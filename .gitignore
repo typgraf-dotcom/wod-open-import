@@ -1,0 +1,22 @@
+# Logs (uploadés comme artifacts GitHub Actions, pas dans le repo)
+logs/
+*.log
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Fichiers temporaires
+*.tmp
+*.bak
+
+# Environnement virtuel
+venv/
+.venv/
+
+# Fichiers images temporaires
+*.png.tmp
+
+# Données brutes volumineuses (optionnel - décommenter pour exclure)
+# competitions_raw.json

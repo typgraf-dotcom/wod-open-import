@@ -1,0 +1,83 @@
+Import scoring.fit → WordPress  [MODE RÉEL]
+Pays : Belgique, Belgium, France, Suisse, Switzerland
+Doublons : skip
+
+1. Récupération scoring.fit...
+   50 total → 45 après filtre pays
+
+2. [SKIP_PRESCAN=True] pré-scan ignoré — doublons détectés à la création
+
+3. Traitement des compétitions :
+  [OK] OPEN INTERNE                                         created (id=19514)
+  [OK] CONCOURS INTERNE OPEN                                created (id=19516)
+  [OK] OPEN CONTEST - CF Uzurat                             created (id=19518)
+  [OK] OPEN PARTY by CrossFit Aubière                       created (id=19520)
+  [OK] HYROX CHALLENGE #3                                   created (id=19522)
+  [OK] AGNETZ HYBRID RACE                                   created (id=19524)
+  [ERR] HYROX Race LE PUY                                    error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] CrossFit Bailleul Battle                             created (id=19526)
+  [ERR] Magic Hyrox Challenge                                error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] Gora Contest                                         created (id=19528)
+  [ERR] 2L2N Training Camp - 1 EDITION 2026                  error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] Pertuis Contest - Spring édition 🪓                   created (id=19530)
+  [OK] Tiger Contest 8                                      created (id=19532)
+  [ERR] Cormeilles Fitness Battle                            error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] Hyrox de Tivizio 3.0                                 created (id=19534)
+  [OK] DAHU BATTLE SPRING EDITION                           created (id=19536)
+  [OK] FIGHTER CONTEST VOL.7                                created (id=19538)
+  [ERR] 24 HEURES DE BIKEERG                                 error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] Chistera Family Contest 3ème édition                 created (id=19540)
+  [ERR] CGH Fit Games                                        error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] Athletic Challenge #3                                created (id=19542)
+  [ERR] HYROX By Night                                       error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] Parrot Battle IV                                     created (id=19544)
+  [ERR] Amplem Factory #5 Spring edition                     error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] HYROX RACE by Calade CrossFit 2ème EDITION           created (id=19546)
+  [ERR] ERGO CHALLENGE                                       error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [ERR] RACE SIMULATION HYROX VILLEFONTAINE #1               error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [ERR] LH HYROX CONTEST                                     error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [ERR] HYROX Simulation Châteauroux by PR                   error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [ERR] Tricassium row contest #2                            error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] Hybrid Comp                                          created (id=19548)
+  [ERR] Orlinz battle #3                                     error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] Séminaire chez Camille Joun !                        created (id=19550)
+  [ERR] YUEI TEAM SERIES                                     error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] HandStand Throwdown Spring Edition                   created (id=19552)
+  [ERR] GAMES OF THE NORTH 2026 Finale                       error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] HYROX EVENT 2026                                     created (id=19554)
+  [ERR] Thunder Battle 5                                     error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] 2GEN WEIGHTLIFTING EXPERIENCE                        created (id=19556)
+  [ERR] WoD By Night 2                                       error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] Sanzaru Hyrox Race                                   created (id=19558)
+  [ERR] Wood Shack Contest #2                                error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [OK] TARVOS CONTEST 2026                                  created (id=19560)
+  [ERR] WODATOLOSA XXL 2026                                  error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+  [ERR] HYROX RACE DAY                                       error
+        502 Server Error: Bad Gateway for url: https://wod-open.com/xmlrpc.php
+
+============================================================
+Résumé :
+  created     : 24
+  error       : 21
+
+Rapport sauvegardé : import_results.json

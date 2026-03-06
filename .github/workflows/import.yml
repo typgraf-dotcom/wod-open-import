@@ -1,0 +1,53 @@
+name: Import quotidien wod-open.com
+
+on:
+  schedule:
+    # 02:00 UTC = 03:00 Paris (hiver) / 04:00 Paris (été)
+    - cron: '0 2 * * *'
+  workflow_dispatch:     # permet de lancer manuellement depuis GitHub
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write    # nécessaire pour commit les résultats
+
+    steps:
+      - name: Checkout du dépôt
+        uses: actions/checkout@v4
+
+      - name: Installation Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Installation des dépendances
+        run: pip install requests Pillow
+
+      - name: Import scoring.fit (daily_import.py)
+        env:
+          WP_APP_PASS:    ${{ secrets.WP_APP_PASS }}
+          SMTP_PASSWORD:  ${{ secrets.SMTP_PASSWORD }}
+        run: python daily_import.py
+
+      - name: Import CompetitionCorner (cc_import.py)
+        env:
+          WP_APP_PASS:    ${{ secrets.WP_APP_PASS }}
+          SMTP_PASSWORD:  ${{ secrets.SMTP_PASSWORD }}
+        run: python cc_import.py
+
+      - name: Sauvegarde des résultats dans le dépôt
+        run: |
+          git config user.email "github-actions@github.com"
+          git config user.name "GitHub Actions"
+          git add import_results.json cc_import_results.json competitions_raw.json
+          git diff --staged --quiet || git commit -m "Auto: import $(date +%Y-%m-%d)"
+          git push
+
+      - name: Upload des logs (artifacts)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs-${{ github.run_id }}
+          path: logs/
+          retention-days: 30

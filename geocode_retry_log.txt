@@ -1,0 +1,97 @@
+Retry géocodage pour 15 événements
+
+[ 1/15] OPEN PARTY by CrossFit Aubière
+    location API : 'CrossFit Aubière'
+    → tentative 1 : 'CrossFit Aubière'
+    → tentative 3 (keywords supprimés) : 'Aubière, France'
+    📍 45.7512575, 3.1144195  (auvergne-rhone-alpes)
+    🗺️  région : auvergne-rhone-alpes → term_id=153
+    ✓ mis à jour
+[ 2/15] HYROX CHALLENGE #3
+    location API : 'MLX Training Club - 15 Rue Alfred de Musset, 33400 Talence'
+    → tentative 1 : 'MLX Training Club - 15 Rue Alfred de Musset, 33400 Talence'
+    → tentative 2 (code postal) : '33400, France'
+    📍 44.8058192, -0.5912419  (nouvelle-aquitaine)
+    🗺️  région : nouvelle-aquitaine → term_id=152
+    ✓ mis à jour
+[ 3/15] CrossFit Bailleul Battle
+    location API : 'CrossFit Bailleul'
+    → tentative 1 : 'CrossFit Bailleul'
+    → tentative 3 (keywords supprimés) : 'Bailleul, France'
+    📍 50.7396668, 2.7349286  (hauts-de-france)
+    🗺️  région : hauts-de-france → term_id=144
+    ✓ mis à jour
+[ 4/15] Magic Hyrox Challenge
+    location API : 'région centre'
+    → tentative 1 : 'région centre'
+    ⚠️  hors bbox (12.37, -1.51) — ignoré
+    ✗ géocodage impossible
+[ 5/15] Pertuis Contest
+    location API : 'Pertuis'
+    → tentative 1 : 'Pertuis'
+    📍 43.6951468, 5.5032671  (provence-alpes-cote-d-azur)
+    🗺️  région : provence-alpes-cote-d-azur → term_id=155
+    ✓ mis à jour
+[ 6/15] Tiger Contest 8
+    location API : 'TIGERWOD'
+    → tentative 1 : 'TIGERWOD'
+    ✗ géocodage impossible
+[ 7/15] FIGHTER CONTEST VOL.7
+    location API : 'FONCTIONNAL FITNESS & FIGHTER Gretz armainvilliers'
+    → tentative 1 : 'FONCTIONNAL FITNESS & FIGHTER Gretz armainvilliers'
+    → tentative 3 (keywords supprimés) : 'FIGHTER Gretz armainvilliers, France'
+    ✗ géocodage impossible
+[ 8/15] 24 HEURES DE BIKEERG
+    location API : "CROSSFIT L'ABATTOIR - 48 RUE ROBERVAL - 26000 VALENCE"
+    → tentative 1 : "CROSSFIT L'ABATTOIR - 48 RUE ROBERVAL - 26000 VALENCE"
+    → tentative 2 (code postal) : '26000, France'
+    📍 44.9234681, 4.9072381  (auvergne-rhone-alpes)
+    🗺️  région : auvergne-rhone-alpes → term_id=153
+    ✓ mis à jour
+[ 9/15] HYROX RACE by Calade CrossFit
+    location API : 'Calade CrossFit'
+    → tentative 1 : 'Calade CrossFit'
+    → tentative 3 (keywords supprimés) : 'Calade, France'
+    📍 43.3415524, 5.3499232  (provence-alpes-cote-d-azur)
+    🗺️  région : provence-alpes-cote-d-azur → term_id=155
+    ✓ mis à jour
+[10/15] ERGO CHALLENGE
+    location API : 'CROSSFIT SAINT QUENTIN'
+    → tentative 1 : 'CROSSFIT SAINT QUENTIN'
+    → tentative 3 (keywords supprimés) : 'SAINT QUENTIN, France'
+    📍 49.8465253, 3.2876843  (hauts-de-france)
+    🗺️  région : hauts-de-france → term_id=144
+    ✓ mis à jour
+[11/15] RACE SIMULATION HYROX VILLEFONTAINE #1
+    location API : '40 rue mongolfier, Villefontaine 38090'
+    → tentative 1 : '40 rue mongolfier, Villefontaine 38090'
+    → tentative 2 (code postal) : '38090, France'
+    📍 45.5957094, 5.1471745  (auvergne-rhone-alpes)
+    🗺️  région : auvergne-rhone-alpes → term_id=153
+    ✓ mis à jour
+[12/15] GAMES OF THE NORTH 2026 Finale
+    location API : 'CrossFit LXII, 3 rue Copernic, 62000 Arras'
+    → tentative 1 : 'CrossFit LXII, 3 rue Copernic, 62000 Arras'
+    → tentative 2 (code postal) : '62000, France'
+    📍 50.2837991, 2.740618  (hauts-de-france)
+    🗺️  région : hauts-de-france → term_id=144
+    ✓ mis à jour
+[13/15] 2GEN WEIGHTLIFTING EXPERIENCE
+    location API : 'Moana Training Club'
+    → tentative 1 : 'Moana Training Club'
+    ✗ géocodage impossible
+[14/15] WoD By Night 2
+    location API : 'CrossFit La Forge'
+    → tentative 1 : 'CrossFit La Forge'
+    ✗ géocodage impossible
+[15/15] Sanzaru Hyrox Race
+    location API : 'Crossfit Sanzaru'
+    → tentative 1 : 'Crossfit Sanzaru'
+    ✗ géocodage impossible
+
+=======================================================
+Résumé retry géocodage :
+  geocoded    : 9
+  region_ok   : 9
+  skipped     : 6
+  error       : 0
