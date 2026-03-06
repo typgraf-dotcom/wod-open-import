@@ -2,41 +2,40 @@ name: Import quotidien wod-open.com
 
 on:
   schedule:
-    # 02:00 UTC = 03:00 Paris (hiver) / 04:00 Paris (été)
-    - cron: '0 2 * * *'
-  workflow_dispatch:     # permet de lancer manuellement depuis GitHub
+    - cron: '0 2 * * *'   # 02:00 UTC = 03:00 Paris (winter) / 04:00 (summer)
+  workflow_dispatch:        # manual trigger from GitHub Actions tab
 
 jobs:
   import:
     runs-on: ubuntu-latest
     permissions:
-      contents: write    # nécessaire pour commit les résultats
+      contents: write
 
     steps:
-      - name: Checkout du dépôt
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Installation Python 3.13
+      - name: Setup Python 3.13
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
 
-      - name: Installation des dépendances
+      - name: Install dependencies
         run: pip install requests Pillow
 
-      - name: Import scoring.fit (daily_import.py)
+      - name: Run scoring.fit import
         env:
-          WP_APP_PASS:    ${{ secrets.WP_APP_PASS }}
-          SMTP_PASSWORD:  ${{ secrets.SMTP_PASSWORD }}
+          WP_APP_PASS:   ${{ secrets.WP_APP_PASS }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         run: python daily_import.py
 
-      - name: Import CompetitionCorner (cc_import.py)
+      - name: Run CompetitionCorner import
         env:
-          WP_APP_PASS:    ${{ secrets.WP_APP_PASS }}
-          SMTP_PASSWORD:  ${{ secrets.SMTP_PASSWORD }}
+          WP_APP_PASS:   ${{ secrets.WP_APP_PASS }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         run: python cc_import.py
 
-      - name: Sauvegarde des résultats dans le dépôt
+      - name: Save results to repo
         run: |
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
@@ -44,7 +43,7 @@ jobs:
           git diff --staged --quiet || git commit -m "Auto: import $(date +%Y-%m-%d)"
           git push
 
-      - name: Upload des logs (artifacts)
+      - name: Upload logs as artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
