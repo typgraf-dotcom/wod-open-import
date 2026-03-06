@@ -15,7 +15,7 @@ Config rapide :
 """
 
 import sys, json, time, re, io, xmlrpc.client, unicodedata
-import logging, smtplib, ssl
+import os, logging, smtplib, ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime, timezone
