@@ -2,6 +2,9 @@
 logs/
 *.log
 
+# Claude Code (config locale, ne pas versionner)
+.claude/
+
 # Cache Python
 __pycache__/
 *.pyc
