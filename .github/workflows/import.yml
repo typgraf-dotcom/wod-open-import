@@ -24,18 +24,21 @@ jobs:
         run: pip install requests Pillow
 
       - name: Run scoring.fit import
+        continue-on-error: true          # save step runs even if this fails
         env:
           WP_APP_PASS:   ${{ secrets.WP_APP_PASS }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         run: python daily_import.py
 
       - name: Run CompetitionCorner import
+        continue-on-error: true          # save step runs even if this fails
         env:
           WP_APP_PASS:   ${{ secrets.WP_APP_PASS }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         run: python cc_import.py
 
       - name: Save results to repo
+        if: always()                     # always save, even after errors
         run: |
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
