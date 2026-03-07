@@ -44,10 +44,11 @@ WP_APP_PASS = os.environ.get("WP_APP_PASS", "1Pyz cRXX sttO rKCx wZbB Zde7")
 XMLRPC_URL  = f"{WP_URL}/xmlrpc.php"
 XMLRPC_AUTH = (WP_USER, WP_APP_PASS)
 
-CC_BASE_URL  = "https://competitioncorner.net"
-CC_API_URL   = f"{CC_BASE_URL}/api2/v1/events/filtered"
-CC_IMG_URL   = f"{CC_BASE_URL}/api2/v1/files/download?filename={{path}}"
-CC_EVENT_URL = f"{CC_BASE_URL}/events/{{id}}"
+CC_BASE_URL   = "https://competitioncorner.net"
+CC_API_URL    = f"{CC_BASE_URL}/api2/v1/events/filtered"
+CC_DETAIL_URL = f"{CC_BASE_URL}/api2/v1/events/{{id}}"
+CC_IMG_URL    = f"{CC_BASE_URL}/api2/v1/files/download?filename={{path}}"
+CC_EVENT_URL  = f"{CC_BASE_URL}/events/{{id}}"
 
 COUNTRIES_FILTER = {"FR", "BE", "CH"}   # codes ISO
 
@@ -226,6 +227,38 @@ def fetch_cc_events() -> list[dict]:
 
 
 # ═══════════════════════════════════════════════════════════
+# ▌ CompetitionCorner — détail d'un event (description + prix)
+# ═══════════════════════════════════════════════════════════
+def fetch_cc_event_detail(ev_id: int) -> dict:
+    """Retourne le détail d'un event CC : description HTML, prix, organisateur."""
+    try:
+        time.sleep(0.5)   # politesse API
+        r = requests.get(CC_DETAIL_URL.format(id=ev_id), timeout=15)
+        r.raise_for_status()
+        return r.json()
+    except Exception as e:
+        log.warning(f"    [CC detail ev_id={ev_id}] {e}")
+        return {}
+
+
+def build_price_html(price, price_team, currency: str) -> str:
+    """Formate le prix en HTML pour l'inclure dans la description."""
+    if not price and not price_team:
+        return ""
+    curr = (currency or "EUR").upper()
+    parts = []
+    if price:
+        parts.append(f"Individuel\u00a0: <strong>{float(price):.0f}\u00a0{curr}</strong>")
+    if price_team and float(price_team) != float(price or 0):
+        parts.append(f"Team\u00a0: <strong>{float(price_team):.0f}\u00a0{curr}</strong>")
+    return (
+        "<p style='background:#f5f5f5;padding:8px 12px;border-left:4px solid #e74c3c;"
+        "margin-bottom:16px'>"
+        "🎫 <strong>Tarif\u00a0:</strong> " + " &nbsp;|&nbsp; ".join(parts) + "</p>"
+    )
+
+
+# ═══════════════════════════════════════════════════════════
 # ▌ Géocodage Nominatim (pour la région France)
 # ═══════════════════════════════════════════════════════════
 def geocode_region(lat: str, lng: str, city: str, country: str) -> str:
@@ -366,8 +399,9 @@ def upload_image(thumbnail: str, slug: str, title: str) -> int | None:
 # ═══════════════════════════════════════════════════════════
 # ▌ Construction du post WP
 # ═══════════════════════════════════════════════════════════
-def build_post(ev: dict, slug: str) -> dict:
+def build_post(ev: dict, slug: str, detail: dict | None = None) -> dict:
     """Construit le payload complet pour wp.newPost."""
+    detail    = detail or {}
     title     = ev.get("name", "").strip()
     loc       = ev.get("eventLocation") or {}
     country_c = loc.get("countryCode", "")
@@ -398,6 +432,14 @@ def build_post(ev: dict, slug: str) -> dict:
     # URL externe
     ev_id   = ev.get("id", "")
     ext_url = CC_EVENT_URL.format(id=ev_id) if ev_id else ""
+
+    # Description + prix (depuis l'endpoint détail)
+    description  = detail.get("description", "") or ""
+    price        = detail.get("registrationPrice")
+    price_team   = detail.get("registrationPriceTeam")
+    currency     = detail.get("currency", "eur")
+    price_html   = build_price_html(price, price_team, currency)
+    post_content = (price_html + "\n" + description).strip() if (price_html or description) else ""
 
     # Taxonomies
     type_ids = detect_type(ev)
@@ -436,7 +478,7 @@ def build_post(ev: dict, slug: str) -> dict:
         "post_status":    POST_STATUS,
         "post_title":     title,
         "post_name":      slug,
-        "post_content":   "",
+        "post_content":   post_content,
         "terms": {
             "type":      type_ids,
             "event_cat": cat_ids,
@@ -703,7 +745,15 @@ def main():
 
         log.info(f"  [NEW] {title[:55]}  (cc_id={cc_id}, {country_c})")
 
-        payload = build_post(ev, slug)
+        # Détail : description + prix
+        detail = fetch_cc_event_detail(cc_id)
+        price     = detail.get("registrationPrice")
+        price_team = detail.get("registrationPriceTeam")
+        currency  = (detail.get("currency") or "eur").upper()
+        has_desc  = bool(detail.get("description"))
+        log.info(f"    prix={price}/{price_team} {currency}  desc={'oui' if has_desc else 'non'}")
+
+        payload = build_post(ev, slug, detail)
 
         if DRY_RUN:
             start_dt = ev.get("startDateTime", "")[:10]
