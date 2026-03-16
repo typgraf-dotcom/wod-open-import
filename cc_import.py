@@ -200,28 +200,38 @@ def wp_call(method: str, *args):
 # ▌ CompetitionCorner API
 # ═══════════════════════════════════════════════════════════
 def fetch_cc_events() -> list[dict]:
-    """Récupère les events actifs et upcoming depuis l'API CC publique."""
+    """Récupère les events actifs et upcoming depuis l'API CC publique (toutes les pages)."""
     all_events: list[dict] = []
     seen_ids: set[int] = set()
 
     for timing in ("active", "upcoming"):
-        try:
-            r = requests.get(CC_API_URL, params={"timing": timing}, timeout=15)
-            r.raise_for_status()
-            events = r.json()
-            if not isinstance(events, list):
-                log.warning(f"  [CC API] réponse inattendue pour timing={timing}")
-                continue
-            added = 0
-            for ev in events:
-                ev_id = ev.get("id")
-                if ev_id and ev_id not in seen_ids:
-                    seen_ids.add(ev_id)
-                    all_events.append(ev)
-                    added += 1
-            log.info(f"  timing={timing}: {len(events)} events ({added} nouveaux)")
-        except Exception as e:
-            log.warning(f"  [CC fetch timing={timing}] {e}")
+        page = 1
+        timing_total = 0
+        while True:
+            try:
+                r = requests.get(CC_API_URL, params={"timing": timing, "page": page}, timeout=15)
+                r.raise_for_status()
+                events = r.json()
+                if not isinstance(events, list):
+                    log.warning(f"  [CC API] réponse inattendue pour timing={timing} page={page}")
+                    break
+                if not events:
+                    break   # plus de pages
+                added = 0
+                for ev in events:
+                    ev_id = ev.get("id")
+                    if ev_id and ev_id not in seen_ids:
+                        seen_ids.add(ev_id)
+                        all_events.append(ev)
+                        added += 1
+                timing_total += added
+                page += 1
+                if len(events) < 10:
+                    break   # dernière page (incomplète)
+            except Exception as e:
+                log.warning(f"  [CC fetch timing={timing} page={page}] {e}")
+                break
+        log.info(f"  timing={timing}: {timing_total} nouveaux events ({page - 1} pages)")
 
     return all_events
 
