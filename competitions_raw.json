@@ -24,7 +24,7 @@
         "_id": "69c0fbe82e5b110033b07d64",
         "type": "single",
         "participants": [],
-        "participants_count": 19
+        "participants_count": 20
       }
     ],
     "_event": {
@@ -59,7 +59,7 @@
       "publish": false
     },
     "publish": true,
-    "total_participants": 19,
+    "total_participants": 20,
     "total_volunteers": 0
   },
   {
@@ -128,288 +128,6 @@
     "total_volunteers": 0
   },
   {
-    "_id": "6969bed30d88920033948d09",
-    "date": {
-      "start": {
-        "hour": "00:00",
-        "day": "27/03/2026",
-        "iso": "2026-03-27T04:00:00Z"
-      },
-      "end": {
-        "hour": "23:59",
-        "day": "28/03/2026",
-        "iso": "2026-03-28T16:00:00Z"
-      }
-    },
-    "eventNumber": 2917,
-    "name": "HYROX PRIMAL CHALLENGE 2026",
-    "type": "inside",
-    "buttonLink": {
-      "url": "HYROX-PRIMAL-CHALLENGE-2026"
-    },
-    "divisions": [
-      {
-        "_id": "6969c5100d88920033949662",
-        "type": "team",
-        "participants": [],
-        "participants_count": 13
-      },
-      {
-        "_id": "6969c5440d889200339496dc",
-        "type": "team",
-        "participants": [],
-        "participants_count": 13
-      },
-      {
-        "_id": "6969c4e70d889200339495ca",
-        "type": "team",
-        "participants": [],
-        "participants_count": 17
-      },
-      {
-        "_id": "6969c1870d889200339490b5",
-        "type": "single",
-        "participants": [],
-        "participants_count": 15
-      },
-      {
-        "_id": "6969c1b10d88920033949138",
-        "type": "single",
-        "participants": [],
-        "participants_count": 10
-      },
-      {
-        "_id": "6969c2520d88920033949296",
-        "type": "team",
-        "participants": [],
-        "participants_count": 5
-      },
-      {
-        "_id": "6969c4b20d88920033949544",
-        "type": "team",
-        "participants": [],
-        "participants_count": 15
-      },
-      {
-        "_id": "6969c1e60d889200339491e4",
-        "type": "team",
-        "participants": [],
-        "participants_count": 30
-      },
-      {
-        "_id": "6969c02c0d88920033948eca",
-        "type": "single",
-        "participants": [],
-        "participants_count": 20
-      },
-      {
-        "_id": "6969c1270d8892003394900b",
-        "type": "single",
-        "participants": [],
-        "participants_count": 8
-      }
-    ],
-    "_event": {
-      "_id": "6969bed30d88920033948d1b",
-      "publish": true,
-      "tags": [
-        "inside"
-      ],
-      "category": "Hybrid Race",
-      "location": "77 Avenue de bourbon",
-      "country": "Réunion"
-    },
-    "_ticketing": {
-      "_id": "6969bed30d88920033948d1d",
-      "_leaderboard": "6969bed30d88920033948d09",
-      "publish": true,
-      "specific_division_spots": [
-        {
-          "_id": "6969c6520d88920033949a1b",
-          "division_id": "6969c02c0d88920033948eca",
-          "division_spots": 20,
-          "whitelist": []
-        },
-        {
-          "_id": "6969c6520d88920033949a1c",
-          "division_id": "6969c1270d8892003394900b",
-          "division_spots": 10,
-          "whitelist": []
-        },
-        {
-          "_id": "6969c6520d88920033949a1d",
-          "division_id": "6969c1870d889200339490b5",
-          "division_spots": 15,
-          "whitelist": []
-        },
-        {
-          "_id": "6969c6520d88920033949a1e",
-          "division_id": "6969c1b10d88920033949138",
-          "division_spots": 10,
-          "whitelist": []
-        },
-        {
-          "_id": "6969c6520d88920033949a1f",
-          "division_id": "6969c1e60d889200339491e4",
-          "division_spots": 30,
-          "whitelist": []
-        },
-        {
-          "_id": "6969c6520d88920033949a20",
-          "division_id": "6969c2520d88920033949296",
-          "division_spots": 5,
-          "whitelist": []
-        },
-        {
-          "_id": "6969c6520d88920033949a21",
-          "division_id": "6969c4b20d88920033949544",
-          "division_spots": 15,
-          "whitelist": []
-        },
-        {
-          "_id": "6969c6520d88920033949a22",
-          "division_id": "6969c4e70d889200339495ca",
-          "division_spots": 20,
-          "whitelist": []
-        },
-        {
-          "_id": "6969c6520d88920033949a23",
-          "division_id": "6969c5100d88920033949662",
-          "division_spots": 15,
-          "whitelist": []
-        },
-        {
-          "_id": "6969c6520d88920033949a24",
-          "division_id": "6969c5440d889200339496dc",
-          "division_spots": 15,
-          "whitelist": []
-        }
-      ],
-      "end_date": "2026-03-06T08:00:00Z",
-      "open_date": "2026-01-18T04:33:00Z",
-      "total_spots": "144"
-    },
-    "_volunteering": {
-      "_id": "6969bed30d88920033948d1f",
-      "publish": true,
-      "total_spots": "22"
-    },
-    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6969bed30d88920033948d09/logo.jpg",
-    "_planning": {
-      "_id": "69ba5f65b0958e0033beea46",
-      "publish": true
-    },
-    "publish": true,
-    "total_participants": 146,
-    "total_volunteers": 16
-  },
-  {
-    "_id": "68cc009a22857600330ec29c",
-    "date": {
-      "start": {
-        "hour": "00:00",
-        "day": "28/03/2026",
-        "iso": "2026-03-28T07:00:00Z"
-      },
-      "end": {
-        "hour": "23:59",
-        "day": "28/03/2026",
-        "iso": "2026-03-28T19:00:00Z"
-      }
-    },
-    "eventNumber": 2648,
-    "name": "Parrot Battle IV",
-    "type": "inside",
-    "buttonLink": {
-      "url": "Parrot-Batlle-IV"
-    },
-    "divisions": [
-      {
-        "_id": "68e788aa389ae800332fe303",
-        "type": "single",
-        "participants": [],
-        "participants_count": 15
-      },
-      {
-        "_id": "68e788be389ae800332fe32e",
-        "type": "single",
-        "participants": [],
-        "participants_count": 11
-      },
-      {
-        "_id": "68e788cc389ae800332fe365",
-        "type": "team",
-        "participants": [],
-        "participants_count": 15
-      },
-      {
-        "_id": "68e788da389ae800332fe378",
-        "type": "team",
-        "participants": [],
-        "participants_count": 8
-      }
-    ],
-    "_event": {
-      "_id": "68cc009a22857600330ec2ae",
-      "publish": true,
-      "tags": [
-        "inside"
-      ],
-      "category": "Functional Fitness",
-      "location": "172 Avenue du stand 58000 Challuy",
-      "country": "France"
-    },
-    "_ticketing": {
-      "_id": "68cc009a22857600330ec2b0",
-      "_leaderboard": "68cc009a22857600330ec29c",
-      "publish": true,
-      "specific_division_spots": [
-        {
-          "_id": "68f9f747e880aa0033dbd770",
-          "division_id": "68e788cc389ae800332fe365",
-          "division_spots": 20,
-          "whitelist": []
-        },
-        {
-          "_id": "68f9f747e880aa0033dbd771",
-          "division_id": "68e788aa389ae800332fe303",
-          "division_spots": 15,
-          "whitelist": []
-        },
-        {
-          "_id": "68fe18e68f98b00033fde9b9",
-          "division_id": "68e788da389ae800332fe378",
-          "division_spots": 20,
-          "whitelist": []
-        },
-        {
-          "_id": "68fe18e68f98b00033fde9ba",
-          "division_id": "68e788be389ae800332fe32e",
-          "division_spots": 15,
-          "whitelist": []
-        }
-      ],
-      "end_date": "2026-03-25T12:00:00Z",
-      "open_date": "2025-10-31T12:00:00Z",
-      "total_spots": null
-    },
-    "_volunteering": {
-      "_id": "68cc009a22857600330ec2b2",
-      "end_date": "2026-01-31T08:00:10Z",
-      "open_date": "2025-11-02T08:00:00Z",
-      "publish": true,
-      "total_spots": "15"
-    },
-    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/68cc009a22857600330ec29c/logo.png",
-    "_planning": {
-      "_id": "68fe1ad48f98b00033fe1697",
-      "publish": true
-    },
-    "publish": true,
-    "total_participants": 49,
-    "total_volunteers": 1
-  },
-  {
     "_id": "6903724b7f022e0033675503",
     "date": {
       "start": {
@@ -471,315 +189,9 @@
       "_id": "699878ae35aff100337b2e3a",
       "publish": true
     },
+    "publish": true,
     "total_participants": 26,
     "total_volunteers": 0
-  },
-  {
-    "_id": "69078d3f00e11d0033935d50",
-    "date": {
-      "start": {
-        "hour": "00:00",
-        "day": "28/03/2026",
-        "iso": "2026-03-28T07:00:00Z"
-      },
-      "end": {
-        "hour": "23:59",
-        "day": "28/03/2026",
-        "iso": "2026-03-28T19:00:00Z"
-      }
-    },
-    "eventNumber": 2725,
-    "name": "HYROX RACE by Calade CrossFit 2ème EDITION",
-    "type": "inside",
-    "buttonLink": {
-      "url": "HYROX-RACE-by-Calade-CrossFit"
-    },
-    "divisions": [
-      {
-        "_id": "69078ea700e11d0033936952",
-        "type": "team",
-        "participants": [],
-        "participants_count": 7
-      },
-      {
-        "_id": "69078eb400e11d00339369ab",
-        "type": "team",
-        "participants": [],
-        "participants_count": 14
-      },
-      {
-        "_id": "69078ec100e11d0033936a2a",
-        "type": "team",
-        "participants": [],
-        "participants_count": 12
-      },
-      {
-        "_id": "69078ecb00e11d0033936a7a",
-        "type": "team",
-        "participants": [],
-        "participants_count": 0
-      },
-      {
-        "_id": "69078ed500e11d0033936ad9",
-        "type": "team",
-        "participants": [],
-        "participants_count": 6
-      },
-      {
-        "_id": "69078ee300e11d0033936b48",
-        "type": "team",
-        "participants": [],
-        "participants_count": 5
-      }
-    ],
-    "_event": {
-      "_id": "69078d3f00e11d0033935d62",
-      "publish": true,
-      "tags": [
-        "inside"
-      ],
-      "category": "Hybrid Race",
-      "location": "Calade CrossFit",
-      "country": "France"
-    },
-    "_ticketing": {
-      "_id": "69078d3f00e11d0033935d64",
-      "_leaderboard": "69078d3f00e11d0033935d50",
-      "publish": true,
-      "specific_division_spots": [
-        {
-          "_id": "69a7162642843900334942db",
-          "division_id": "69078ee300e11d0033936b48",
-          "division_spots": 6,
-          "whitelist": []
-        },
-        {
-          "_id": "69a7162642843900334942dc",
-          "division_id": "69078ed500e11d0033936ad9",
-          "division_spots": 6,
-          "whitelist": []
-        },
-        {
-          "_id": "69a7162642843900334942dd",
-          "division_id": "69078ea700e11d0033936952",
-          "division_spots": 7,
-          "whitelist": []
-        },
-        {
-          "_id": "69a7162642843900334942de",
-          "division_id": "69078eb400e11d00339369ab",
-          "division_spots": 14,
-          "whitelist": []
-        },
-        {
-          "_id": "69a7162642843900334942df",
-          "division_id": "69078ec100e11d0033936a2a",
-          "division_spots": 11,
-          "whitelist": []
-        },
-        {
-          "_id": "69a7162642843900334942e0",
-          "division_id": "69078ecb00e11d0033936a7a",
-          "division_spots": 0,
-          "whitelist": []
-        }
-      ],
-      "end_date": "2026-03-21T22:59:00Z",
-      "open_date": "2025-11-02T17:00:00Z",
-      "total_spots": null
-    },
-    "_volunteering": {
-      "_id": "69078d3f00e11d0033935d66"
-    },
-    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69078d3f00e11d0033935d50/logo.png",
-    "_planning": {
-      "_id": "6977384c6b08fe00336529f6",
-      "publish": true
-    },
-    "total_participants": 44,
-    "total_volunteers": 0
-  },
-  {
-    "_id": "691d61f56405640033e89f55",
-    "date": {
-      "start": {
-        "hour": "00:00",
-        "day": "28/03/2026",
-        "iso": "2026-03-28T07:00:00Z"
-      },
-      "end": {
-        "hour": "23:59",
-        "day": "28/03/2026",
-        "iso": "2026-03-28T19:00:00Z"
-      }
-    },
-    "eventNumber": 2770,
-    "name": "ERGO CHALLENGE ",
-    "type": "inside",
-    "buttonLink": {
-      "url": "CHALLENGE-INTER-ENTREPRISE-"
-    },
-    "divisions": [
-      {
-        "_id": "69917ccbfab60b00338d629b",
-        "type": "team",
-        "participants": [],
-        "participants_count": 3
-      },
-      {
-        "_id": "69917ce4fab60b00338d62d5",
-        "type": "team",
-        "participants": [],
-        "participants_count": 4
-      },
-      {
-        "_id": "69917cf2fab60b00338d6313",
-        "type": "team",
-        "participants": [],
-        "participants_count": 1
-      }
-    ],
-    "_event": {
-      "_id": "691d61f56405640033e89f67",
-      "publish": true,
-      "tags": [
-        "inside"
-      ],
-      "category": "Hybrid Race",
-      "location": "CROSSFIT SAINT QUENTIN",
-      "country": "France"
-    },
-    "_ticketing": {
-      "_id": "691d61f56405640033e89f69",
-      "_leaderboard": "691d61f56405640033e89f55",
-      "publish": true,
-      "specific_division_spots": [
-        {
-          "_id": "69917ccbfab60b00338d62a2",
-          "division_id": "69917ccbfab60b00338d629b",
-          "division_spots": 8,
-          "whitelist": []
-        },
-        {
-          "_id": "69917ce4fab60b00338d62dc",
-          "division_id": "69917ce4fab60b00338d62d5",
-          "division_spots": 8,
-          "whitelist": []
-        },
-        {
-          "_id": "69917cf2fab60b00338d631a",
-          "division_id": "69917cf2fab60b00338d6313",
-          "division_spots": 8,
-          "whitelist": []
-        }
-      ],
-      "end_date": "2026-03-13T19:42:00Z",
-      "open_date": "2025-12-01T07:00:00Z",
-      "total_spots": "24"
-    },
-    "_volunteering": {
-      "_id": "691d61f56405640033e89f6b"
-    },
-    "_planning": {
-      "_id": "698f4b67a387540033db318d",
-      "publish": true
-    },
-    "publish": true,
-    "total_participants": 8,
-    "total_volunteers": 0
-  },
-  {
-    "_id": "693096f51c811a0033da7305",
-    "date": {
-      "start": {
-        "day": "28/03/2026",
-        "hour": "08:00",
-        "iso": "2026-03-28T07:00:00Z"
-      },
-      "end": {
-        "day": "28/03/2026",
-        "hour": "18:00",
-        "iso": "2026-03-28T17:00:28Z"
-      }
-    },
-    "eventNumber": 2808,
-    "name": "RACE SIMULATION HYROX VILLEFONTAINE #1",
-    "type": "inside",
-    "buttonLink": {
-      "url": "RACE-SIMULATION-HYROX-VILLEFONTAINE-#1"
-    },
-    "divisions": [
-      {
-        "_id": "693099391c811a0033da7c6f",
-        "type": "team",
-        "participants": [],
-        "participants_count": 24
-      },
-      {
-        "_id": "693099471c811a0033da7cca",
-        "type": "team",
-        "participants": [],
-        "participants_count": 42
-      },
-      {
-        "_id": "693099511c811a0033da7d10",
-        "type": "team",
-        "participants": [],
-        "participants_count": 54
-      }
-    ],
-    "_event": {
-      "_id": "693096f51c811a0033da7317",
-      "publish": true,
-      "tags": [
-        "inside"
-      ],
-      "category": "Hybrid Race",
-      "location": "40 rue mongolfier, Villefontaine 38090",
-      "country": "France"
-    },
-    "_ticketing": {
-      "_id": "693096f51c811a0033da7319",
-      "_leaderboard": "693096f51c811a0033da7305",
-      "publish": true,
-      "specific_division_spots": [
-        {
-          "_id": "693099771c811a0033da7de5",
-          "division_id": "693099511c811a0033da7d10",
-          "division_spots": 54,
-          "whitelist": []
-        },
-        {
-          "_id": "693099771c811a0033da7de6",
-          "division_id": "693099471c811a0033da7cca",
-          "division_spots": 42,
-          "whitelist": []
-        },
-        {
-          "_id": "693099771c811a0033da7de7",
-          "division_id": "693099391c811a0033da7c6f",
-          "division_spots": 24,
-          "whitelist": []
-        }
-      ],
-      "total_spots": "120",
-      "open_date": "2025-12-08T07:00:00Z"
-    },
-    "_volunteering": {
-      "_id": "693096f51c811a0033da731b",
-      "end_date": "2026-03-27T07:44:25Z",
-      "open_date": "2026-01-26T07:44:17Z",
-      "publish": true,
-      "total_spots": "20"
-    },
-    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/693096f51c811a0033da7305/logo.png",
-    "publish": true,
-    "_planning": {
-      "_id": "6937d420fb23ee0033360426",
-      "publish": true
-    },
-    "total_participants": 120,
-    "total_volunteers": 2
   },
   {
     "_id": "698492e1e796d20033053b31",
@@ -884,172 +296,6 @@
     },
     "total_participants": 38,
     "total_volunteers": 21
-  },
-  {
-    "_id": "6984bba4e796d2003305ddbf",
-    "date": {
-      "start": {
-        "day": "28/03/2026",
-        "hour": "08:00",
-        "iso": "2026-03-28T07:00:00Z"
-      },
-      "end": {
-        "day": "28/03/2026",
-        "hour": "18:00",
-        "iso": "2026-03-28T17:00:00Z"
-      }
-    },
-    "eventNumber": 2983,
-    "name": "HYROX Simulation Châteauroux by PR",
-    "type": "inside",
-    "buttonLink": {
-      "url": "Hyrox-Châteauroux"
-    },
-    "divisions": [
-      {
-        "_id": "6984bc5ee796d2003305df32",
-        "type": "single",
-        "participants": [],
-        "participants_count": 15
-      },
-      {
-        "_id": "6984bc6de796d2003305df4b",
-        "type": "single",
-        "participants": [],
-        "participants_count": 7
-      },
-      {
-        "_id": "6984bc81372bd10033827292",
-        "type": "single",
-        "participants": [],
-        "participants_count": 3
-      },
-      {
-        "_id": "6984bca0372bd1003382733c",
-        "type": "single",
-        "participants": [],
-        "participants_count": 0
-      },
-      {
-        "_id": "6984bcb0e796d2003305dff6",
-        "type": "team",
-        "participants": [],
-        "participants_count": 15
-      },
-      {
-        "_id": "6984bcbee796d2003305e029",
-        "type": "team",
-        "participants": [],
-        "participants_count": 11
-      },
-      {
-        "_id": "6984bcd0372bd100338273b7",
-        "type": "team",
-        "participants": [],
-        "participants_count": 22
-      },
-      {
-        "_id": "6984bda1e796d2003305e2ab",
-        "type": "team",
-        "participants": [],
-        "participants_count": 4
-      },
-      {
-        "_id": "6984bdb2e796d2003305e2db",
-        "type": "team",
-        "participants": [],
-        "participants_count": 0
-      }
-    ],
-    "_event": {
-      "_id": "6984bba4e796d2003305ddd1",
-      "publish": true,
-      "tags": [
-        "inside"
-      ],
-      "category": "Hybrid Race",
-      "location": "Châteauroux",
-      "country": "France"
-    },
-    "_ticketing": {
-      "_id": "6984bba4e796d2003305ddd3",
-      "_leaderboard": "6984bba4e796d2003305ddbf",
-      "publish": true,
-      "specific_division_spots": [],
-      "end_date": "2026-03-20T19:00:00Z",
-      "open_date": "2026-02-06T19:00:00Z",
-      "total_spots": "100"
-    },
-    "_volunteering": {
-      "_id": "6984bba4e796d2003305ddd5"
-    },
-    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6984bba4e796d2003305ddbf/logo.jpg",
-    "_planning": {
-      "_id": "69860f9abdabf600336a4763",
-      "publish": true
-    },
-    "publish": true,
-    "total_participants": 77,
-    "total_volunteers": 0
-  },
-  {
-    "_id": "696b45e45110a10033667d06",
-    "date": {
-      "start": {
-        "day": "28/03/2026",
-        "hour": "08:30",
-        "iso": "2026-03-28T07:30:00Z"
-      },
-      "end": {
-        "day": "28/03/2026",
-        "hour": "18:00",
-        "iso": "2026-03-28T17:00:00Z"
-      }
-    },
-    "eventNumber": 2918,
-    "name": "Tricassium row contest #2",
-    "type": "inside",
-    "buttonLink": {
-      "url": "Tricassium-row-contest-#2"
-    },
-    "divisions": [
-      {
-        "_id": "696b47a45110a10033669a94",
-        "type": "team",
-        "participants": [],
-        "participants_count": 7
-      }
-    ],
-    "_event": {
-      "_id": "696b45e45110a10033667d18",
-      "publish": true,
-      "tags": [
-        "inside"
-      ],
-      "category": "Functional Fitness",
-      "location": "Pont sainte marie",
-      "country": "France"
-    },
-    "_ticketing": {
-      "_id": "696b45e45110a10033667d1a",
-      "_leaderboard": "696b45e45110a10033667d06",
-      "publish": true,
-      "specific_division_spots": [],
-      "end_date": "2026-03-15T19:00:00Z",
-      "open_date": "2026-01-17T16:00:00Z",
-      "total_spots": "20"
-    },
-    "_volunteering": {
-      "_id": "696b45e45110a10033667d1c"
-    },
-    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/696b45e45110a10033667d06/logo.jpg",
-    "_planning": {
-      "_id": "696b48925110a1003366b28c",
-      "publish": true
-    },
-    "publish": true,
-    "total_participants": 7,
-    "total_volunteers": 0
   },
   {
     "_id": "692580c414ab1b00338775ad",
@@ -1947,7 +1193,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/696942630d88920033910a08/logo.png",
     "total_participants": 42,
-    "total_volunteers": 13
+    "total_volunteers": 14
   },
   {
     "_id": "69775cee6b08fe003365ea82",
@@ -2279,146 +1525,6 @@
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6966bd4a2af439003310f770/logo.jpg",
     "publish": false,
     "total_participants": 35,
-    "total_volunteers": 0
-  },
-  {
-    "_id": "69b3f91ce52fc10033e5c329",
-    "date": {
-      "start": {
-        "day": "05/04/2026",
-        "hour": "10:30",
-        "iso": "2026-04-05T08:30:00Z"
-      },
-      "end": {
-        "day": "05/04/2026",
-        "hour": "17:00",
-        "iso": "2026-04-05T15:00:00Z"
-      }
-    },
-    "eventNumber": 3070,
-    "name": "Deadly Dozen Official Gym Race",
-    "type": "inside",
-    "buttonLink": {
-      "url": "Deadly-Erg-Gym-Race"
-    },
-    "divisions": [
-      {
-        "_id": "69b3f9c0e52fc10033e5c4e6",
-        "type": "single",
-        "participants": [],
-        "participants_count": 7
-      },
-      {
-        "_id": "69b3f9cee52fc10033e5c518",
-        "type": "single",
-        "participants": [],
-        "participants_count": 3
-      },
-      {
-        "_id": "69b3f9e0e52fc10033e5c534",
-        "type": "single",
-        "participants": [],
-        "participants_count": 0
-      },
-      {
-        "_id": "69b3f9eae52fc10033e5c55d",
-        "type": "single",
-        "participants": [],
-        "participants_count": 0
-      },
-      {
-        "_id": "69b3f9fde52fc10033e5c58f",
-        "type": "team",
-        "participants": [],
-        "participants_count": 0
-      },
-      {
-        "_id": "69b3fa0fe52fc10033e5c5c6",
-        "type": "team",
-        "participants": [],
-        "participants_count": 0
-      },
-      {
-        "_id": "69b42accdea0bb003340b09e",
-        "type": "team",
-        "participants": [],
-        "participants_count": 0
-      }
-    ],
-    "_event": {
-      "_id": "69b3f91ce52fc10033e5c33b",
-      "publish": true,
-      "tags": [
-        "inside"
-      ],
-      "category": "Hybrid Race",
-      "location": "Montigny Le Bretonneux",
-      "country": "France"
-    },
-    "_ticketing": {
-      "_id": "69b3f91ce52fc10033e5c33d",
-      "_leaderboard": "69b3f91ce52fc10033e5c329",
-      "publish": true,
-      "specific_division_spots": [
-        {
-          "_id": "69b6bfe4f2a47f0033157796",
-          "division_id": "69b3f9c0e52fc10033e5c4e6",
-          "division_spots": 12,
-          "whitelist": []
-        },
-        {
-          "_id": "69b6bfe4f2a47f0033157797",
-          "division_id": "69b3f9cee52fc10033e5c518",
-          "division_spots": 12,
-          "whitelist": []
-        },
-        {
-          "_id": "69b6bfe4f2a47f0033157798",
-          "division_id": "69b3f9fde52fc10033e5c58f",
-          "division_spots": 12,
-          "whitelist": []
-        },
-        {
-          "_id": "69b6bfe4f2a47f0033157799",
-          "division_id": "69b3fa0fe52fc10033e5c5c6",
-          "division_spots": 12,
-          "whitelist": []
-        },
-        {
-          "_id": "69b6bfe4f2a47f003315779a",
-          "division_id": "69b42accdea0bb003340b09e",
-          "division_spots": 12,
-          "whitelist": []
-        },
-        {
-          "_id": "69b6bfe4f2a47f003315779b",
-          "division_id": "69b3f9e0e52fc10033e5c534",
-          "division_spots": 6,
-          "whitelist": []
-        },
-        {
-          "_id": "69b6bfe4f2a47f003315779c",
-          "division_id": "69b3f9eae52fc10033e5c55d",
-          "division_spots": 6,
-          "whitelist": []
-        }
-      ],
-      "total_spots": "100",
-      "end_date": "2026-04-11T15:16:00Z",
-      "open_date": "2026-03-22T11:00:00Z"
-    },
-    "_volunteering": {
-      "_id": "69b3f91ce52fc10033e5c33f",
-      "end_date": "2026-03-28T10:00:24Z",
-      "total_spots": "25",
-      "open_date": "2026-03-16T11:00:00Z"
-    },
-    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69b3f91ce52fc10033e5c329/logo.png",
-    "_planning": {
-      "_id": "69b533553531720033a52ce5",
-      "publish": false
-    },
-    "total_participants": 10,
     "total_volunteers": 0
   },
   {
@@ -2786,8 +1892,12 @@
       "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/68e681ba389ae800332e0a0c/logo.png",
+    "_planning": {
+      "_id": "69c85c30b393a70033e37a77",
+      "publish": false
+    },
     "total_participants": 137,
-    "total_volunteers": 18
+    "total_volunteers": 20
   },
   {
     "_id": "6915b00ba6624b0033914881",
@@ -3067,7 +2177,7 @@
         "_id": "697b906635ad470033e33106",
         "type": "team",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       },
       {
         "_id": "697b907335ad470033e33130",
@@ -3079,7 +2189,7 @@
         "_id": "697b907b35ad470033e33146",
         "type": "team",
         "participants": [],
-        "participants_count": 13
+        "participants_count": 14
       },
       {
         "_id": "6991a6d6fab60b00338dddfd",
@@ -3091,7 +2201,7 @@
         "_id": "6991a6f8fab60b00338ddea2",
         "type": "team",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 3
       }
     ],
     "_event": {
@@ -3136,37 +2246,37 @@
         {
           "_id": "697b929a35ad470033e33614",
           "division_id": "697b905b35ad470033e330f5",
-          "division_spots": 50,
+          "division_spots": 12,
           "whitelist": []
         },
         {
           "_id": "697b929a35ad470033e33615",
           "division_id": "697b906635ad470033e33106",
-          "division_spots": 30,
+          "division_spots": 8,
           "whitelist": []
         },
         {
           "_id": "697b929a35ad470033e33616",
           "division_id": "697b907335ad470033e33130",
-          "division_spots": 2,
+          "division_spots": 0,
           "whitelist": []
         },
         {
           "_id": "697b929a35ad470033e33617",
           "division_id": "697b907b35ad470033e33146",
-          "division_spots": 30,
+          "division_spots": 14,
           "whitelist": []
         },
         {
           "_id": "6991a6d6fab60b00338dde06",
           "division_id": "6991a6d6fab60b00338dddfd",
-          "division_spots": 30,
+          "division_spots": 3,
           "whitelist": []
         },
         {
           "_id": "6991a6f8fab60b00338ddeab",
           "division_id": "6991a6f8fab60b00338ddea2",
-          "division_spots": 30,
+          "division_spots": 3,
           "whitelist": []
         }
       ],
@@ -3182,7 +2292,7 @@
       "_id": "697b933f35ad470033e337b5",
       "publish": false
     },
-    "total_participants": 57,
+    "total_participants": 58,
     "total_volunteers": 0
   },
   {
@@ -3393,7 +2503,7 @@
       "publish": false
     },
     "total_participants": 57,
-    "total_volunteers": 17
+    "total_volunteers": 20
   },
   {
     "_id": "69a6c6f7cc827d00331208f8",
@@ -3432,7 +2542,7 @@
         "_id": "69a7ece2f6c7b70033e1a673",
         "type": "team",
         "participants": [],
-        "participants_count": 14
+        "participants_count": 15
       },
       {
         "_id": "69a7ed93f6c7b70033e1aa23",
@@ -3509,8 +2619,8 @@
       "_id": "69a7f5bef6c7b70033e1d347",
       "publish": false
     },
-    "total_participants": 52,
-    "total_volunteers": 2
+    "total_participants": 53,
+    "total_volunteers": 3
   },
   {
     "_id": "69b2d8762fbc560033ff1def",
@@ -3623,7 +2733,7 @@
         "_id": "69b18402104cb00033725b23",
         "type": "team",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       },
       {
         "_id": "69b1840f6a227900333f0619",
@@ -3635,7 +2745,7 @@
         "_id": "69b1841d104cb00033725b60",
         "type": "team",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       }
     ],
     "_event": {
@@ -3703,7 +2813,7 @@
       "_id": "69b7fffcae87f70033d28e61",
       "publish": false
     },
-    "total_participants": 30,
+    "total_participants": 32,
     "total_volunteers": 11
   },
   {
@@ -3731,13 +2841,13 @@
         "_id": "69a467ec514f120033f8b6e0",
         "type": "single",
         "participants": [],
-        "participants_count": 8
+        "participants_count": 9
       },
       {
         "_id": "69a46813514f120033f8b7a4",
         "type": "single",
         "participants": [],
-        "participants_count": 17
+        "participants_count": 18
       }
     ],
     "_event": {
@@ -3776,7 +2886,7 @@
       "_id": "69a46742514f120033f8b14d"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69a46742514f120033f8b134/logo.png",
-    "total_participants": 25,
+    "total_participants": 27,
     "total_volunteers": 0
   },
   {
@@ -3899,7 +3009,7 @@
         "_id": "69668bf12af4390033102e58",
         "type": "team",
         "participants": [],
-        "participants_count": 21
+        "participants_count": 22
       },
       {
         "_id": "69668c012af4390033102e87",
@@ -3956,7 +3066,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69666b862af43900330fc33d/logo.png",
     "publish": true,
-    "total_participants": 39,
+    "total_participants": 40,
     "total_volunteers": 0
   },
   {
@@ -4008,7 +3118,7 @@
         "_id": "69830dcee4026e003377ece4",
         "type": "team",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       }
     ],
     "_event": {
@@ -4071,7 +3181,7 @@
       "publish": true
     },
     "publish": true,
-    "total_participants": 13,
+    "total_participants": 14,
     "total_volunteers": 2
   },
   {
@@ -4099,13 +3209,13 @@
         "_id": "6988a2d3da1dc300337731ed",
         "type": "team",
         "participants": [],
-        "participants_count": 17
+        "participants_count": 18
       },
       {
         "_id": "6988a2ddda1dc30033773281",
         "type": "team",
         "participants": [],
-        "participants_count": 13
+        "participants_count": 14
       },
       {
         "_id": "6988a2e7da1dc300337732bf",
@@ -4159,7 +3269,7 @@
       "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69889f85fde97a0033ec0aff/logo.png",
-    "total_participants": 50,
+    "total_participants": 52,
     "total_volunteers": 5
   },
   {
@@ -4381,7 +3491,7 @@
         "_id": "699d857caa1b6e0033e19f00",
         "type": "team",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "_id": "699d85d1aa1b6e0033e1a253",
@@ -4514,7 +3624,7 @@
       "_id": "69b43298dea0bb003340c9e2",
       "publish": false
     },
-    "total_participants": 49,
+    "total_participants": 50,
     "total_volunteers": 0
   },
   {
@@ -4613,13 +3723,13 @@
         "_id": "6938049efb23ee003336ba08",
         "type": "team",
         "participants": [],
-        "participants_count": 12
+        "participants_count": 13
       },
       {
         "_id": "693804b4fb23ee003336ba8b",
         "type": "team",
         "participants": [],
-        "participants_count": 2
+        "participants_count": 4
       }
     ],
     "_event": {
@@ -4663,7 +3773,7 @@
       "_id": "693567ba1f7bc10033c630ce"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/693567ba1f7bc10033c630b3/logo.png",
-    "total_participants": 34,
+    "total_participants": 37,
     "total_volunteers": 0
   },
   {
@@ -4697,7 +3807,7 @@
         "_id": "697380fc651a54003309e1d7",
         "type": "team",
         "participants": [],
-        "participants_count": 126
+        "participants_count": 127
       }
     ],
     "_event": {
@@ -4760,7 +3870,7 @@
       "_id": "69805f97b0f82200334ca269",
       "publish": false
     },
-    "total_participants": 282,
+    "total_participants": 283,
     "total_volunteers": 55
   },
   {
@@ -5075,13 +4185,13 @@
         "_id": "69a82c3ef6c7b70033e25362",
         "type": "single",
         "participants": [],
-        "participants_count": 22
+        "participants_count": 23
       },
       {
         "_id": "69a82c475eece30033e974f5",
         "type": "single",
         "participants": [],
-        "participants_count": 27
+        "participants_count": 28
       }
     ],
     "_event": {
@@ -5115,7 +4225,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/699485d5f689990033915fee/logo.jpg",
-    "total_participants": 49,
+    "total_participants": 51,
     "total_volunteers": 11
   },
   {
@@ -5149,7 +4259,7 @@
         "_id": "69aff3619f8be70033455328",
         "type": "team",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "_id": "69aff3829f8be700334553ed",
@@ -5195,7 +4305,7 @@
     },
     "publish": true,
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69aff28d2cbec100334a89ea/logo.jpg",
-    "total_participants": 15,
+    "total_participants": 16,
     "total_volunteers": 0
   },
   {
@@ -5903,7 +5013,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69a5dd14cc827d00330fbb5b/logo.jpg",
     "total_participants": 13,
-    "total_volunteers": 17
+    "total_volunteers": 18
   },
   {
     "_id": "6908719900e11d003395cab0",
@@ -6278,13 +5388,13 @@
         "_id": "695e804b3f14a60033015313",
         "type": "team",
         "participants": [],
-        "participants_count": 9
+        "participants_count": 10
       },
       {
         "_id": "695e80613f14a60033015373",
         "type": "team",
         "participants": [],
-        "participants_count": 12
+        "participants_count": 13
       },
       {
         "_id": "695e808c3f14a60033015431",
@@ -6369,7 +5479,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/695e7e2b3f14a60033014cee/logo.jpg",
-    "total_participants": 39,
+    "total_participants": 41,
     "total_volunteers": 0
   },
   {
@@ -6736,7 +5846,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/699c277126bbf3003324664d/logo.png",
     "total_participants": 27,
-    "total_volunteers": 12
+    "total_volunteers": 13
   },
   {
     "_id": "69a801ccf6c7b70033e1edb9",
@@ -6775,7 +5885,7 @@
         "_id": "69a80574f6c7b70033e1f993",
         "type": "team",
         "participants": [],
-        "participants_count": 13
+        "participants_count": 14
       }
     ],
     "_event": {
@@ -6821,7 +5931,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69a801ccf6c7b70033e1edb9/logo.jpg",
     "publish": true,
-    "total_participants": 32,
+    "total_participants": 33,
     "total_volunteers": 0
   },
   {
@@ -7124,7 +6234,7 @@
         "_id": "69aed5afb4c5fa0033f19657",
         "type": "team",
         "participants": [],
-        "participants_count": 12
+        "participants_count": 14
       }
     ],
     "_event": {
@@ -7151,7 +6261,7 @@
       "_id": "69aedbb2b4c5fa0033f1d5a4",
       "publish": false
     },
-    "total_participants": 23,
+    "total_participants": 25,
     "total_volunteers": 0
   },
   {
@@ -7490,7 +6600,7 @@
         "_id": "699c230f26bbf30033244bc8",
         "type": "team",
         "participants": [],
-        "participants_count": 1
+        "participants_count": 2
       },
       {
         "_id": "699c231926bbf30033244c2f",
@@ -7521,7 +6631,7 @@
       "_id": "698c49c44aaab30033e01c51"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/698c49c44aaab30033e01c3b/logo.jpg",
-    "total_participants": 4,
+    "total_participants": 5,
     "total_volunteers": 0
   },
   {
@@ -7590,7 +6700,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69a5e6facc827d0033104d1b/logo.jpg",
     "total_participants": 15,
-    "total_volunteers": 11
+    "total_volunteers": 12
   },
   {
     "_id": "68f33a4cd861b500336f4833",
@@ -7814,7 +6924,7 @@
         "_id": "69660d8c2074b0003327cd95",
         "type": "team",
         "participants": [],
-        "participants_count": 2
+        "participants_count": 3
       }
     ],
     "_event": {
@@ -7862,7 +6972,7 @@
       "_id": "69660f642074b0003327d54c",
       "publish": false
     },
-    "total_participants": 12,
+    "total_participants": 13,
     "total_volunteers": 0
   },
   {
@@ -8202,7 +7312,7 @@
         "_id": "697cc9e8d105e70033f77b97",
         "type": "team",
         "participants": [],
-        "participants_count": 2
+        "participants_count": 3
       },
       {
         "_id": "697cca00d105e70033f77bfa",
@@ -8241,7 +7351,147 @@
       "_id": "697cc5cad105e70033f76d4f",
       "publish": false
     },
-    "total_participants": 9,
+    "total_participants": 10,
+    "total_volunteers": 0
+  },
+  {
+    "_id": "69b3f91ce52fc10033e5c329",
+    "date": {
+      "start": {
+        "day": "26/04/2026",
+        "hour": "10:30",
+        "iso": "2026-04-26T08:30:00Z"
+      },
+      "end": {
+        "day": "26/04/2026",
+        "hour": "17:30",
+        "iso": "2026-04-26T15:30:29Z"
+      }
+    },
+    "eventNumber": 3070,
+    "name": "Deadly Dozen Official Gym Race",
+    "type": "inside",
+    "buttonLink": {
+      "url": "Deadly-Erg-Gym-Race"
+    },
+    "divisions": [
+      {
+        "_id": "69b3f9c0e52fc10033e5c4e6",
+        "type": "single",
+        "participants": [],
+        "participants_count": 7
+      },
+      {
+        "_id": "69b3f9cee52fc10033e5c518",
+        "type": "single",
+        "participants": [],
+        "participants_count": 3
+      },
+      {
+        "_id": "69b3f9e0e52fc10033e5c534",
+        "type": "single",
+        "participants": [],
+        "participants_count": 0
+      },
+      {
+        "_id": "69b3f9eae52fc10033e5c55d",
+        "type": "single",
+        "participants": [],
+        "participants_count": 0
+      },
+      {
+        "_id": "69b3f9fde52fc10033e5c58f",
+        "type": "team",
+        "participants": [],
+        "participants_count": 0
+      },
+      {
+        "_id": "69b3fa0fe52fc10033e5c5c6",
+        "type": "team",
+        "participants": [],
+        "participants_count": 0
+      },
+      {
+        "_id": "69b42accdea0bb003340b09e",
+        "type": "team",
+        "participants": [],
+        "participants_count": 0
+      }
+    ],
+    "_event": {
+      "_id": "69b3f91ce52fc10033e5c33b",
+      "publish": true,
+      "tags": [
+        "inside"
+      ],
+      "category": "Hybrid Race",
+      "location": "Montigny Le Bretonneux (78)",
+      "country": "France"
+    },
+    "_ticketing": {
+      "_id": "69b3f91ce52fc10033e5c33d",
+      "_leaderboard": "69b3f91ce52fc10033e5c329",
+      "publish": true,
+      "specific_division_spots": [
+        {
+          "_id": "69b6bfe4f2a47f0033157796",
+          "division_id": "69b3f9c0e52fc10033e5c4e6",
+          "division_spots": 12,
+          "whitelist": []
+        },
+        {
+          "_id": "69b6bfe4f2a47f0033157797",
+          "division_id": "69b3f9cee52fc10033e5c518",
+          "division_spots": 12,
+          "whitelist": []
+        },
+        {
+          "_id": "69b6bfe4f2a47f0033157798",
+          "division_id": "69b3f9fde52fc10033e5c58f",
+          "division_spots": 12,
+          "whitelist": []
+        },
+        {
+          "_id": "69b6bfe4f2a47f0033157799",
+          "division_id": "69b3fa0fe52fc10033e5c5c6",
+          "division_spots": 12,
+          "whitelist": []
+        },
+        {
+          "_id": "69b6bfe4f2a47f003315779a",
+          "division_id": "69b42accdea0bb003340b09e",
+          "division_spots": 12,
+          "whitelist": []
+        },
+        {
+          "_id": "69b6bfe4f2a47f003315779b",
+          "division_id": "69b3f9e0e52fc10033e5c534",
+          "division_spots": 6,
+          "whitelist": []
+        },
+        {
+          "_id": "69b6bfe4f2a47f003315779c",
+          "division_id": "69b3f9eae52fc10033e5c55d",
+          "division_spots": 6,
+          "whitelist": []
+        }
+      ],
+      "total_spots": "100",
+      "end_date": "2026-04-12T21:59:00Z",
+      "open_date": "2026-03-22T11:00:00Z"
+    },
+    "_volunteering": {
+      "_id": "69b3f91ce52fc10033e5c33f",
+      "end_date": "2026-03-28T10:00:24Z",
+      "total_spots": "25",
+      "open_date": "2026-03-16T11:00:00Z"
+    },
+    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69b3f91ce52fc10033e5c329/logo.png",
+    "_planning": {
+      "_id": "69b533553531720033a52ce5",
+      "publish": false
+    },
+    "total_participants": 10,
     "total_volunteers": 0
   },
   {
@@ -8711,7 +7961,7 @@
         "_id": "695e2792c892230033b0e1eb",
         "type": "single",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       },
       {
         "_id": "695e279ec892230033b0e20b",
@@ -8829,7 +8079,7 @@
       "publish": false
     },
     "publish": false,
-    "total_participants": 81,
+    "total_participants": 82,
     "total_volunteers": 2
   },
   {
@@ -8863,7 +8113,7 @@
         "_id": "69b2ed5ce52fc10033e37959",
         "type": "team",
         "participants": [],
-        "participants_count": 2
+        "participants_count": 3
       }
     ],
     "_event": {
@@ -8906,7 +8156,7 @@
       "_id": "696a40260d8892003396ce4d",
       "publish": false
     },
-    "total_participants": 7,
+    "total_participants": 8,
     "total_volunteers": 0
   },
   {
@@ -9592,7 +8842,7 @@
         "_id": "693ad3b4dbdb1100339feb26",
         "type": "team",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       },
       {
         "_id": "693ad3bedbdb1100339febb3",
@@ -9677,7 +8927,7 @@
       "_id": "69944f0f7ae916003349e9b4",
       "publish": false
     },
-    "total_participants": 37,
+    "total_participants": 38,
     "total_volunteers": 0
   },
   {
@@ -9989,7 +9239,7 @@
         "_id": "69a57a50514f120033fc92f7",
         "type": "single",
         "participants": [],
-        "participants_count": 17
+        "participants_count": 18
       },
       {
         "_id": "69a57a6f514f120033fc9334",
@@ -10001,7 +9251,7 @@
         "_id": "69a57a940a55fd0033bbb5bd",
         "type": "single",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "_id": "69a57aac514f120033fc93a8",
@@ -10040,7 +9290,7 @@
         {
           "_id": "69a57adb0a55fd0033bbb6e5",
           "division_id": "69a57a50514f120033fc92f7",
-          "division_spots": 17,
+          "division_spots": 19,
           "whitelist": []
         },
         {
@@ -10076,7 +9326,7 @@
       "_id": "69a578a7514f120033fc8509"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69a578a7514f120033fc84f3/logo.png",
-    "total_participants": 40,
+    "total_participants": 42,
     "total_volunteers": 0
   },
   {
@@ -10122,7 +9372,7 @@
         "_id": "699387247ae916003347ec3f",
         "type": "team",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       },
       {
         "_id": "699387527ae916003347edd8",
@@ -10134,7 +9384,7 @@
         "_id": "6993876d7ae916003347eeb4",
         "type": "team",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       }
     ],
     "_event": {
@@ -10201,7 +9451,7 @@
       "_id": "699477077ae91600334aa4c0",
       "publish": false
     },
-    "total_participants": 29,
+    "total_participants": 31,
     "total_volunteers": 0
   },
   {
@@ -11172,7 +10422,7 @@
         "_id": "6968650d8206630033e69ff7",
         "type": "team",
         "participants": [],
-        "participants_count": 24
+        "participants_count": 25
       },
       {
         "_id": "696865218206630033e6a012",
@@ -11240,7 +10490,7 @@
       "_id": "69685c128206630033e69e1b"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69685c128206630033e69e05/logo.png",
-    "total_participants": 49,
+    "total_participants": 50,
     "total_volunteers": 0
   },
   {
@@ -11402,7 +10652,7 @@
         "_id": "696639742074b00033283ceb",
         "type": "team",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       },
       {
         "_id": "6966397c2074b00033283d01",
@@ -11447,17 +10697,17 @@
         {
           "_id": "69808871b0f82200334df5f7",
           "division_id": "6966397c2074b00033283d01",
-          "division_spots": 20,
+          "division_spots": 18,
           "whitelist": []
         },
         {
           "_id": "69808871b0f82200334df5f8",
           "division_id": "696639832074b00033283d12",
-          "division_spots": 17,
+          "division_spots": 16,
           "whitelist": []
         }
       ],
-      "end_date": "2026-03-27T20:30:00Z",
+      "end_date": "2026-03-29T21:30:00Z",
       "open_date": "2026-02-20T19:00:00Z",
       "total_spots": "54"
     },
@@ -11473,7 +10723,7 @@
       "_id": "69c3a7b556823f0033479e18",
       "publish": false
     },
-    "total_participants": 53,
+    "total_participants": 54,
     "total_volunteers": 18
   },
   {
@@ -11519,13 +10769,13 @@
         "_id": "6908860b00e11d0033961502",
         "type": "team",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 7
       },
       {
         "_id": "6908863200e11d003396165a",
         "type": "team",
         "participants": [],
-        "participants_count": 9
+        "participants_count": 10
       },
       {
         "_id": "6908865b00e11d00339617d1",
@@ -11650,7 +10900,7 @@
       "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6908800f00e11d003395ff2a/logo.jpg",
-    "total_participants": 26,
+    "total_participants": 28,
     "total_volunteers": 4
   },
   {
@@ -11736,13 +10986,14 @@
       "end_date": "2026-05-24T21:59:11Z",
       "open_date": "2025-12-15T12:40:54Z",
       "total_spots": "35",
-      "publish": true
+      "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/68f8a60077adc20033801b71/logo.jpg",
     "_planning": {
       "_id": "691ee78591ac350033608a72",
-      "publish": true
+      "publish": false
     },
+    "publish": true,
     "total_participants": 29,
     "total_volunteers": 27
   },
@@ -11784,12 +11035,6 @@
         "type": "team",
         "participants": [],
         "participants_count": 69
-      },
-      {
-        "_id": "68f77126e5cbd300339266ff",
-        "type": "team",
-        "participants": [],
-        "participants_count": 0
       }
     ],
     "_event": {
@@ -12016,7 +11261,7 @@
         "_id": "694c8450bfd97800338b0b82",
         "type": "single",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 9
       },
       {
         "_id": "694c8479bfd97800338b0c3e",
@@ -12040,7 +11285,7 @@
         "_id": "694c84b6bfd97800338b0c9c",
         "type": "single",
         "participants": [],
-        "participants_count": 11
+        "participants_count": 12
       }
     ],
     "_event": {
@@ -12072,7 +11317,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/694c3d0fbfd97800338ac10f/logo.png",
-    "total_participants": 32,
+    "total_participants": 35,
     "total_volunteers": 0
   },
   {
@@ -12237,7 +11482,7 @@
         "_id": "69735db8651a54003308d6b1",
         "type": "single",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       },
       {
         "_id": "69735dc5651a54003308d6c2",
@@ -12261,7 +11506,7 @@
         "_id": "69735dee651a54003308d754",
         "type": "single",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "_id": "69735df9651a54003308d780",
@@ -12314,7 +11559,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6971e9761859f10033486409/logo.png",
-    "total_participants": 29,
+    "total_participants": 31,
     "total_volunteers": 1
   },
   {
@@ -12496,7 +11741,7 @@
         "_id": "69b53f963531720033a55594",
         "type": "team",
         "participants": [],
-        "participants_count": 15
+        "participants_count": 16
       }
     ],
     "_event": {
@@ -12522,7 +11767,7 @@
       "_id": "69a191133c341c003380a685"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69a191133c341c003380a66a/logo.jpg",
-    "total_participants": 15,
+    "total_participants": 16,
     "total_volunteers": 0
   },
   {
@@ -12635,7 +11880,7 @@
         "_id": "6954093eb6fbeb0033964b54",
         "type": "team",
         "participants": [],
-        "participants_count": 10
+        "participants_count": 11
       },
       {
         "_id": "6954094cb6fbeb0033964b6f",
@@ -12675,7 +11920,7 @@
       "_id": "695409ecb6fbeb0033964e27",
       "publish": false
     },
-    "total_participants": 30,
+    "total_participants": 31,
     "total_volunteers": 0
   },
   {
@@ -12709,7 +11954,7 @@
         "_id": "698b4e5d46c6ce00334c2950",
         "type": "team",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       },
       {
         "_id": "698b4e6446c6ce00334c29a6",
@@ -12741,7 +11986,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/698b4dbd46c6ce00334c25ce/logo.png",
     "publish": true,
-    "total_participants": 26,
+    "total_participants": 27,
     "total_volunteers": 0
   },
   {
@@ -13538,7 +12783,7 @@
         "_id": "69821ce4f02fee0033942932",
         "type": "team",
         "participants": [],
-        "participants_count": 21
+        "participants_count": 23
       },
       {
         "_id": "69821cf7f02fee003394298d",
@@ -13585,7 +12830,7 @@
       "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69821a8ff02fee0033941e70/logo.png",
-    "total_participants": 89,
+    "total_participants": 91,
     "total_volunteers": 18
   },
   {
@@ -13691,7 +12936,7 @@
         "_id": "69c117352e5b110033b13ae1",
         "type": "single",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 1
       },
       {
         "_id": "69c117fd2e5b110033b14103",
@@ -13765,7 +13010,7 @@
       "_id": "69c113b42e5b110033b1207d"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69c113b42e5b110033b12065/logo.jpg",
-    "total_participants": 0,
+    "total_participants": 1,
     "total_volunteers": 0
   },
   {
@@ -14227,13 +13472,13 @@
         "_id": "69c140292e5b110033b28f27",
         "type": "team",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 7
       },
       {
         "_id": "69c140462e5b110033b28fa7",
         "type": "team",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 8
       }
     ],
     "_event": {
@@ -14276,7 +13521,7 @@
       "_id": "69c54398d76aed003357d9a4",
       "publish": false
     },
-    "total_participants": 11,
+    "total_participants": 15,
     "total_volunteers": 0
   },
   {
@@ -14395,19 +13640,19 @@
         "_id": "69b9649d84a0320033b12257",
         "type": "team",
         "participants": [],
-        "participants_count": 10
+        "participants_count": 12
       },
       {
         "_id": "69b964ab84a0320033b122dc",
         "type": "team",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 7
       },
       {
         "_id": "69b964b984a0320033b122f7",
         "type": "team",
         "participants": [],
-        "participants_count": 11
+        "participants_count": 13
       },
       {
         "_id": "69b964c184a0320033b1230e",
@@ -14419,13 +13664,13 @@
         "_id": "69b964d184a0320033b12344",
         "type": "team",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       },
       {
         "_id": "69b964dc84a0320033b123b2",
         "type": "team",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       }
     ],
     "_event": {
@@ -14487,7 +13732,7 @@
       "_id": "68fa2ecfe880aa0033dc90f9"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/68fa2ecee880aa0033dc90e3/logo.png",
-    "total_participants": 46,
+    "total_participants": 53,
     "total_volunteers": 0
   },
   {
@@ -14645,7 +13890,7 @@
         "_id": "6935c4abf2a3de003302a850",
         "type": "team",
         "participants": [],
-        "participants_count": 20
+        "participants_count": 21
       },
       {
         "_id": "6935c4cdf2a3de003302aa09",
@@ -14726,7 +13971,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6935c39df2a3de003302a0bb/logo.jpg",
-    "total_participants": 90,
+    "total_participants": 91,
     "total_volunteers": 0
   },
   {
@@ -14754,7 +13999,7 @@
         "_id": "69403cbeddcf73003326aa9c",
         "type": "team",
         "participants": [],
-        "participants_count": 16
+        "participants_count": 17
       },
       {
         "_id": "69403ce9ddcf73003326abbf",
@@ -14802,7 +14047,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69403bc7ddcf73003326a827/logo.jpg",
-    "total_participants": 36,
+    "total_participants": 37,
     "total_volunteers": 0
   },
   {
@@ -15231,7 +14476,7 @@
         "_id": "696cdab6e2dd8f0033b039d9",
         "type": "team",
         "participants": [],
-        "participants_count": 9
+        "participants_count": 10
       },
       {
         "_id": "696cdac2e2dd8f0033b039f8",
@@ -15287,7 +14532,7 @@
       "_id": "696cd944e2dd8f0033b01efc"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/696cd944e2dd8f0033b01ee6/logo.jpg",
-    "total_participants": 39,
+    "total_participants": 40,
     "total_volunteers": 0
   },
   {
@@ -16196,7 +15441,7 @@
         "_id": "6937e8fafb23ee0033364353",
         "type": "team",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "_id": "6937e91cfb23ee003336440b",
@@ -16257,7 +15502,7 @@
       "_id": "6937eccffb23ee0033365b67",
       "publish": true
     },
-    "total_participants": 22,
+    "total_participants": 23,
     "total_volunteers": 0
   },
   {
@@ -16485,7 +15730,7 @@
         "_id": "698615e7bdabf600336a67d5",
         "type": "team",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       }
     ],
     "_event": {
@@ -16530,7 +15775,7 @@
       "_id": "698613ddbdabf600336a5cdb"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/698613ddbdabf600336a5cc4/logo.png",
-    "total_participants": 9,
+    "total_participants": 10,
     "total_volunteers": 0
   },
   {
@@ -16708,7 +15953,7 @@
         "_id": "69c03d872e5b110033ae0261",
         "type": "team",
         "participants": [],
-        "participants_count": 2
+        "participants_count": 3
       },
       {
         "_id": "69c03dbc2e5b110033ae04f2",
@@ -16765,7 +16010,7 @@
       "_id": "69c03ac02e5b110033adde7b"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69c03ac02e5b110033adde65/logo.jpg",
-    "total_participants": 5,
+    "total_participants": 6,
     "total_volunteers": 0
   },
   {
@@ -16799,7 +16044,7 @@
         "_id": "69a2e2ff3c341c003383fdd1",
         "type": "team",
         "participants": [],
-        "participants_count": 9
+        "participants_count": 10
       }
     ],
     "_event": {
@@ -16847,7 +16092,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6952b2d875e493003391df5a/logo.png",
     "publish": true,
-    "total_participants": 13,
+    "total_participants": 14,
     "total_volunteers": 2
   },
   {
@@ -17318,7 +16563,7 @@
         "_id": "698213f5f02fee003393fac1",
         "type": "single",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "_id": "69821404f02fee003393faf9",
@@ -17434,7 +16679,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/696ba8055110a100336e65fc/logo.png",
     "publish": false,
-    "total_participants": 49,
+    "total_participants": 50,
     "total_volunteers": 0
   },
   {
@@ -17621,7 +16866,7 @@
         "_id": "699ca75eaa1b6e0033df28d1",
         "type": "team",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "_id": "699ca7bcaa1b6e0033df2f4b",
@@ -17657,7 +16902,7 @@
         "_id": "699ca92eaa1b6e0033df8d01",
         "type": "single",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 1
       },
       {
         "_id": "699ca93aaa1b6e0033df8d87",
@@ -17795,7 +17040,7 @@
       "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6977ed4d94ce8f0033298c9c/logo.jpg",
-    "total_participants": 17,
+    "total_participants": 19,
     "total_volunteers": 0
   },
   {
@@ -17982,7 +17227,7 @@
         "_id": "698de2bf02f0f30033a76e08",
         "type": "team",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       },
       {
         "_id": "698de2c602f0f30033a76e6a",
@@ -18044,7 +17289,7 @@
       "_id": "698de01502f0f30033a766ab"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/698de01502f0f30033a76695/logo.png",
-    "total_participants": 24,
+    "total_participants": 25,
     "total_volunteers": 0
   },
   {
@@ -18453,7 +17698,7 @@
         "_id": "697cd67ad105e70033f7b562",
         "type": "team",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       },
       {
         "_id": "697cd687d105e70033f7b583",
@@ -18564,7 +17809,7 @@
       "_id": "697ccd9dd105e70033f79037"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/697ccd9dd105e70033f7901c/logo.png",
-    "total_participants": 27,
+    "total_participants": 28,
     "total_volunteers": 0
   },
   {
@@ -18604,7 +17849,7 @@
         "_id": "6992efce2a81c300330839bb",
         "type": "team",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       }
     ],
     "_event": {
@@ -18649,7 +17894,7 @@
       "_id": "6992eeac2a81c30033083373"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6992eeac2a81c3003308335d/logo.png",
-    "total_participants": 8,
+    "total_participants": 9,
     "total_volunteers": 0
   },
   {
@@ -18677,7 +17922,7 @@
         "_id": "69adb07024fe8d00331863cf",
         "type": "team",
         "participants": [],
-        "participants_count": 17
+        "participants_count": 18
       },
       {
         "_id": "69adb08024fe8d003318643f",
@@ -18689,7 +17934,7 @@
         "_id": "69adb08924fe8d0033186492",
         "type": "team",
         "participants": [],
-        "participants_count": 8
+        "participants_count": 11
       }
     ],
     "_event": {
@@ -18733,7 +17978,7 @@
       "_id": "69adafe624fe8d0033186193"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69adafe624fe8d0033186177/logo.jpg",
-    "total_participants": 29,
+    "total_participants": 33,
     "total_volunteers": 0
   },
   {
@@ -18761,7 +18006,7 @@
         "_id": "69c41f88d76aed003351978b",
         "type": "team",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 1
       },
       {
         "_id": "69c41f99d76aed003351985f",
@@ -18822,7 +18067,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69c41e1cd76aed00335189a8/logo.jpg",
-    "total_participants": 0,
+    "total_participants": 1,
     "total_volunteers": 0
   },
   {
@@ -18937,7 +18182,7 @@
       "publish": false
     },
     "total_participants": 240,
-    "total_volunteers": 63
+    "total_volunteers": 64
   },
   {
     "_id": "695d1f59c892230033af3c66",
@@ -19513,7 +18758,7 @@
         {
           "_id": "694d457538f6a200335e45b9",
           "division_id": "694d451e38f6a200335e445e",
-          "division_spots": 20,
+          "division_spots": 24,
           "whitelist": []
         }
       ],
@@ -19553,37 +18798,37 @@
         "_id": "68cbd1481e228f0033887dee",
         "type": "team",
         "participants": [],
-        "participants_count": 92
+        "participants_count": 101
       },
       {
         "_id": "68cbd14e1e228f0033887dff",
         "type": "team",
         "participants": [],
-        "participants_count": 154
+        "participants_count": 170
       },
       {
         "_id": "68cbd1541e228f0033887e10",
         "type": "team",
         "participants": [],
-        "participants_count": 119
+        "participants_count": 127
       },
       {
         "_id": "6979e0c0df04460033cccab6",
         "type": "team",
         "participants": [],
-        "participants_count": 50
+        "participants_count": 53
       },
       {
         "_id": "6979e0cbdf04460033cccb41",
         "type": "team",
         "participants": [],
-        "participants_count": 46
+        "participants_count": 48
       },
       {
         "_id": "6979e0dedf04460033cccbdb",
         "type": "team",
         "participants": [],
-        "participants_count": 41
+        "participants_count": 46
       },
       {
         "_id": "69c5633072621700332b4f60",
@@ -19601,7 +18846,7 @@
         "_id": "69c5635372621700332b504e",
         "type": "single",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 6
       },
       {
         "_id": "69c5636672621700332b50c5",
@@ -19627,25 +18872,25 @@
         {
           "_id": "68cbd1481e228f0033887df3",
           "division_id": "68cbd1481e228f0033887dee",
-          "division_spots": 104,
+          "division_spots": 112,
           "whitelist": []
         },
         {
           "_id": "68cbd14e1e228f0033887e04",
           "division_id": "68cbd14e1e228f0033887dff",
-          "division_spots": 168,
+          "division_spots": 176,
           "whitelist": []
         },
         {
           "_id": "68cbd1541e228f0033887e15",
           "division_id": "68cbd1541e228f0033887e10",
-          "division_spots": 128,
+          "division_spots": 136,
           "whitelist": []
         },
         {
           "_id": "6979ea8ddf04460033cd0034",
           "division_id": "6979e0c0df04460033cccab6",
-          "division_spots": 60,
+          "division_spots": 62,
           "whitelist": []
         },
         {
@@ -19697,7 +18942,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/68cbc5dc1e228f0033885955/logo.png",
-    "total_participants": 530,
+    "total_participants": 575,
     "total_volunteers": 0
   },
   {
@@ -20115,7 +19360,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69b2bf64547c370033500236/logo.jpg",
     "total_participants": 112,
-    "total_volunteers": 0
+    "total_volunteers": 1
   },
   {
     "_id": "69bc137fb83e3600337c83b6",
@@ -20453,89 +19698,6 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6989cc76da1dc300337ee47a/logo.png",
     "total_participants": 17,
-    "total_volunteers": 0
-  },
-  {
-    "_id": "69c591be72621700332d764a",
-    "date": {
-      "start": {
-        "hour": "00:00",
-        "day": "27/09/2026",
-        "iso": "2026-09-27T06:00:00Z"
-      },
-      "end": {
-        "hour": "23:59",
-        "day": "27/09/2026",
-        "iso": "2026-09-27T18:00:00Z"
-      }
-    },
-    "eventNumber": 3103,
-    "name": "RACE SIMULATION HYROX VILLEFONTAINE #2",
-    "type": "inside",
-    "buttonLink": {
-      "url": "RACE-SIMULATION-HYROX-VILLEFONTAINE-#É"
-    },
-    "divisions": [
-      {
-        "_id": "69c594bf72621700332d9de2",
-        "type": "team",
-        "participants": [],
-        "participants_count": 0
-      },
-      {
-        "_id": "69c594cc72621700332d9e87",
-        "type": "team",
-        "participants": [],
-        "participants_count": 0
-      },
-      {
-        "_id": "69c594d672621700332d9f04",
-        "type": "team",
-        "participants": [],
-        "participants_count": 0
-      }
-    ],
-    "_event": {
-      "_id": "69c591be72621700332d7660",
-      "publish": true,
-      "tags": [
-        "inside"
-      ],
-      "category": "Hybrid Race",
-      "location": "VILLEFONTAINE",
-      "country": "France"
-    },
-    "_ticketing": {
-      "_id": "69c591be72621700332d7664",
-      "_leaderboard": "69c591be72621700332d764a",
-      "publish": true,
-      "specific_division_spots": [
-        {
-          "_id": "69c5952672621700332da445",
-          "division_id": "69c594bf72621700332d9de2",
-          "division_spots": 80,
-          "whitelist": []
-        },
-        {
-          "_id": "69c5952672621700332da446",
-          "division_id": "69c594cc72621700332d9e87",
-          "division_spots": 40,
-          "whitelist": []
-        },
-        {
-          "_id": "69c5952672621700332da447",
-          "division_id": "69c594d672621700332d9f04",
-          "division_spots": 40,
-          "whitelist": []
-        }
-      ],
-      "total_spots": "160"
-    },
-    "_volunteering": {
-      "_id": "69c591be72621700332d7668"
-    },
-    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69c591be72621700332d764a/logo.png",
-    "total_participants": 0,
     "total_volunteers": 0
   },
   {
@@ -21333,7 +20495,7 @@
         "_id": "69b58c943531720033a6e67c",
         "type": "team",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "_id": "69b58ca33531720033a6e719",
@@ -21457,7 +20619,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69958841f689990033943b6b/logo.jpg",
-    "total_participants": 40,
+    "total_participants": 41,
     "total_volunteers": 1
   },
   {
@@ -21497,7 +20659,7 @@
         "_id": "697e48e6b487c3003386b9e4",
         "type": "team",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 1
       }
     ],
     "_event": {
@@ -21541,7 +20703,7 @@
       "_id": "697e47aab487c3003386b4c8"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/697e47aab487c3003386b4b2/logo.png",
-    "total_participants": 15,
+    "total_participants": 16,
     "total_volunteers": 0
   }
 ]
