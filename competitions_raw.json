@@ -24,7 +24,7 @@
         "_id": "69cbde1f45e434003329a5e5",
         "type": "single",
         "participants": [],
-        "participants_count": 17
+        "participants_count": 18
       },
       {
         "_id": "69cbde2b45e434003329a61b",
@@ -60,7 +60,7 @@
       "_id": "69e77bbdb82f5d0033b140a5",
       "publish": true
     },
-    "total_participants": 21,
+    "total_participants": 22,
     "total_volunteers": 0
   },
   {
@@ -88,31 +88,31 @@
         "type": "team",
         "_id": "69fd5493d526e64166a67150",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 8
       },
       {
         "type": "single",
         "_id": "69fd54dcd526e64166a67174",
         "participants": [],
-        "participants_count": 1
+        "participants_count": 3
       },
       {
         "type": "single",
         "_id": "69fd54e760acef361712e2e7",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 11
       },
       {
         "type": "single",
         "_id": "69fd551a60acef361712e300",
         "participants": [],
-        "participants_count": 8
+        "participants_count": 13
       },
       {
         "type": "single",
         "_id": "6a01825158b994343a8d221b",
         "participants": [],
-        "participants_count": 13
+        "participants_count": 31
       }
     ],
     "_event": {
@@ -154,8 +154,62 @@
       "_id": "69c12d252e5b110033b1d54f",
       "publish": false
     },
-    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6980d4adf02fee00338c9d38/logo.png",
-    "total_participants": 32,
+    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6980d4adf02fee00338c9d38/logo.jpg",
+    "publish": false,
+    "total_participants": 66,
+    "total_volunteers": 0
+  },
+  {
+    "_id": "6a0d850003212bd547ef862f",
+    "eventNumber": 3239,
+    "name": "CHALLENGE #1 BY TLN - MAX PUSH-UP",
+    "type": "online",
+    "date": {
+      "start": {
+        "hour": "00:00",
+        "day": "01/06/2026",
+        "iso": "2026-06-01T06:00:00Z"
+      },
+      "end": {
+        "hour": "23:59",
+        "day": "30/06/2026",
+        "iso": "2026-06-30T18:00:00Z"
+      }
+    },
+    "buttonLink": {
+      "url": "CHALLENGE-#1-BY-TLN---MAX-PUSH-UP"
+    },
+    "divisions": [
+      {
+        "type": "single",
+        "participants": [],
+        "_id": "6a0d861003212bd547ef9abd",
+        "participants_count": 1
+      }
+    ],
+    "_event": {
+      "_id": "6a0d850003212bd547ef8641",
+      "publish": true,
+      "category": "Functional Fitness",
+      "country": "France",
+      "tags": [
+        "online"
+      ]
+    },
+    "_ticketing": {
+      "_id": "6a0d850003212bd547ef8643",
+      "publish": true,
+      "_leaderboard": "6a0d850003212bd547ef862f",
+      "specific_division_spots": [],
+      "end_date": "2026-06-30T21:59:00Z",
+      "open_date": "2026-05-31T22:01:00Z"
+    },
+    "_volunteering": {
+      "_id": "6a0d850003212bd547ef8645"
+    },
+    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a0d850003212bd547ef862f/logo.png",
+    "publish": true,
+    "total_participants": 1,
     "total_volunteers": 0
   },
   {
@@ -247,13 +301,13 @@
         "_id": "69076af900e11d0033924c28",
         "type": "team",
         "participants": [],
-        "participants_count": 34
+        "participants_count": 35
       },
       {
         "_id": "69076b0700e11d0033924cf4",
         "type": "team",
         "participants": [],
-        "participants_count": 12
+        "participants_count": 13
       },
       {
         "_id": "69076b1400e11d0033924d5d",
@@ -296,7 +350,7 @@
           "_id": "697a4076d0c77c0033b7aaa6"
         }
       ],
-      "end_date": "2026-06-01T21:59:00Z",
+      "end_date": "2026-06-01T19:15:00Z",
       "open_date": "2026-01-30T09:00:00Z",
       "total_spots": "120"
     },
@@ -304,7 +358,7 @@
       "_id": "6907673100e11d0033922d4a"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6907673000e11d0033922d31/logo.jpg",
-    "total_participants": 84,
+    "total_participants": 86,
     "total_volunteers": 0
   },
   {
@@ -496,7 +550,7 @@
     "publish": true,
     "_planning": {
       "_id": "69e09f682fc9980033c732fa",
-      "publish": true
+      "publish": false
     },
     "total_participants": 59,
     "total_volunteers": 32
@@ -589,22 +643,22 @@
     },
     "divisions": [
       {
-        "_id": "697cba5735ad470033e68208",
         "type": "team",
         "participants": [],
-        "participants_count": 46
-      },
-      {
         "_id": "697cba5c35ad470033e68223",
-        "type": "team",
-        "participants": [],
         "participants_count": 22
       },
       {
-        "_id": "697cba6835ad470033e68241",
         "type": "team",
         "participants": [],
+        "_id": "697cba6835ad470033e68241",
         "participants_count": 22
+      },
+      {
+        "type": "team",
+        "participants": [],
+        "_id": "697cba5735ad470033e68208",
+        "participants_count": 46
       }
     ],
     "_event": {
@@ -647,7 +701,8 @@
       "_id": "697cb85835ad470033e66426",
       "end_date": "2026-06-02T22:00:00Z",
       "open_date": "2026-05-30T22:00:00Z",
-      "total_spots": "100"
+      "total_spots": "100",
+      "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/697cb85735ad470033e66410/logo.jpg",
     "_planning": {
@@ -811,6 +866,10 @@
       "_id": "698a44cc46c6ce00334909fa"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/698a44cc46c6ce00334909e4/logo.png",
+    "_planning": {
+      "_id": "6a1dbd7cb09b84c71fe35553",
+      "publish": true
+    },
     "total_participants": 40,
     "total_volunteers": 0
   },
@@ -1201,7 +1260,7 @@
       "publish": true
     },
     "total_participants": 15,
-    "total_volunteers": 0
+    "total_volunteers": 3
   },
   {
     "_id": "69dcd6c98efc030033f1be87",
@@ -1268,6 +1327,71 @@
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69dcd6c98efc030033f1be87/logo.png",
     "total_participants": 6,
     "total_volunteers": 1
+  },
+  {
+    "_id": "6a1d4204c83ef43ca50dd2f5",
+    "eventNumber": 3256,
+    "name": "OB Summer Contest 3 ",
+    "type": "inside",
+    "date": {
+      "start": {
+        "hour": "00:00",
+        "day": "06/06/2026",
+        "iso": "2026-06-06T06:00:00Z"
+      },
+      "end": {
+        "hour": "23:59",
+        "day": "06/06/2026",
+        "iso": "2026-06-06T18:00:00Z"
+      }
+    },
+    "buttonLink": {
+      "url": "OB-Summer-Contest-3-"
+    },
+    "divisions": [
+      {
+        "type": "team",
+        "participants": [],
+        "_id": "6a1d4625c83ef43ca50f4133",
+        "participants_count": 24
+      }
+    ],
+    "_event": {
+      "_id": "6a1d4205c83ef43ca50dd307",
+      "publish": true,
+      "category": "Functional Fitness",
+      "location": "CrossFit OB 22, 42 bis Rue Mgr le Mée, 22120 Yffiniac, France",
+      "country": "France",
+      "latitude": "48.48501187",
+      "longitude": "-2.67227766",
+      "tags": [
+        "inside"
+      ]
+    },
+    "_ticketing": {
+      "_id": "6a1d4205c83ef43ca50dd309",
+      "publish": true,
+      "_leaderboard": "6a1d4204c83ef43ca50dd2f5",
+      "specific_division_spots": [
+        {
+          "division_id": "6a1d4625c83ef43ca50f4133",
+          "division_spots": null,
+          "whitelist": [],
+          "_id": "6a1d4625c83ef43ca50f413a"
+        }
+      ]
+    },
+    "_volunteering": {
+      "_id": "6a1d4205c83ef43ca50dd30b"
+    },
+    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a1d4204c83ef43ca50dd2f5/logo.png",
+    "_planning": {
+      "_id": "6a1d42473ea685f0b9c30886",
+      "publish": true
+    },
+    "publish": true,
+    "total_participants": 24,
+    "total_volunteers": 0
   },
   {
     "_id": "69f4ca51adda60053474b34f",
@@ -1354,7 +1478,7 @@
         "_id": "69897682da1dc300337d0533",
         "type": "team",
         "participants": [],
-        "participants_count": 18
+        "participants_count": 17
       },
       {
         "_id": "698976b2da1dc300337d057c",
@@ -1378,7 +1502,7 @@
         "_id": "6989779ada1dc300337d0a62",
         "type": "team",
         "participants": [],
-        "participants_count": 8
+        "participants_count": 7
       },
       {
         "_id": "698983aada1dc300337d2f56",
@@ -1396,13 +1520,13 @@
         "_id": "698985b7da1dc300337d3602",
         "type": "team",
         "participants": [],
-        "participants_count": 21
+        "participants_count": 22
       },
       {
         "_id": "698e038802f0f30033a7d23c",
         "type": "team",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       }
     ],
     "_event": {
@@ -1591,39 +1715,39 @@
     },
     "divisions": [
       {
-        "_id": "69402b348ee5b5003333b470",
         "type": "team",
         "participants": [],
+        "_id": "69402b348ee5b5003333b470",
         "participants_count": 11
       },
       {
-        "_id": "69402b428ee5b5003333b4cb",
         "type": "team",
         "participants": [],
+        "_id": "69402b428ee5b5003333b4cb",
         "participants_count": 10
       },
       {
-        "_id": "69402b508ee5b5003333b50f",
         "type": "team",
         "participants": [],
+        "_id": "69402b508ee5b5003333b50f",
         "participants_count": 15
       },
       {
-        "_id": "69402b5b8ee5b5003333b573",
         "type": "team",
         "participants": [],
+        "_id": "69402b5b8ee5b5003333b573",
         "participants_count": 11
       },
       {
-        "_id": "69402b668ee5b5003333b5c5",
         "type": "team",
         "participants": [],
+        "_id": "69402b668ee5b5003333b5c5",
         "participants_count": 12
       },
       {
-        "_id": "69402b738ee5b5003333b60a",
         "type": "team",
         "participants": [],
+        "_id": "69402b738ee5b5003333b60a",
         "participants_count": 11
       }
     ],
@@ -2116,7 +2240,7 @@
         "type": "team",
         "participants": [],
         "_id": "69e4925e6ae8b50033b64196",
-        "participants_count": 7
+        "participants_count": 8
       }
     ],
     "_event": {
@@ -2147,7 +2271,7 @@
           "_id": "69e4925e6ae8b50033b6419d"
         }
       ],
-      "end_date": "2026-05-31T10:34:00Z",
+      "end_date": "2026-06-04T22:00:00Z",
       "open_date": "2026-04-19T22:01:00Z",
       "total_spots": "40"
     },
@@ -2163,7 +2287,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69e35e0ae4587800334b74c4/logo.jpg",
     "publish": true,
-    "total_participants": 23,
+    "total_participants": 24,
     "total_volunteers": 1
   },
   {
@@ -2197,7 +2321,7 @@
         "type": "team",
         "_id": "6a04697513d2ad9b9078b051",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 7
       },
       {
         "type": "team",
@@ -2209,7 +2333,7 @@
         "type": "team",
         "_id": "6a0469d1afb4fc818272a8ad",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       }
     ],
     "_event": {
@@ -2263,7 +2387,7 @@
       "_id": "6a070a21388670434678e772",
       "publish": false
     },
-    "total_participants": 28,
+    "total_participants": 30,
     "total_volunteers": 0
   },
   {
@@ -2849,13 +2973,13 @@
         "_id": "6939b7fa6c99ce00333cc24f",
         "type": "team",
         "participants": [],
-        "participants_count": 28
+        "participants_count": 29
       },
       {
         "_id": "69be7a3d795c12003358ef77",
         "type": "team",
         "participants": [],
-        "participants_count": 15
+        "participants_count": 16
       },
       {
         "_id": "69be7ae8795c12003358fb4f",
@@ -2898,7 +3022,7 @@
           "_id": "6939b7fa6c99ce00333cc256"
         }
       ],
-      "end_date": "2026-06-01T18:00:00Z",
+      "end_date": "2026-06-10T18:00:00Z",
       "open_date": "2025-12-10T18:32:00Z"
     },
     "_volunteering": {
@@ -2912,7 +3036,7 @@
       "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6935c39df2a3de003302a0bb/logo.jpg",
-    "total_participants": 168,
+    "total_participants": 170,
     "total_volunteers": 0
   },
   {
@@ -3015,46 +3139,46 @@
     },
     "divisions": [
       {
-        "_id": "69515980bd21340033d109ba",
         "type": "team",
         "participants": [],
+        "_id": "69515980bd21340033d109ba",
         "participants_count": 4
       },
       {
-        "_id": "695159a7d3e18c00334e840c",
         "type": "team",
         "participants": [],
+        "_id": "695159a7d3e18c00334e840c",
         "participants_count": 11
       },
       {
-        "_id": "695159e0d3e18c00334e8494",
         "type": "team",
         "participants": [],
+        "_id": "695159e0d3e18c00334e8494",
         "participants_count": 9
       },
       {
-        "_id": "695159f9bd21340033d10b76",
         "type": "team",
         "participants": [],
+        "_id": "695159f9bd21340033d10b76",
         "participants_count": 7
       },
       {
-        "_id": "69515a27bd21340033d10c55",
         "type": "team",
         "participants": [],
+        "_id": "69515a27bd21340033d10c55",
         "participants_count": 13
       },
       {
-        "_id": "69515a42d3e18c00334e8617",
         "type": "team",
         "participants": [],
+        "_id": "69515a42d3e18c00334e8617",
         "participants_count": 5
       },
       {
-        "_id": "69515a58d3e18c00334e868e",
         "type": "team",
         "participants": [],
-        "participants_count": 5
+        "_id": "69515a58d3e18c00334e868e",
+        "participants_count": 6
       }
     ],
     "_event": {
@@ -3110,12 +3234,12 @@
         },
         {
           "division_id": "69515a58d3e18c00334e868e",
-          "division_spots": 5,
+          "division_spots": 6,
           "whitelist": [],
           "_id": "69515a7cd3e18c00334e8746"
         }
       ],
-      "end_date": "2026-05-15T19:10:00Z",
+      "end_date": "2026-05-01T19:10:00Z",
       "open_date": "2026-01-02T19:00:00Z",
       "total_spots": "60"
     },
@@ -3130,7 +3254,7 @@
       "_id": "6a0dc2eaf4a95ecb69d0d7fb",
       "publish": false
     },
-    "total_participants": 54,
+    "total_participants": 55,
     "total_volunteers": 33
   },
   {
@@ -3894,6 +4018,107 @@
     "total_volunteers": 0
   },
   {
+    "_id": "6a05bb54b6158ccb95e3a78b",
+    "eventNumber": 3221,
+    "name": "CF 40026 - Summer team challenge 2026",
+    "type": "inside",
+    "date": {
+      "start": {
+        "day": "13/06/2026",
+        "hour": "08:00",
+        "iso": "2026-06-13T06:00:00Z"
+      },
+      "end": {
+        "day": "14/06/2026",
+        "hour": "20:00",
+        "iso": "2026-06-14T18:00:00Z"
+      }
+    },
+    "buttonLink": {
+      "url": "CF-40026---Summer-team-challenge-2026"
+    },
+    "divisions": [
+      {
+        "type": "team",
+        "participants": [],
+        "_id": "6a05bc44b6158ccb95e3aecc",
+        "participants_count": 8
+      },
+      {
+        "type": "team",
+        "participants": [],
+        "_id": "6a05bc56b6158ccb95e3aed8",
+        "participants_count": 15
+      },
+      {
+        "type": "team",
+        "participants": [],
+        "_id": "6a05bc60b6158ccb95e3af49",
+        "participants_count": 7
+      },
+      {
+        "type": "team",
+        "participants": [],
+        "_id": "6a05bc6abaecaad3c18001bd",
+        "participants_count": 15
+      }
+    ],
+    "_event": {
+      "_id": "6a05bb54b6158ccb95e3a79d",
+      "publish": true,
+      "category": "Functional Fitness",
+      "location": "Imola",
+      "country": "Italy",
+      "tags": [
+        "inside"
+      ]
+    },
+    "_ticketing": {
+      "_id": "6a05bb54b6158ccb95e3a79f",
+      "publish": true,
+      "_leaderboard": "6a05bb54b6158ccb95e3a78b",
+      "specific_division_spots": [
+        {
+          "division_id": "6a05bc44b6158ccb95e3aecc",
+          "division_spots": 8,
+          "whitelist": [],
+          "_id": "6a05bc44b6158ccb95e3aed3"
+        },
+        {
+          "division_id": "6a05bc56b6158ccb95e3aed8",
+          "division_spots": 15,
+          "whitelist": [],
+          "_id": "6a05bc56b6158ccb95e3aedf"
+        },
+        {
+          "division_id": "6a05bc60b6158ccb95e3af49",
+          "division_spots": 7,
+          "whitelist": [],
+          "_id": "6a05bc60b6158ccb95e3af50"
+        },
+        {
+          "division_id": "6a05bc6abaecaad3c18001bd",
+          "division_spots": 15,
+          "whitelist": [],
+          "_id": "6a05bc6abaecaad3c18001c4"
+        }
+      ],
+      "end_date": "2026-06-13T12:15:00Z",
+      "open_date": "2026-05-14T12:15:00Z"
+    },
+    "_volunteering": {
+      "_id": "6a05bb54b6158ccb95e3a7a1"
+    },
+    "_planning": {
+      "_id": "6a05bdd0b6158ccb95e3beb7",
+      "publish": true
+    },
+    "publish": true,
+    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a05bb54b6158ccb95e3a78b/logo.png",
+    "total_participants": 45,
+    "total_volunteers": 0
+  },
+  {
     "_id": "6a16aa98a39beb66ce9a0c34",
     "eventNumber": 3248,
     "name": "Murph 6 ans CrossFit Parempuyre",
@@ -3936,7 +4161,7 @@
         "type": "single",
         "_id": "6a16ac68a39beb66ce9a4866",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 5
       }
     ],
     "_event": {
@@ -3962,7 +4187,7 @@
       "_id": "6a16aa98a39beb66ce9a0cea"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a16aa98a39beb66ce9a0c34/logo.png",
-    "total_participants": 20,
+    "total_participants": 22,
     "total_volunteers": 0
   },
   {
@@ -4176,7 +4401,7 @@
       "publish": false
     },
     "total_participants": 38,
-    "total_volunteers": 3
+    "total_volunteers": 4
   },
   {
     "_id": "69a99907e0b0b40033ec46dd",
@@ -4684,7 +4909,7 @@
         "type": "team",
         "_id": "69ef855267e9e33f60cff146",
         "participants": [],
-        "participants_count": 13
+        "participants_count": 14
       }
     ],
     "_event": {
@@ -4709,7 +4934,7 @@
           "_id": "69ef86ae67e9e33f60cff9be"
         }
       ],
-      "total_spots": "20"
+      "total_spots": "16"
     },
     "_volunteering": {
       "_id": "69ef843f555b30e0a136d5c1",
@@ -4717,7 +4942,7 @@
       "total_spots": "15"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69ef843f555b30e0a136d5ab/logo.jpg",
-    "total_participants": 13,
+    "total_participants": 14,
     "total_volunteers": 0
   },
   {
@@ -4757,7 +4982,7 @@
         "type": "team",
         "_id": "6a0aed7477b0cddf12ab4a2c",
         "participants": [],
-        "participants_count": 11
+        "participants_count": 12
       }
     ],
     "_event": {
@@ -4789,7 +5014,7 @@
         },
         {
           "division_id": "6a0aed7477b0cddf12ab4a2c",
-          "division_spots": 19,
+          "division_spots": 20,
           "whitelist": [],
           "_id": "6a0aed7577b0cddf12ab4a33"
         }
@@ -4809,7 +5034,7 @@
       "_id": "6a0b2f491ac6f41065248529",
       "publish": false
     },
-    "total_participants": 35,
+    "total_participants": 36,
     "total_volunteers": 1
   },
   {
@@ -4993,7 +5218,7 @@
         "type": "team",
         "_id": "69fc4e1964fa7acab3d66126",
         "participants": [],
-        "participants_count": 10
+        "participants_count": 11
       },
       {
         "type": "team",
@@ -5046,7 +5271,7 @@
       "_id": "6a16fd09b640bd78b18b6ee4",
       "publish": false
     },
-    "total_participants": 29,
+    "total_participants": 30,
     "total_volunteers": 0
   },
   {
@@ -5141,7 +5366,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/697401961c36030033338f1b/logo.jpg",
     "total_participants": 52,
-    "total_volunteers": 22
+    "total_volunteers": 24
   },
   {
     "_id": "68d02f21e1beaa0033760012",
@@ -5344,7 +5569,7 @@
       ],
       "open_date": "2026-01-09T06:30:00Z",
       "total_spots": "50",
-      "end_date": "2026-05-30T07:30:00Z"
+      "end_date": "2026-06-02T07:30:00Z"
     },
     "_volunteering": {
       "_id": "6937e738fb23ee0033363c55"
@@ -5914,7 +6139,7 @@
         "_id": "69c269415f9c080033eff9a4",
         "type": "team",
         "participants": [],
-        "participants_count": 17
+        "participants_count": 18
       },
       {
         "_id": "69c2696f5f9c080033effb36",
@@ -5938,7 +6163,7 @@
         "_id": "69c269b45f9c080033effd7b",
         "type": "single",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       },
       {
         "_id": "69c269c25f9c080033effe2b",
@@ -5975,7 +6200,7 @@
       "_id": "69c1136a2e5b110033b11f01"
     },
     "publish": true,
-    "total_participants": 83,
+    "total_participants": 85,
     "total_volunteers": 0
   },
   {
@@ -6015,7 +6240,7 @@
         "_id": "69cce89192eb930033a85d36",
         "type": "team",
         "participants": [],
-        "participants_count": 9
+        "participants_count": 10
       },
       {
         "_id": "69cd8c3856a7530033f7c9e2",
@@ -6140,7 +6365,7 @@
       "publish": false
     },
     "publish": false,
-    "total_participants": 46,
+    "total_participants": 47,
     "total_volunteers": 19
   },
   {
@@ -6340,7 +6565,7 @@
       "specific_division_spots": [
         {
           "division_id": "69e9f84a016ef5003343d28b",
-          "division_spots": 40,
+          "division_spots": 20,
           "whitelist": [],
           "_id": "69e9f88b016ef5003343d360"
         },
@@ -6351,10 +6576,11 @@
           "_id": "69e9f88b016ef5003343d361"
         }
       ],
-      "total_spots": "64"
+      "total_spots": "44"
     },
     "_volunteering": {
-      "_id": "69e9efcd4353dc00336d680f"
+      "_id": "69e9efcd4353dc00336d680f",
+      "publish": false
     },
     "_planning": {
       "_id": "69e9f2bd016ef5003343bed3",
@@ -6389,7 +6615,7 @@
         "type": "team",
         "_id": "6a0345b5b032b305182cc720",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "type": "team",
@@ -6425,7 +6651,7 @@
       "_id": "6a0341f3371a72d5c93867e7"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a0341f3371a72d5c93867d1/logo.png",
-    "total_participants": 9,
+    "total_participants": 10,
     "total_volunteers": 0
   },
   {
@@ -6453,7 +6679,7 @@
         "type": "single",
         "_id": "6a0dbc54f4a95ecb69d02024",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 8
       },
       {
         "type": "single",
@@ -6495,7 +6721,7 @@
       "publish": true,
       "_leaderboard": "6a0c66ca1ac6f4106535f23a",
       "specific_division_spots": [],
-      "end_date": "2026-05-31T22:00:00Z",
+      "end_date": "2026-06-01T22:00:00Z",
       "open_date": "2026-05-19T16:48:00Z"
     },
     "_volunteering": {
@@ -6503,7 +6729,7 @@
       "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a0c66ca1ac6f4106535f23a/logo.png",
-    "total_participants": 20,
+    "total_participants": 22,
     "total_volunteers": 3
   },
   {
@@ -6622,7 +6848,7 @@
         "_id": "69c3ed7156823f00334c261f",
         "type": "team",
         "participants": [],
-        "participants_count": 23
+        "participants_count": 24
       },
       {
         "_id": "69c3ed7e56823f00334c281a",
@@ -6634,7 +6860,7 @@
         "_id": "69c3ed8d56823f00334c2a03",
         "type": "team",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 7
       },
       {
         "_id": "69c3ed9a56823f00334c2ae1",
@@ -6711,7 +6937,7 @@
       "_id": "69c3ebdf56823f00334c11a3",
       "publish": false
     },
-    "total_participants": 67,
+    "total_participants": 69,
     "total_volunteers": 13
   },
   {
@@ -6924,7 +7150,7 @@
         "_id": "69bc3f9cf32a5100335892ac",
         "type": "team",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "_id": "69bc3fa9f32a51003358935a",
@@ -6936,7 +7162,7 @@
         "_id": "69bc3fb4f32a510033589373",
         "type": "team",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       }
     ],
     "_event": {
@@ -6987,7 +7213,7 @@
       "_id": "69844ee3e796d20033044e05",
       "publish": false
     },
-    "total_participants": 15,
+    "total_participants": 17,
     "total_volunteers": 11
   },
   {
@@ -7382,96 +7608,6 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69dca97c28792700336cf26b/logo.png",
     "total_participants": 19,
-    "total_volunteers": 0
-  },
-  {
-    "_id": "69a01999e126ee003337c79d",
-    "date": {
-      "start": {
-        "hour": "00:00",
-        "day": "26/06/2026",
-        "iso": "2026-06-26T06:00:00Z"
-      },
-      "end": {
-        "hour": "23:59",
-        "day": "27/06/2026",
-        "iso": "2026-06-27T18:00:00Z"
-      }
-    },
-    "eventNumber": 3038,
-    "name": "Summit Blast ",
-    "type": "inside",
-    "buttonLink": {
-      "url": "Summit-Blast-"
-    },
-    "divisions": [
-      {
-        "_id": "69a01baee126ee003337d08b",
-        "type": "team",
-        "participants": [],
-        "participants_count": 3
-      },
-      {
-        "_id": "69a01bc3e126ee003337d09d",
-        "type": "team",
-        "participants": [],
-        "participants_count": 2
-      },
-      {
-        "_id": "69a01bd4e126ee003337d0fc",
-        "type": "team",
-        "participants": [],
-        "participants_count": 4
-      }
-    ],
-    "_event": {
-      "_id": "69a01999e126ee003337c7b2",
-      "publish": true,
-      "tags": [
-        "inside"
-      ],
-      "category": "Functional Fitness",
-      "location": "Briançon",
-      "country": "France"
-    },
-    "_ticketing": {
-      "_id": "69a01999e126ee003337c7b4",
-      "_leaderboard": "69a01999e126ee003337c79d",
-      "publish": true,
-      "specific_division_spots": [
-        {
-          "division_id": "69a01bc3e126ee003337d09d",
-          "division_spots": 15,
-          "whitelist": [],
-          "_id": "69a01c4ee126ee003337d47d"
-        },
-        {
-          "division_id": "69a01baee126ee003337d08b",
-          "division_spots": 15,
-          "whitelist": [],
-          "_id": "69a01c4ee126ee003337d47e"
-        },
-        {
-          "division_id": "69a01bd4e126ee003337d0fc",
-          "division_spots": 15,
-          "whitelist": [],
-          "_id": "69a01c4ee126ee003337d47f"
-        }
-      ],
-      "end_date": "2026-05-31T19:00:00Z",
-      "total_spots": "45",
-      "open_date": "2026-02-26T11:00:00Z"
-    },
-    "_volunteering": {
-      "_id": "69a01999e126ee003337c7b6"
-    },
-    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69a01999e126ee003337c79d/logo.jpg",
-    "_planning": {
-      "_id": "69cd1a3922fabb003397e262",
-      "publish": true
-    },
-    "publish": true,
-    "total_participants": 9,
     "total_volunteers": 0
   },
   {
@@ -8005,7 +8141,7 @@
       "_leaderboard": "69735c61651a54003308d076",
       "publish": true,
       "specific_division_spots": [],
-      "end_date": "2026-05-31T21:59:00Z",
+      "end_date": "2026-06-13T21:59:00Z",
       "open_date": "2026-01-23T12:51:00Z",
       "total_spots": "48"
     },
@@ -8227,7 +8363,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6977ed4d94ce8f0033298c9c/logo.jpg",
     "total_participants": 51,
-    "total_volunteers": 10
+    "total_volunteers": 13
   },
   {
     "_id": "69ba632bb0958e0033bf0403",
@@ -8291,7 +8427,7 @@
           "_id": "69ba66deb0958e0033bf19fd"
         }
       ],
-      "end_date": "2026-05-31T21:59:00Z",
+      "end_date": "2026-06-07T21:59:00Z",
       "open_date": "2026-03-21T09:00:00Z",
       "total_spots": null
     },
@@ -8967,6 +9103,96 @@
     "total_volunteers": 0
   },
   {
+    "_id": "69a01999e126ee003337c79d",
+    "date": {
+      "start": {
+        "day": "27/06/2026",
+        "hour": "20:00",
+        "iso": "2026-06-27T18:00:00Z"
+      },
+      "end": {
+        "day": "28/06/2026",
+        "hour": "08:00",
+        "iso": "2026-06-28T06:00:00Z"
+      }
+    },
+    "eventNumber": 3038,
+    "name": "Summit Blast ",
+    "type": "inside",
+    "buttonLink": {
+      "url": "Summit-Blast-"
+    },
+    "divisions": [
+      {
+        "_id": "69a01baee126ee003337d08b",
+        "type": "team",
+        "participants": [],
+        "participants_count": 3
+      },
+      {
+        "_id": "69a01bc3e126ee003337d09d",
+        "type": "team",
+        "participants": [],
+        "participants_count": 2
+      },
+      {
+        "_id": "69a01bd4e126ee003337d0fc",
+        "type": "team",
+        "participants": [],
+        "participants_count": 4
+      }
+    ],
+    "_event": {
+      "_id": "69a01999e126ee003337c7b2",
+      "publish": true,
+      "tags": [
+        "inside"
+      ],
+      "category": "Functional Fitness",
+      "location": "Briançon",
+      "country": "France"
+    },
+    "_ticketing": {
+      "_id": "69a01999e126ee003337c7b4",
+      "_leaderboard": "69a01999e126ee003337c79d",
+      "publish": true,
+      "specific_division_spots": [
+        {
+          "division_id": "69a01bc3e126ee003337d09d",
+          "division_spots": 12,
+          "whitelist": [],
+          "_id": "69a01c4ee126ee003337d47d"
+        },
+        {
+          "division_id": "69a01baee126ee003337d08b",
+          "division_spots": 12,
+          "whitelist": [],
+          "_id": "69a01c4ee126ee003337d47e"
+        },
+        {
+          "division_id": "69a01bd4e126ee003337d0fc",
+          "division_spots": 12,
+          "whitelist": [],
+          "_id": "69a01c4ee126ee003337d47f"
+        }
+      ],
+      "end_date": "2026-06-20T22:00:00Z",
+      "total_spots": "36",
+      "open_date": "2026-02-26T11:00:00Z"
+    },
+    "_volunteering": {
+      "_id": "69a01999e126ee003337c7b6"
+    },
+    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69a01999e126ee003337c79d/logo.jpg",
+    "_planning": {
+      "_id": "69cd1a3922fabb003397e262",
+      "publish": true
+    },
+    "publish": true,
+    "total_participants": 9,
+    "total_volunteers": 0
+  },
+  {
     "_id": "698de01502f0f30033a76695",
     "date": {
       "start": {
@@ -9199,7 +9425,7 @@
         "_id": "69b14688104cb00033717581",
         "type": "single",
         "participants": [],
-        "participants_count": 11
+        "participants_count": 13
       },
       {
         "_id": "69b1468d104cb00033717594",
@@ -9256,7 +9482,7 @@
       "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69b142f5104cb00033716348/logo.jpg",
-    "total_participants": 32,
+    "total_participants": 34,
     "total_volunteers": 10
   },
   {
@@ -9284,7 +9510,7 @@
         "_id": "69d41f94d578d200333d6ef9",
         "type": "team",
         "participants": [],
-        "participants_count": 11
+        "participants_count": 12
       },
       {
         "_id": "69d41fa0d578d200333d6f36",
@@ -9368,7 +9594,7 @@
       "_id": "69e51a43f9b21700338049f4",
       "publish": false
     },
-    "total_participants": 46,
+    "total_participants": 47,
     "total_volunteers": 0
   },
   {
@@ -9631,13 +9857,13 @@
         "type": "team",
         "_id": "6a01acc558b994343a947e79",
         "participants": [],
-        "participants_count": 1
+        "participants_count": 2
       },
       {
         "type": "team",
         "_id": "6a01acd72d0eb44c88a1ce15",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 7
       },
       {
         "type": "team",
@@ -9669,7 +9895,7 @@
         },
         {
           "division_id": "6a01acd72d0eb44c88a1ce15",
-          "division_spots": 7,
+          "division_spots": 8,
           "whitelist": [],
           "_id": "6a01ad2658b994343a947f1e"
         },
@@ -9692,7 +9918,7 @@
       "_id": "6a01ddc058b994343a9bbf75",
       "publish": true
     },
-    "total_participants": 8,
+    "total_participants": 10,
     "total_volunteers": 0
   },
   {
@@ -9910,7 +10136,7 @@
         "_id": "69d89f30939fcd0033f49d8a",
         "type": "single",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 7
       },
       {
         "_id": "69d89f8e939fcd0033f49ef2",
@@ -10045,7 +10271,7 @@
       "_id": "69d894e7939fcd0033f47730"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69d894e7939fcd0033f4771a/logo.jpg",
-    "total_participants": 107,
+    "total_participants": 108,
     "total_volunteers": 0
   },
   {
@@ -11252,7 +11478,7 @@
         "_id": "69e61ecc5638370033f2a636",
         "type": "team",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "_id": "69e61ed75638370033f2a65f",
@@ -11288,7 +11514,59 @@
       "_id": "69e74b3cb82f5d0033b01eaa",
       "publish": false
     },
-    "total_participants": 7,
+    "total_participants": 8,
+    "total_volunteers": 0
+  },
+  {
+    "_id": "69b51f8f3531720033a4e4d8",
+    "date": {
+      "start": {
+        "day": "05/07/2026",
+        "hour": "09:30",
+        "iso": "2026-07-05T07:30:00Z"
+      },
+      "end": {
+        "day": "05/07/2026",
+        "hour": "16:30",
+        "iso": "2026-07-05T14:30:00Z"
+      }
+    },
+    "eventNumber": 3072,
+    "name": "Haltéro, renfo, prépa mentale chez Camille Joun ",
+    "type": "inside",
+    "buttonLink": {
+      "url": "Séminaire-Home-Joun-"
+    },
+    "divisions": [
+      {
+        "_id": "69b51fb83531720033a4e609",
+        "type": "single",
+        "participants": [],
+        "participants_count": 2
+      }
+    ],
+    "_event": {
+      "_id": "69b51f8f3531720033a4e4ea",
+      "publish": true,
+      "tags": [
+        "inside"
+      ],
+      "category": "Workshop",
+      "location": "30mn de Toulouse",
+      "country": "France"
+    },
+    "_ticketing": {
+      "_id": "69b51f8f3531720033a4e4ec",
+      "_leaderboard": "69b51f8f3531720033a4e4d8",
+      "publish": true,
+      "specific_division_spots": [],
+      "open_date": "2026-03-14T08:43:00Z",
+      "total_spots": "10"
+    },
+    "_volunteering": {
+      "_id": "69b51f8f3531720033a4e4ee"
+    },
+    "total_participants": 2,
     "total_volunteers": 0
   },
   {
@@ -11415,7 +11693,7 @@
       "publish": false
     },
     "total_participants": 307,
-    "total_volunteers": 367
+    "total_volunteers": 368
   },
   {
     "_id": "695d1f59c892230033af3c66",
@@ -11616,6 +11894,10 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/696758502af439003311aba7/logo.png",
     "publish": true,
+    "_planning": {
+      "_id": "6a1da704b09b84c71fe03ec9",
+      "publish": false
+    },
     "total_participants": 80,
     "total_volunteers": 0
   },
@@ -11838,7 +12120,7 @@
         "_id": "69e7cd00b82f5d0033b2eb07",
         "type": "team",
         "participants": [],
-        "participants_count": 1
+        "participants_count": 2
       }
     ],
     "_event": {
@@ -11867,7 +12149,7 @@
       "_id": "69e1164074d93b00331d7f5f",
       "publish": false
     },
-    "total_participants": 43,
+    "total_participants": 44,
     "total_volunteers": 0
   },
   {
@@ -12548,25 +12830,25 @@
         "_id": "699b16c402d56e0033d1b433",
         "type": "team",
         "participants": [],
-        "participants_count": 13
+        "participants_count": 14
       },
       {
         "_id": "699b16ce02d56e0033d1b4ae",
         "type": "team",
         "participants": [],
-        "participants_count": 10
+        "participants_count": 12
       },
       {
         "_id": "699b16d902d56e0033d1b553",
         "type": "single",
         "participants": [],
-        "participants_count": 12
+        "participants_count": 13
       },
       {
         "_id": "699b16e302d56e0033d1b5ce",
         "type": "single",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       },
       {
         "_id": "699b16ec02d56e0033d1b635",
@@ -12621,7 +12903,7 @@
       "_id": "699b166e02d56e0033d1af06"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/699b166e02d56e0033d1aeed/logo.png",
-    "total_participants": 51,
+    "total_participants": 56,
     "total_volunteers": 0
   },
   {
@@ -13214,7 +13496,7 @@
     "_volunteering": {
       "_id": "68cbc5dc1e228f003388596b",
       "open_date": null,
-      "publish": true
+      "publish": false
     },
     "_planning": {
       "_id": "68d666cb53e23d0033572424",
@@ -13222,7 +13504,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/68cbc5dc1e228f0033885955/logo.png",
     "total_participants": 792,
-    "total_volunteers": 101
+    "total_volunteers": 102
   },
   {
     "_id": "6a01de9958b994343a9bda82",
@@ -13504,7 +13786,7 @@
         "_id": "69de57bc6591170033971dfd",
         "type": "team",
         "participants": [],
-        "participants_count": 13
+        "participants_count": 14
       }
     ],
     "_event": {
@@ -13537,7 +13819,7 @@
       "_id": "69ca90cbbb702c00336a4455"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69ca90cabb702c00336a443f/logo.jpg",
-    "total_participants": 13,
+    "total_participants": 14,
     "total_volunteers": 0
   },
   {
@@ -13781,7 +14063,7 @@
         "_id": "69de8fb765911700339801c6",
         "type": "team",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "_id": "69de8fd36591170033980234",
@@ -13823,7 +14105,7 @@
       "_id": "69dfda652fc9980033c50094",
       "publish": false
     },
-    "total_participants": 15,
+    "total_participants": 16,
     "total_volunteers": 0
   },
   {
@@ -13984,7 +14266,7 @@
         "_id": "69931f042a81c3003309705b",
         "type": "team",
         "participants": [],
-        "participants_count": 15
+        "participants_count": 16
       }
     ],
     "_event": {
@@ -14017,7 +14299,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6993190b2a81c30033094bbf/logo.png",
-    "total_participants": 50,
+    "total_participants": 51,
     "total_volunteers": 27
   },
   {
@@ -14057,7 +14339,7 @@
         "type": "team",
         "_id": "6a07307b0780a1ff65a695ca",
         "participants": [],
-        "participants_count": 19
+        "participants_count": 20
       },
       {
         "type": "single",
@@ -14129,7 +14411,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a07291c0780a1ff65a640f8/logo.jpg",
-    "total_participants": 64,
+    "total_participants": 65,
     "total_volunteers": 0
   },
   {
@@ -14322,13 +14604,13 @@
         "_id": "69b2c08a547c370033502f87",
         "type": "team",
         "participants": [],
-        "participants_count": 32
+        "participants_count": 33
       },
       {
         "_id": "69b2c0c6547c3700335041ba",
         "type": "team",
         "participants": [],
-        "participants_count": 30
+        "participants_count": 32
       },
       {
         "_id": "69b2c0f7547c3700335042ca",
@@ -14382,13 +14664,13 @@
         "_id": "69b2c2ac2fbc560033fe6bdb",
         "type": "team",
         "participants": [],
-        "participants_count": 8
+        "participants_count": 9
       },
       {
         "_id": "69b2c2bf2fbc560033fe6de5",
         "type": "single",
         "participants": [],
-        "participants_count": 11
+        "participants_count": 12
       },
       {
         "_id": "69b2c2ce2fbc560033fe6e46",
@@ -14517,7 +14799,11 @@
       "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69b2bf64547c370033500236/logo.jpg",
-    "total_participants": 174,
+    "_planning": {
+      "_id": "6a1d48df3ea685f0b9c5ec96",
+      "publish": false
+    },
+    "total_participants": 179,
     "total_volunteers": 12
   },
   {
@@ -14569,7 +14855,7 @@
         "_id": "69bc17c3b83e3600337c93ec",
         "type": "team",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "_id": "69bc17d5b83e3600337c9418",
@@ -14664,7 +14950,7 @@
       "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69bc137fb83e3600337c83b6/logo.jpg",
-    "total_participants": 28,
+    "total_participants": 29,
     "total_volunteers": 2
   },
   {
@@ -14765,7 +15051,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69cf66719ad05c003330dcf8/logo.png",
     "total_participants": 50,
-    "total_volunteers": 15
+    "total_volunteers": 17
   },
   {
     "_id": "69d78265602e4000333a93be",
@@ -14980,7 +15266,7 @@
         "type": "team",
         "_id": "6a0c81fff4a95ecb69c381dc",
         "participants": [],
-        "participants_count": 9
+        "participants_count": 10
       },
       {
         "type": "team",
@@ -14998,7 +15284,7 @@
         "type": "team",
         "_id": "6a0c823cf4a95ecb69c3862b",
         "participants": [],
-        "participants_count": 8
+        "participants_count": 9
       }
     ],
     "_event": {
@@ -15027,7 +15313,7 @@
       "_id": "6a1446f37f669cd854f9cef2",
       "publish": false
     },
-    "total_participants": 56,
+    "total_participants": 58,
     "total_volunteers": 0
   },
   {
@@ -15250,8 +15536,9 @@
       "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69f78b152969178162fabb7d/logo.jpg",
+    "publish": true,
     "total_participants": 112,
-    "total_volunteers": 19
+    "total_volunteers": 29
   },
   {
     "_id": "69ef09a50d9486c6ee951be4",
@@ -15498,7 +15785,7 @@
         "_id": "6986281678b5e400335e6925",
         "type": "team",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 7
       }
     ],
     "_event": {
@@ -15537,7 +15824,7 @@
       "_id": "6986265478b5e400335e5df7"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6986265478b5e400335e5ddf/logo.png",
-    "total_participants": 12,
+    "total_participants": 13,
     "total_volunteers": 0
   },
   {
@@ -15608,37 +15895,37 @@
       "publish": true,
       "specific_division_spots": [
         {
-          "_id": "69ccf5e592eb930033a8e90c",
           "division_id": "69ccf40792eb930033a8d366",
           "division_spots": 7,
-          "whitelist": []
+          "whitelist": [],
+          "_id": "69ccf5e592eb930033a8e90c"
         },
         {
-          "_id": "69ccf5e592eb930033a8e90d",
           "division_id": "69ccf41692eb930033a8d3ad",
           "division_spots": 7,
-          "whitelist": []
+          "whitelist": [],
+          "_id": "69ccf5e592eb930033a8e90d"
         },
         {
-          "_id": "69ccf5e592eb930033a8e90e",
           "division_id": "69ccf4c192eb930033a8d8e7",
           "division_spots": 7,
-          "whitelist": []
+          "whitelist": [],
+          "_id": "69ccf5e592eb930033a8e90e"
         },
         {
-          "_id": "69ccf5e592eb930033a8e90f",
           "division_id": "69ccf4e392eb930033a8d9be",
           "division_spots": 7,
-          "whitelist": []
+          "whitelist": [],
+          "_id": "69ccf5e592eb930033a8e90f"
         },
         {
-          "_id": "69df6f2a65911700339a60c9",
           "division_id": "69df6f1a65911700339a5fa7",
           "division_spots": 7,
-          "whitelist": []
+          "whitelist": [],
+          "_id": "69df6f2a65911700339a60c9"
         }
       ],
-      "end_date": "2026-06-04T22:00:00Z",
+      "end_date": "2026-06-11T22:00:00Z",
       "open_date": "2026-04-01T10:00:00Z",
       "total_spots": "35"
     },
@@ -16555,6 +16842,96 @@
     "total_volunteers": 0
   },
   {
+    "_id": "6a1770569a31492f7bf7a06c",
+    "eventNumber": 3249,
+    "name": "OLYMPIADES BATTLE",
+    "type": "inside",
+    "date": {
+      "start": {
+        "hour": "00:00",
+        "day": "25/09/2026",
+        "iso": "2026-09-25T21:00:00Z"
+      },
+      "end": {
+        "hour": "23:59",
+        "day": "26/09/2026",
+        "iso": "2026-09-26T09:00:00Z"
+      }
+    },
+    "buttonLink": {
+      "url": "OLYMPIADES-BATTLE"
+    },
+    "divisions": [
+      {
+        "type": "team",
+        "_id": "6a1772229a31492f7bf7ba69",
+        "participants": [],
+        "participants_count": 0
+      },
+      {
+        "type": "team",
+        "_id": "6a17722b9a31492f7bf7ba7a",
+        "participants": [],
+        "participants_count": 0
+      },
+      {
+        "type": "team",
+        "_id": "6a1772359a31492f7bf7ba86",
+        "participants": [],
+        "participants_count": 0
+      }
+    ],
+    "_event": {
+      "_id": "6a1770569a31492f7bf7a07e",
+      "publish": true,
+      "category": "Functional Fitness",
+      "location": "Noumea, Noumea, South Province, New Caledonia",
+      "country": "New Caledonia",
+      "latitude": "-22.275595",
+      "longitude": "166.439931",
+      "tags": [
+        "inside"
+      ]
+    },
+    "_ticketing": {
+      "_id": "6a1770569a31492f7bf7a080",
+      "publish": true,
+      "_leaderboard": "6a1770569a31492f7bf7a06c",
+      "specific_division_spots": [
+        {
+          "division_id": "6a1772229a31492f7bf7ba69",
+          "division_spots": 20,
+          "whitelist": [],
+          "_id": "6a1e09c61f3f369aa983dcee"
+        },
+        {
+          "division_id": "6a17722b9a31492f7bf7ba7a",
+          "division_spots": 20,
+          "whitelist": [],
+          "_id": "6a1e09c61f3f369aa983dcef"
+        },
+        {
+          "division_id": "6a1772359a31492f7bf7ba86",
+          "division_spots": 20,
+          "whitelist": [],
+          "_id": "6a1e09c61f3f369aa983dcf0"
+        }
+      ],
+      "total_spots": "60",
+      "end_date": "2026-06-20T07:00:00Z",
+      "open_date": "2026-06-02T21:00:00Z"
+    },
+    "_volunteering": {
+      "_id": "6a1770569a31492f7bf7a082",
+      "end_date": "2026-06-20T07:00:00Z",
+      "open_date": "2026-06-02T21:00:00Z",
+      "publish": true
+    },
+    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a1770569a31492f7bf7a06c/logo.jpg",
+    "total_participants": 0,
+    "total_volunteers": 0
+  },
+  {
     "_id": "6989cc76da1dc300337ee47a",
     "date": {
       "start": {
@@ -16700,7 +17077,7 @@
         "_id": "69c94bcbb393a70033e8e851",
         "type": "single",
         "participants": [],
-        "participants_count": 19
+        "participants_count": 20
       },
       {
         "_id": "69c94bdab393a70033e8e8cf",
@@ -16712,7 +17089,7 @@
         "_id": "69c94bedb393a70033e8e968",
         "type": "team",
         "participants": [],
-        "participants_count": 14
+        "participants_count": 16
       },
       {
         "_id": "69c94c15b393a70033e8eb34",
@@ -16730,7 +17107,7 @@
         "_id": "69c94c34b393a70033e8ec45",
         "type": "team",
         "participants": [],
-        "participants_count": 12
+        "participants_count": 13
       },
       {
         "_id": "69c94c58b393a70033e8ee17",
@@ -16806,7 +17183,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69c04ffd2e5b110033af1318/logo.png",
     "publish": true,
-    "total_participants": 136,
+    "total_participants": 140,
     "total_volunteers": 0
   },
   {
@@ -17161,7 +17538,7 @@
         "type": "team",
         "_id": "69f8946ed77c3dbbb0d4e11a",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 7
       },
       {
         "type": "team",
@@ -17185,7 +17562,7 @@
         "type": "team",
         "_id": "69f894b29329dc381f3714c2",
         "participants": [],
-        "participants_count": 16
+        "participants_count": 17
       },
       {
         "type": "single",
@@ -17273,7 +17650,7 @@
       "_id": "69f8f052d77c3dbbb01a2e66",
       "publish": true
     },
-    "total_participants": 72,
+    "total_participants": 74,
     "total_volunteers": 0
   },
   {
@@ -17748,7 +18125,7 @@
         "type": "team",
         "_id": "69ee88930d9486c6ee8f331d",
         "participants": [],
-        "participants_count": 62
+        "participants_count": 63
       },
       {
         "type": "team",
@@ -17826,7 +18203,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69ee83520d9486c6ee8ea165/logo.png",
-    "total_participants": 222,
+    "total_participants": 223,
     "total_volunteers": 6
   },
   {
@@ -18119,7 +18496,7 @@
         "_id": "69c53423d76aed0033576a75",
         "type": "single",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       },
       {
         "_id": "69c534c3d76aed0033576f67",
@@ -18179,7 +18556,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69b6db3ff2a47f003315e05e/logo.png",
     "publish": true,
-    "total_participants": 89,
+    "total_participants": 90,
     "total_volunteers": 0
   },
   {
@@ -18207,7 +18584,7 @@
         "_id": "69d66e5721dd6c003323c014",
         "type": "team",
         "participants": [],
-        "participants_count": 10
+        "participants_count": 11
       },
       {
         "_id": "69d66e7221dd6c003323c0bc",
@@ -18219,7 +18596,7 @@
         "_id": "69d66e7e21dd6c003323c0cf",
         "type": "team",
         "participants": [],
-        "participants_count": 16
+        "participants_count": 17
       },
       {
         "_id": "69d66e8a21dd6c003323c0ea",
@@ -18291,7 +18668,7 @@
       "total_spots": "30"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69d66e2d21dd6c003323bf78/logo.png",
-    "total_participants": 49,
+    "total_participants": 51,
     "total_volunteers": 9
   },
   {
@@ -18403,7 +18780,7 @@
         "type": "team",
         "_id": "6a0db4fcf4a95ecb69cf9d01",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 1
       },
       {
         "type": "team",
@@ -18430,7 +18807,7 @@
     },
     "_ticketing": {
       "_id": "6a0db42df4a95ecb69cf7869",
-      "publish": false,
+      "publish": true,
       "_leaderboard": "6a0db42df4a95ecb69cf7855",
       "specific_division_spots": [
         {
@@ -18460,7 +18837,7 @@
       "_id": "6a0db42df4a95ecb69cf786b"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a0db42df4a95ecb69cf7855/logo.png",
-    "total_participants": 0,
+    "total_participants": 1,
     "total_volunteers": 0
   },
   {
@@ -18500,7 +18877,7 @@
         "type": "team",
         "_id": "69ef4c850d9486c6ee9d8063",
         "participants": [],
-        "participants_count": 18
+        "participants_count": 20
       }
     ],
     "_event": {
@@ -18525,7 +18902,7 @@
       "_id": "69ef42830d9486c6ee9c4d8b"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69ef42830d9486c6ee9c4d75/logo.jpg",
-    "total_participants": 41,
+    "total_participants": 43,
     "total_volunteers": 0
   },
   {
@@ -18643,7 +19020,7 @@
         "type": "single",
         "_id": "6a05c76fb6158ccb95e44bfe",
         "participants": [],
-        "participants_count": 8
+        "participants_count": 10
       },
       {
         "type": "single",
@@ -18661,7 +19038,7 @@
         "type": "single",
         "_id": "6a05c792baecaad3c1808bd2",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       },
       {
         "type": "single",
@@ -18679,7 +19056,7 @@
         "type": "team",
         "_id": "6a05c7dfbaecaad3c1808cd0",
         "participants": [],
-        "participants_count": 15
+        "participants_count": 16
       },
       {
         "type": "team",
@@ -18794,7 +19171,7 @@
       "_id": "6a05f1cca18444b7e2359da6",
       "publish": false
     },
-    "total_participants": 92,
+    "total_participants": 96,
     "total_volunteers": 0
   },
   {
@@ -18834,7 +19211,7 @@
         "_id": "694661a77694860033a545c4",
         "type": "team",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       },
       {
         "_id": "694661b57694860033a545ec",
@@ -18893,7 +19270,7 @@
       "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69465fa07694860033a54170/logo.jpg",
-    "total_participants": 57,
+    "total_participants": 58,
     "total_volunteers": 9
   },
   {
@@ -19082,7 +19459,7 @@
         "_id": "697e3170b487c3003385db3b",
         "type": "team",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "_id": "697e3193b487c3003385dc2e",
@@ -19094,7 +19471,7 @@
         "_id": "697e319eb487c3003385dc51",
         "type": "team",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "_id": "697e31a9b487c3003385dc75",
@@ -19161,7 +19538,8 @@
     "_volunteering": {
       "_id": "697e2f43b487c3003385d1f9"
     },
-    "total_participants": 27,
+    "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/697e2f43b487c3003385d1e3/logo.png",
+    "total_participants": 29,
     "total_volunteers": 0
   },
   {
@@ -19314,7 +19692,7 @@
         "_id": "69b58ca33531720033a6e719",
         "type": "team",
         "participants": [],
-        "participants_count": 29
+        "participants_count": 30
       },
       {
         "_id": "69b58d983531720033a6ecca",
@@ -19444,7 +19822,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69958841f689990033943b6b/logo.jpg",
-    "total_participants": 143,
+    "total_participants": 144,
     "total_volunteers": 1
   },
   {
