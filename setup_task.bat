@@ -1,107 +1,90 @@
 @echo off
 REM ─────────────────────────────────────────────────────────
-REM setup_task.bat
-REM Crée deux tâches planifiées Windows :
-REM   1. WodOpenImport     — daily_import.py  (scoring.fit)  à 03:00
-REM   2. WodOpenImportCC   — cc_import.py     (CompCorner)   à 03:30
+REM setup_task.bat  v3
+REM Crée deux tâches planifiées Windows via PowerShell :
+REM   1. WodOpenImport     — daily_import.py  (scoring.fit)  à 06:00
+REM   2. WodOpenImportCC   — cc_import.py     (CompCorner)   à 06:30
 REM
-REM Corrections v2 :
-REM   - Chemin Python complet (évite erreur PATH en tâche planifiée)
-REM   - StartWhenAvailable : lance dès le démarrage si 3h était manqué
-REM   - Répertoire de travail explicite (/sd fixé)
-REM
-REM Lancer en tant qu'Administrateur :
-REM   clic droit → "Exécuter en tant qu'administrateur"
+REM - WorkingDirectory explicitement fixé (correction v3)
+REM - StartWhenAvailable : lance dès le démarrage si l'heure est passée
+REM - Lancer en tant qu'Administrateur
 REM ─────────────────────────────────────────────────────────
 
-REM Chemin Python complet (pas via PATH, pour fiabilité en tâche planifiée)
-SET PYTHON=C:\Users\thery.persyn\AppData\Local\Programs\Python\Python313\python.exe
+powershell -NoProfile -ExecutionPolicy Bypass -Command "& {
 
-REM Répertoire du projet
-SET WORKDIR=C:\projects\wod-open-import
+  $PYTHON  = 'C:\Users\thery.persyn\AppData\Local\Programs\Python\Python313\python.exe'
+  $WORKDIR = 'C:\projects\wod-open-import'
 
-ECHO Python : %PYTHON%
-ECHO Workdir: %WORKDIR%
-ECHO.
+  # ── Action commune ────────────────────────────────────────
+  function Make-Action($script) {
+    $a = New-ScheduledTaskAction `
+      -Execute $PYTHON `
+      -Argument \"`\"`$WORKDIR\$script`\"\" `
+      -WorkingDirectory $WORKDIR
+    return $a
+  }
 
-REM ─── Tâche 1 : scoring.fit — daily_import.py à 03:00 ─────
-schtasks /delete /tn "WodOpenImport" /f >nul 2>&1
+  # ── Trigger quotidien ─────────────────────────────────────
+  function Make-Trigger($hour, $min) {
+    return New-ScheduledTaskTrigger -Daily -At \"${hour}:${min}\"
+  }
 
-schtasks /create ^
-  /tn "WodOpenImport" ^
-  /tr "\"%PYTHON%\" \"%WORKDIR%\daily_import.py\"" ^
-  /sc DAILY ^
-  /st 03:00 ^
-  /ru "%USERNAME%" ^
-  /f
+  # ── Principal (compte courant) ────────────────────────────
+  $principal = New-ScheduledTaskPrincipal `
+    -UserId $env:USERNAME `
+    -LogonType S4U `
+    -RunLevel Limited
 
-IF %ERRORLEVEL% NEQ 0 (
-    ECHO [ERREUR] Tache 1 echouee. Lancez en Administrateur.
-    goto :end
-)
-ECHO [OK] Tache 1 creee : WodOpenImport (daily_import.py a 03:00)
+  # ── Settings ─────────────────────────────────────────────
+  $settings = New-ScheduledTaskSettingsSet `
+    -StartWhenAvailable `
+    -ExecutionTimeLimit (New-TimeSpan -Hours 2) `
+    -MultipleInstances IgnoreNew
 
-REM Activer "lancer dès que possible si l'heure est passée" via PowerShell
-powershell -NoProfile -Command ^
-  "$t = Get-ScheduledTask -TaskName 'WodOpenImport';" ^
-  "$t.Settings.StartWhenAvailable = $true;" ^
-  "$t | Set-ScheduledTask" >nul 2>&1
+  # ══ Tâche 1 : WodOpenImport ═══════════════════════════════
+  Unregister-ScheduledTask -TaskName 'WodOpenImport' -Confirm:`$false -ErrorAction SilentlyContinue
+  Register-ScheduledTask `
+    -TaskName 'WodOpenImport' `
+    -Action   (Make-Action 'daily_import.py') `
+    -Trigger  (Make-Trigger 6 00) `
+    -Principal `$principal `
+    -Settings `$settings `
+    -Description 'Import scoring.fit → wod-open.com (quotidien 06h00)' | Out-Null
+  Write-Host '[OK] WodOpenImport (daily_import.py) cree a 06:00'
 
-IF %ERRORLEVEL% EQU 0 (
-    ECHO [OK] StartWhenAvailable active pour WodOpenImport
-) ELSE (
-    ECHO [WARN] StartWhenAvailable non configure (droit admin requis)
-)
+  # ══ Tâche 2 : WodOpenImportCC ═════════════════════════════
+  Unregister-ScheduledTask -TaskName 'WodOpenImportCC' -Confirm:`$false -ErrorAction SilentlyContinue
+  Register-ScheduledTask `
+    -TaskName 'WodOpenImportCC' `
+    -Action   (Make-Action 'cc_import.py') `
+    -Trigger  (Make-Trigger 6 30) `
+    -Principal `$principal `
+    -Settings `$settings `
+    -Description 'Import CompetitionCorner → wod-open.com (quotidien 06h30)' | Out-Null
+  Write-Host '[OK] WodOpenImportCC (cc_import.py) cree a 06:30'
 
-REM ─── Tâche 2 : CompetitionCorner — cc_import.py à 03:30 ──
-schtasks /delete /tn "WodOpenImportCC" /f >nul 2>&1
+  # ── Vérification ─────────────────────────────────────────
+  Write-Host ''
+  Write-Host '============================================================'
+  Write-Host ' Verification'
+  Write-Host '============================================================'
+  foreach ($tn in @('WodOpenImport','WodOpenImportCC')) {
+    $t = Get-ScheduledTask -TaskName `$tn -ErrorAction SilentlyContinue
+    if (`$t) {
+      `$a = `$t.Actions[0]
+      Write-Host \"  [`$tn]\"
+      Write-Host \"    Execute : `$(`$a.Execute)\"
+      Write-Host \"    Args    : `$(`$a.Arguments)\"
+      Write-Host \"    WorkDir : `$(`$a.WorkingDirectory)\"
+      `$info = Get-ScheduledTaskInfo -TaskName `$tn
+      Write-Host \"    NextRun : `$(`$info.NextRunTime)\"
+    }
+  }
+  Write-Host ''
+  Write-Host ' Pour tester maintenant (PowerShell admin) :'
+  Write-Host '   Start-ScheduledTask -TaskName WodOpenImport'
+  Write-Host '   Start-ScheduledTask -TaskName WodOpenImportCC'
+  Write-Host '============================================================'
+}"
 
-schtasks /create ^
-  /tn "WodOpenImportCC" ^
-  /tr "\"%PYTHON%\" \"%WORKDIR%\cc_import.py\"" ^
-  /sc DAILY ^
-  /st 03:30 ^
-  /ru "%USERNAME%" ^
-  /f
-
-IF %ERRORLEVEL% NEQ 0 (
-    ECHO [ERREUR] Tache 2 echouee.
-    goto :end
-)
-ECHO [OK] Tache 2 creee : WodOpenImportCC (cc_import.py a 03:30)
-
-powershell -NoProfile -Command ^
-  "$t = Get-ScheduledTask -TaskName 'WodOpenImportCC';" ^
-  "$t.Settings.StartWhenAvailable = $true;" ^
-  "$t | Set-ScheduledTask" >nul 2>&1
-
-IF %ERRORLEVEL% EQU 0 (
-    ECHO [OK] StartWhenAvailable active pour WodOpenImportCC
-) ELSE (
-    ECHO [WARN] StartWhenAvailable non configure (droit admin requis)
-)
-
-ECHO.
-ECHO ============================================================
-ECHO  Recapitulatif
-ECHO ============================================================
-ECHO  WodOpenImport    : daily_import.py  a 03:00
-ECHO  WodOpenImportCC  : cc_import.py     a 03:30
-ECHO  Python           : %PYTHON%
-ECHO  Workdir          : %WORKDIR%
-ECHO  Logs             : %WORKDIR%\logs\
-ECHO.
-ECHO  Si le PC est eteint a 3h, les taches tourneront
-ECHO  automatiquement au demarrage suivant (StartWhenAvailable).
-ECHO.
-ECHO  Pour verifier :
-ECHO    schtasks /query /tn "WodOpenImport"   /fo LIST
-ECHO    schtasks /query /tn "WodOpenImportCC" /fo LIST
-ECHO.
-ECHO  Pour tester maintenant :
-ECHO    schtasks /run /tn "WodOpenImport"
-ECHO    schtasks /run /tn "WodOpenImportCC"
-ECHO ============================================================
-
-:end
 pause
