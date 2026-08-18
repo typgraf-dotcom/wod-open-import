@@ -31,7 +31,7 @@ XMLRPC_URL  = f"{WP_URL}/xmlrpc.php"
 XMLRPC_AUTH = (WP_USER, WP_APP_PASS)
 
 SCORING_API_DETAIL = (
-    "https://scoring-fit-prod-7a29180d25c8.herokuapp.com"
+    "https://scoring-prod.up.railway.app"
     "/api/event/public-presentation/{eventNumber}"
 )
 

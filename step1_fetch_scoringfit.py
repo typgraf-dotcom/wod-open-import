@@ -14,7 +14,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="repla
 
 
 API_URL = (
-    "https://scoring-fit-prod-7a29180d25c8.herokuapp.com"
+    "https://scoring-prod.up.railway.app"
     "/api/leaderboard/competition/search-query"
 )
 

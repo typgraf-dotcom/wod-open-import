@@ -26,7 +26,7 @@ WP_APP_PASS = "1Pyz cRXX sttO rKCx wZbB Zde7"
 FILTER_COUNTRIES = {"France", "Belgique", "Belgium", "Suisse", "Switzerland"}
 SCORING_FIT_URL  = "https://scoring.fit"
 SCORING_API      = (
-    "https://scoring-fit-prod-7a29180d25c8.herokuapp.com"
+    "https://scoring-prod.up.railway.app"
     "/api/leaderboard/competition/search-query"
 )
 

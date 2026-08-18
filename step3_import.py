@@ -107,7 +107,7 @@ def wp_call(method: str, *args):
 # Scoring.fit
 # ---------------------------------------------------------------------------
 SCORING_API = (
-    "https://scoring-fit-prod-7a29180d25c8.herokuapp.com"
+    "https://scoring-prod.up.railway.app"
     "/api/leaderboard/competition/search-query"
 )
 
