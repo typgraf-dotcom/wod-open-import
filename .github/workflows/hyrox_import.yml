@@ -21,13 +21,14 @@ jobs:
           python-version: '3.13'
 
       - name: Install dependencies
-        run: pip install requests Pillow beautifulsoup4
+        run: pip install requests Pillow beautifulsoup4 anthropic
 
       - name: Run HYROX import
         continue-on-error: true          # save step runs même en cas d'échec
         env:
-          WP_APP_PASS:   ${{ secrets.WP_APP_PASS }}
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          WP_APP_PASS:        ${{ secrets.WP_APP_PASS }}
+          SMTP_PASSWORD:      ${{ secrets.SMTP_PASSWORD }}
+          ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
         run: python hyrox_import.py
 
       - name: Save results to repo
