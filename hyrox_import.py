@@ -16,7 +16,10 @@ Enchaîne :
        - nouvel event                              → créer le brouillon WP
        - "Find out more" → "Buy Tickets"            → réactivité : prix +
          update WP + notification email
-       - slug HYROX changé (nouvelle saison)        → update discret
+       - slug HYROX changé (nouvelle édition, même page evergreen)
+                                                     → tout rafraîchir
+                                                       (dates, calendrier,
+                                                       adresse, contenu)
        - sinon                                      → rien
   4. Sauvegarde du state file + email récapitulatif
 
@@ -789,7 +792,11 @@ def build_post(ev: dict, city_fr: str, country_name: str, geo: dict, detail: dic
         "meta":       meta,
     }
 
-def create_wp_event(ev: dict, city_name: str, country_name: str, geo: dict) -> int | None:
+def _build_payload(ev: dict, city_name: str, country_name: str, geo: dict) -> dict:
+    """Fetch détail + géocodage précis + construction du payload complet —
+    factorisé entre création (create_wp_event) et rafraîchissement d'édition
+    (refresh_wp_event), pour que les deux produisent exactement le même
+    contenu à partir des mêmes données fraîchement scrapées."""
     city_fr = french_city_name(city_name)
     qualifier = venue_qualifier(city_guess(ev["nom_event"]), city_name)
     detail = fetch_event_detail(ev["url_event_hyrox"])
@@ -805,7 +812,10 @@ def create_wp_event(ev: dict, city_name: str, country_name: str, geo: dict) -> i
     elif geo.get("lat"):
         log.info(f"    📍 {city_fr}, {country_name} → {geo['lat']}, {geo['lng']}")
 
-    payload = build_post(ev, city_fr, country_name, geo, detail, qualifier)
+    return build_post(ev, city_fr, country_name, geo, detail, qualifier)
+
+def create_wp_event(ev: dict, city_name: str, country_name: str, geo: dict) -> int | None:
+    payload = _build_payload(ev, city_name, country_name, geo)
 
     if DRY_RUN:
         log.info(f"    [DRY] newPost → {payload['title']}")
@@ -829,6 +839,22 @@ def create_wp_event(ev: dict, city_name: str, country_name: str, geo: dict) -> i
 
     return wp_id
 
+def refresh_wp_event(wp_id: int, ev: dict, city_name: str, country_name: str, geo: dict) -> bool:
+    """Nouvelle édition (le slug HYROX a changé, même ville) : ré-applique
+    tout le payload (titre, dates, calendrier, adresse, contenu, tags) sur
+    la page existante — page "evergreen" par ville, cf. brief section 3.
+    L'image à la une n'est PAS retouchée (conservée d'une édition à l'autre)."""
+    payload = _build_payload(ev, city_name, country_name, geo)
+    if DRY_RUN:
+        log.info(f"    [DRY] refresh wp_id={wp_id} → {payload['title']}")
+        return True
+    try:
+        wp_rest("patch", f"events/{wp_id}", json=payload)
+        return True
+    except Exception as e:
+        log.error(f"    [ERR refresh] {e}")
+        return False
+
 def update_wp_price(wp_id: int, price: str) -> None:
     if not wp_id or DRY_RUN:
         return
@@ -839,15 +865,6 @@ def update_wp_price(wp_id: int, price: str) -> None:
     except Exception as e:
         log.warning(f"    [update prix] {e}")
 
-def update_wp_ticket_link(wp_id: int, url: str) -> None:
-    if not wp_id or DRY_RUN:
-        return
-    try:
-        wp_rest("patch", f"events/{wp_id}", json={
-            "meta": {"ova_mb_event_ticket_external_link": url}
-        })
-    except Exception as e:
-        log.warning(f"    [update lien] {e}")
 
 
 # ═══════════════════════════════════════════════════════════
@@ -902,7 +919,7 @@ def send_summary_email(stats: dict, elapsed: float) -> None:
     <table style='border-collapse:collapse'>
         <tr><td style='padding:4px 16px 4px 0'><b>✅ Nouveaux brouillons</b></td><td><b>{stats['created']}</b></td></tr>
         <tr><td style='padding:4px 16px 4px 0'>🔔 Réactivations (inscriptions ouvertes)</td><td><b>{stats['reactivated']}</b></td></tr>
-        <tr><td style='padding:4px 16px 4px 0'>🔄 Slugs saison mis à jour</td><td><b>{stats['slug_updated']}</b></td></tr>
+        <tr><td style='padding:4px 16px 4px 0'>🔄 Nouvelles éditions rafraîchies</td><td><b>{stats['slug_updated']}</b></td></tr>
         <tr><td style='padding:4px 16px 4px 0'>⏭️ Inchangés</td><td><b>{stats['unchanged']}</b></td></tr>
         <tr><td style='padding:4px 16px 4px 0'>❌ Erreurs</td><td style='color:{"#e74c3c" if stats["error"] else "#27ae60"}'><b>{stats['error']}</b></td></tr>
         <tr><td style='padding:4px 16px 4px 0'>⏱️ Durée</td><td>{elapsed/60:.1f} min</td></tr>
@@ -993,11 +1010,14 @@ def main():
             stats["reactivated"] += 1
 
         elif prev.get("slug_hyrox_actuel") != ev["slug_hyrox"]:
-            log.info(f"  [slug MAJ] {ev['nom_event'][:50]} : "
+            log.info(f"  [🔄 NOUVELLE ÉDITION] {ev['nom_event'][:50]} : "
                      f"{prev.get('slug_hyrox_actuel')} → {ev['slug_hyrox']}")
-            update_wp_ticket_link(wp_id, ev["url_event_hyrox"])
-            prev["slug_hyrox_actuel"] = ev["slug_hyrox"]
-            stats["slug_updated"] += 1
+            if refresh_wp_event(wp_id, ev, city_name, country_nm, geo):
+                prev["slug_hyrox_actuel"] = ev["slug_hyrox"]
+                prev["prix_connu"] = ""
+                stats["slug_updated"] += 1
+            else:
+                stats["error"] += 1
 
         else:
             stats["unchanged"] += 1
@@ -1016,7 +1036,7 @@ def main():
     log.info(f"✅ Terminé en {elapsed:.0f}s")
     log.info(f"   créés       : {stats['created']}")
     log.info(f"   réactivés   : {stats['reactivated']}")
-    log.info(f"   slug MAJ    : {stats['slug_updated']}")
+    log.info(f"   éditions MAJ: {stats['slug_updated']}")
     log.info(f"   inchangés   : {stats['unchanged']}")
     log.info(f"   erreurs     : {stats['error']}")
     log.info(f"   log         : {log_file}")
