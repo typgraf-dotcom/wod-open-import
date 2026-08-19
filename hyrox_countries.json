@@ -1,0 +1,4 @@
+{
+  "_comment": "Pays suivis, par code ISO 3166-1 alpha-2. La ville n'est PAS filtrée par nom : chaque event est géocodé (nom extrait du titre) et gardé si son pays réel est dans cette liste. Ajouter/retirer un code suffit, aucune ville à lister à la main.",
+  "codes_pays": ["FR", "BE", "CH", "DE", "LU", "IT", "ES"]
+}

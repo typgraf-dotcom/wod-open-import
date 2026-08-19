@@ -1,0 +1,48 @@
+name: Import hebdomadaire HYROX officiel
+
+on:
+  schedule:
+    - cron: '0 5 * * 1'   # 05:00 UTC lundi = 06:00/07:00 Paris selon saison
+  workflow_dispatch:        # déclenchement manuel depuis l'onglet Actions
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: pip install requests Pillow beautifulsoup4
+
+      - name: Run HYROX import
+        continue-on-error: true          # save step runs même en cas d'échec
+        env:
+          WP_APP_PASS:   ${{ secrets.WP_APP_PASS }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: python hyrox_import.py
+
+      - name: Save results to repo
+        if: always()                     # toujours sauvegarder, même après erreur
+        run: |
+          git config user.email "github-actions@github.com"
+          git config user.name "GitHub Actions"
+          git add hyrox_state.json hyrox_raw.json
+          git diff --staged --quiet || git commit -m "Auto: import HYROX $(date +%Y-%m-%d)"
+          git push
+
+      - name: Upload logs as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hyrox-logs-${{ github.run_id }}
+          path: logs/
+          retention-days: 30
