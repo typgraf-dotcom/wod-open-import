@@ -478,21 +478,48 @@ def geocode_free(query: str) -> dict:
 # ═══════════════════════════════════════════════════════════
 # ▌ Page event individuelle : description, adresse, prix
 # ═══════════════════════════════════════════════════════════
-# Le prix billet n'apparaît quasiment jamais en HTML statique (chargé par
-# un widget billetterie tiers en JS) — cf. vérification manuelle sur un
-# event "Buy Tickets" réel : aucun tarif trouvé, seulement des montants
-# de collecte caritative sans rapport. On ne remonte donc un prix QUE
-# s'il est sans ambiguïté (symbole monnaie collé à un nombre, à proximité
-# immédiate du mot "ticket"/"price"/"from"), sinon "NC" plutôt que de
-# risquer un faux prix (principe anti-hallucination, section 5).
-_PRICE_CONTEXT_RE = re.compile(
-    r'(?:ticket|price|from)\D{0,25}(\d{2,4}(?:[.,]\d{2})?)\s?(€|EUR|\$|USD|£|GBP)',
-    re.IGNORECASE)
+# Le prix billet vient de la page billetterie tierce (sous-domaine
+# {pays}.hyrox.com), liée en clair dans le HTML de la page event dès que
+# les inscriptions sont ouvertes (absente sinon — donc pas de fetch inutile
+# tant que le statut est "Find out more"). Cette page est en Next.js avec
+# SSR : les tickets (nom, prix, devise) sont dans le JSON __NEXT_DATA__,
+# aucun rendu JS nécessaire. Vérifié sur Genève (80 CHF relay — correspond
+# exactement au tarif déjà affiché manuellement sur l'ancienne page
+# wod-open) et Bordeaux (EUR). On exclut spectateurs/tarifs solidaires/
+# options photo pour ne garder que le tarif athlète le plus bas.
+_TICKET_URL_RE = re.compile(r'https://[a-z]+\.hyrox\.com/event/[a-z0-9-]+\?useEmbed=true')
+_PRICE_EXCLUDE_RE = re.compile(r'spectator|charity|photo|package', re.IGNORECASE)
+
+def fetch_ticket_price(event_html: str) -> str:
+    """'À partir de 80 CHF' ou '' si billetterie pas encore ouverte /
+    structure inattendue (jamais bloquant, jamais de prix inventé)."""
+    m = _TICKET_URL_RE.search(event_html)
+    if not m:
+        return ""
+    try:
+        r = requests.get(m.group(0), headers={"User-Agent": USER_AGENT}, timeout=20)
+        r.raise_for_status()
+        nd = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text, re.DOTALL)
+        if not nd:
+            return ""
+        data = json.loads(nd.group(1))
+        pp = data["props"]["pageProps"]
+        tickets = pp.get("shop", {}).get("tickets", [])
+        currency = pp.get("seller", {}).get("currency", "")
+        prices = [t["price"] for t in tickets
+                 if isinstance(t.get("price"), (int, float)) and t["price"] > 0
+                 and not _PRICE_EXCLUDE_RE.search(t.get("name") or "")]
+        if not prices or not currency:
+            return ""
+        return f"À partir de {min(prices):g} {currency}"
+    except Exception as e:
+        log.warning(f"    [ticket price] {e}")
+        return ""
 
 def fetch_event_detail(event_url: str) -> dict:
     """Récupère description officielle (texte brut), adresse précise du
-    lieu (section "Venue Information") et prix (best-effort) depuis la
-    page event individuelle."""
+    lieu (section "Venue Information") et prix (billetterie tierce, si
+    ouverte) depuis la page event individuelle."""
     try:
         r = requests.get(event_url, headers={"User-Agent": USER_AGENT}, timeout=15)
         r.raise_for_status()
@@ -508,8 +535,7 @@ def fetch_event_detail(event_url: str) -> dict:
     addr_el = soup.select_one(".event_map_address .w-post-elm-value")
     venue_address = addr_el.get_text(strip=True) if addr_el else ""
 
-    m = _PRICE_CONTEXT_RE.search(r.text)
-    price = f"{m.group(1)} {m.group(2)}" if m else ""
+    price = fetch_ticket_price(r.text)
 
     return {"description": description, "venue_address": venue_address, "price": price}
 
