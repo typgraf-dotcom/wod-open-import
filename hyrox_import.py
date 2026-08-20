@@ -491,7 +491,8 @@ _TICKET_URL_RE = re.compile(r'https://[a-z]+\.hyrox\.com/event/[a-z0-9-]+\?useEm
 _PRICE_EXCLUDE_RE = re.compile(r'spectator|charity|photo|package', re.IGNORECASE)
 
 def fetch_ticket_price(event_html: str) -> str:
-    """'À partir de 80 CHF' ou '' si billetterie pas encore ouverte /
+    """'80 - 129 CHF' (fourchette, même convention que daily_import.py/
+    cc_import.py) ou '' si billetterie pas encore ouverte /
     structure inattendue (jamais bloquant, jamais de prix inventé)."""
     m = _TICKET_URL_RE.search(event_html)
     if not m:
@@ -511,7 +512,8 @@ def fetch_ticket_price(event_html: str) -> str:
                  and not _PRICE_EXCLUDE_RE.search(t.get("name") or "")]
         if not prices or not currency:
             return ""
-        return f"À partir de {min(prices):g} {currency}"
+        lo, hi = min(prices), max(prices)
+        return f"{lo:g} - {hi:g} {currency}" if lo != hi else f"{lo:g} {currency}"
     except Exception as e:
         log.warning(f"    [ticket price] {e}")
         return ""
