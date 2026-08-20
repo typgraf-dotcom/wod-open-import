@@ -71,6 +71,8 @@ def main():
                 geo = precise
 
         payload = h.build_post(ev, city_fr, country_nm, geo, detail, qualifier)
+        # Ne jamais repasser un post publié en brouillon lors d'une correction.
+        payload.pop("status", None)
         patch = {"content": payload["content"]} if DESC_ONLY else payload
 
         if DESC_ONLY:

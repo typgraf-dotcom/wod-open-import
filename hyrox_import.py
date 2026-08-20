@@ -848,8 +848,13 @@ def refresh_wp_event(wp_id: int, ev: dict, city_name: str, country_name: str, ge
     """Nouvelle édition (le slug HYROX a changé, même ville) : ré-applique
     tout le payload (titre, dates, calendrier, adresse, contenu, tags) sur
     la page existante — page "evergreen" par ville, cf. brief section 3.
-    L'image à la une n'est PAS retouchée (conservée d'une édition à l'autre)."""
+    L'image à la une n'est PAS retouchée (conservée d'une édition à l'autre).
+
+    Ne touche JAMAIS au statut : si la page a été publiée entre-temps
+    (validation manuelle), un rafraîchissement de saison ne doit pas la
+    repasser en brouillon. status n'est pertinent qu'à la création."""
     payload = _build_payload(ev, city_name, country_name, geo)
+    payload.pop("status", None)
     if DRY_RUN:
         log.info(f"    [DRY] refresh wp_id={wp_id} → {payload['title']}")
         return True
