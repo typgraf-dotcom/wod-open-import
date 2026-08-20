@@ -94,6 +94,22 @@ add_action('init', function () {
         'type'          => 'array',
         'auth_callback' => '__return_true',
     ]);
+
+    // Galerie EventList : tableau (vide par défaut). Sans ce champ initialisé,
+    // eventlist/templates/loop/thumbnail.php fait array_unshift() sur une
+    // chaîne vide renvoyée par get_post_meta() pour une clé jamais posée →
+    // fatal error. Incident du 20/08/2026 (27 events HYROX créés sans cette
+    // clé, page "événements liés" plantait en 500 sur tout le site).
+    unregister_post_meta('event', 'ova_mb_event_gallery');
+    register_post_meta('event', 'ova_mb_event_gallery', [
+        'show_in_rest'  => [
+            'schema' => ['type' => 'array', 'items' => ['type' => 'string']],
+        ],
+        'single'        => true,
+        'type'          => 'array',
+        'default'       => [],
+        'auth_callback' => '__return_true',
+    ]);
 }, 30);
 
 // ── 4. Fallback : sauvegarder les meta via update_post_meta après chaque REST ─
@@ -127,6 +143,7 @@ add_action('rest_after_insert_event', function ($post, $request, $creating) {
         'ova_mb_event_phone_organizer',
         'ova_mb_event_mail_organizer',
         'ova_mb_event_calendar',
+        'ova_mb_event_gallery',
     ];
     foreach ($allowed as $key) {
         if (array_key_exists($key, $meta)) {

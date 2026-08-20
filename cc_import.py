@@ -685,6 +685,11 @@ def build_post(ev: dict, slug: str, detail: dict | None = None) -> dict:
         "ova_mb_event_name_organizer":             ev.get("venue") or detail.get("organizerName") or title,
         "ova_mb_event_phone_organizer":            "NC",
         "ova_mb_event_mail_organizer":             detail.get("organizerEmail") or "NC",
+        # Sans ce champ, eventlist/templates/loop/thumbnail.php fait
+        # array_unshift() sur une chaîne vide (get_post_meta() pour une
+        # clé jamais posée) → fatal error 500 sur les pages "événements
+        # liés" affichant cet event. Incident du 20/08/2026.
+        "ova_mb_event_gallery":                    [],
     }
     if min_p is not None:
         meta["ova_mb_event_min_price"] = str(min_p)

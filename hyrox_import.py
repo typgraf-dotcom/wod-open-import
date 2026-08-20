@@ -775,6 +775,11 @@ def build_post(ev: dict, city_fr: str, country_name: str, geo: dict, detail: dic
         "ova_mb_event_phone_organizer":            "NC",
         "ova_mb_event_mail_organizer":              "NC",
         "ova_mb_event_price_desc":                 price,
+        # Sans ce champ, eventlist/templates/loop/thumbnail.php fait
+        # array_unshift() sur une chaîne vide (get_post_meta() pour une clé
+        # jamais posée) → fatal error 500 sur les pages "événements liés"
+        # affichant cet event. Incident du 20/08/2026.
+        "ova_mb_event_gallery":                    [],
     }
     if geo.get("lat"):
         meta["ova_mb_event_map_lat"] = geo["lat"]
