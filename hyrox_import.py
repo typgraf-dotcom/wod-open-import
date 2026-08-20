@@ -329,6 +329,17 @@ def venue_qualifier(city_guess_raw: str, city_local: str) -> str:
             return rest.title()
     return ""
 
+def expected_title(ev: dict, city_name: str) -> str:
+    """Titre WP tel que build_post() le générera — calculable sans fetch de
+    la page détail (city_guess/venue_qualifier ne dépendent que du titre
+    hyrox.com et du nom de ville déjà géocodé). Source unique utilisée à la
+    fois pour la construction réelle et pour la pré-vérification anti-
+    doublon dans main()."""
+    city_fr = french_city_name(city_name)
+    qualifier = venue_qualifier(city_guess(ev["nom_event"]), city_name)
+    return f"HYROX{' Youngstars' if ev['is_youngstars'] else ''} {city_fr}" \
+           f"{' ' + qualifier if qualifier else ''}".strip()
+
 
 # ═══════════════════════════════════════════════════════════
 # ▌ Fetch + parsing hyrox.com
@@ -701,6 +712,36 @@ def fetch_wp_slugs() -> set[str]:
             break
     return slugs
 
+def fetch_existing_hyrox_titles() -> list[tuple[int, str]]:
+    """(id, titre) de tous les events WP dont le titre/contenu contient
+    "hyrox" — détection fuzzy de doublon quand le slug généré ne collisionne
+    pas littéralement avec une page déjà créée manuellement sous un autre
+    nom (cf. fetch_wp_slugs, qui ne suffit pas seul, incident 20/08/2026)."""
+    out: list[tuple[int, str]] = []
+    page = 1
+    while True:
+        try:
+            r = requests.get(
+                f"{REST_URL}/events", auth=REST_AUTH,
+                params={"per_page": 100, "page": page, "search": "hyrox",
+                        "status": "publish,draft,pending,private,future",
+                        "_fields": "id,title"},
+                timeout=30)
+            if r.status_code in (400, 404):
+                break
+            r.raise_for_status()
+            data = r.json()
+            if not data:
+                break
+            out.extend((ev["id"], ev.get("title", {}).get("rendered", "")) for ev in data)
+            if len(data) < 100:
+                break
+            page += 1
+        except Exception as e:
+            log.warning(f"  [fetch_existing_hyrox_titles page={page}] {e}")
+            break
+    return out
+
 def upload_image(image_url: str, slug: str, title: str) -> int | None:
     if not image_url:
         return None
@@ -946,9 +987,15 @@ def notify_reactivation(items: list[dict]) -> None:
     </body></html>"""
     _send_email(f"[wod-open] 🔔 {len(items)} inscription(s) HYROX ouverte(s)", html)
 
-def send_summary_email(stats: dict, elapsed: float) -> None:
+def send_summary_email(stats: dict, elapsed: float, warnings: list[str] | None = None) -> None:
     date_str = datetime.now().strftime("%d/%m/%Y %H:%M")
     status_color = "#27ae60" if stats["error"] == 0 else "#e74c3c"
+    warn_html = ""
+    if warnings:
+        items = "".join(f"<li>{w}</li>" for w in warnings)
+        warn_html = f"""
+        <h3 style='color:#e67e22'>⚠️ Doublons possibles à vérifier ({len(warnings)})</h3>
+        <ul style='font-size:13px;color:#555'>{items}</ul>"""
     html = f"""
     <html><body style='font-family:Arial,sans-serif;color:#333;max-width:700px'>
     <h2 style='border-bottom:2px solid {status_color};padding-bottom:8px'>
@@ -962,6 +1009,7 @@ def send_summary_email(stats: dict, elapsed: float) -> None:
         <tr><td style='padding:4px 16px 4px 0'>❌ Erreurs</td><td style='color:{"#e74c3c" if stats["error"] else "#27ae60"}'><b>{stats['error']}</b></td></tr>
         <tr><td style='padding:4px 16px 4px 0'>⏱️ Durée</td><td>{elapsed/60:.1f} min</td></tr>
     </table>
+    {warn_html}
     <p style='font-size:11px;color:#999;margin-top:24px'>Log complet : {log_file}</p>
     </body></html>"""
     _send_email(
@@ -999,8 +1047,14 @@ def main():
     log.info("  Scan des slugs WP existants (filet de sécurité anti-doublon)...")
     wp_slugs = fetch_wp_slugs()
     log.info(f"  → {len(wp_slugs)} slugs WP chargés")
+    log.info("  Scan des titres \"hyrox\" existants (détection fuzzy)...")
+    known_ids = {e["wp_post_id"] for e in state.values()}
+    existing_hyrox_titles = [(pid, t) for pid, t in fetch_existing_hyrox_titles()
+                             if pid not in known_ids]
+    log.info(f"  → {len(existing_hyrox_titles)} titres externes chargés")
     stats = {"created": 0, "reactivated": 0, "slug_updated": 0, "unchanged": 0, "error": 0}
     reactivations: list[dict] = []
+    warnings: list[str] = []
 
     for ev in filtered:
         ville = ville_normalisee(ev["city_code"], ev["slug_hyrox"])
@@ -1010,12 +1064,31 @@ def main():
         prev = state.get(ville)
 
         if prev is None:
-            slug = event_slug(ev["nom_event"], city_name)
+            title = expected_title(ev, city_name)
+            slug = event_slug(title)
             if slug in wp_slugs:
                 log.info(f"  [SKIP doublon WP] {ev['nom_event'][:50]} — "
                          f"présent sur WP mais absent du state file, "
                          f"probablement suite à un run interrompu")
                 continue
+
+            # Détection fuzzy (au-delà du slug exact) : page(s) existante(s)
+            # avec "hyrox" + la ville dans le titre, sous un slug différent
+            # du nôtre — cf. incident Paris/Bordeaux/Nice du 20/08/2026, où
+            # 3 events avaient déjà une page manuellement créée avec un
+            # slug différent. Ne bloque pas la création (trop de faux
+            # positifs possibles entre éditions/lieux différents dans la
+            # même ville), juste une alerte à vérifier manuellement.
+            city_fr = french_city_name(city_name)
+            possible_dups = [(pid, t) for pid, t in existing_hyrox_titles
+                             if city_fr.lower() in t.lower()]
+            if possible_dups:
+                msg = (f"Page(s) existante(s) possiblement en double pour "
+                       f"\"{title}\" : " +
+                       ", ".join(f"id={pid} ({t})" for pid, t in possible_dups))
+                log.warning(f"  [⚠️ DOUBLON POSSIBLE] {msg}")
+                warnings.append(msg)
+
             # ── Nouvel event ─────────────────────────────
             log.info(f"  [NEW] {ev['nom_event'][:55]} ({city_name}, {country_nm})")
             wp_id = create_wp_event(ev, city_name, country_nm, geo)
@@ -1081,7 +1154,7 @@ def main():
 
     # ── 5. Notifications ─────────────────────────────────────
     notify_reactivation(reactivations)
-    send_summary_email(stats, elapsed)
+    send_summary_email(stats, elapsed, warnings)
 
 
 if __name__ == "__main__":
