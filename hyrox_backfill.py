@@ -11,6 +11,9 @@ Usage :
   python hyrox_backfill.py --run --desc-only   → ne PATCH que le champ
       "content" (description) — pour ne pas retoucher titre/tags/etc déjà
       corrigés dans un run précédent, ex: après ajout d'ANTHROPIC_API_KEY
+  python hyrox_backfill.py --run --price-only  → ne PATCH que le prix
+      (meta.ova_mb_event_price_desc), et seulement si un vrai prix est
+      trouvé (billetterie ouverte) — laisse "NC" tel quel sinon
   python hyrox_backfill.py --run --only tnf-hyrox-tenerife   → un seul event (debug)
 """
 
@@ -19,8 +22,9 @@ from pathlib import Path
 
 import hyrox_import as h
 
-DRY_RUN   = "--run" not in sys.argv
-DESC_ONLY = "--desc-only" in sys.argv
+DRY_RUN    = "--run" not in sys.argv
+DESC_ONLY  = "--desc-only" in sys.argv
+PRICE_ONLY = "--price-only" in sys.argv
 _HERE = Path(__file__).parent
 
 
@@ -51,6 +55,25 @@ def main():
             continue
 
         print(f"\n[{ville}] wp_id={wp_id}  {ev['nom_event']}")
+
+        if PRICE_ONLY:
+            price = h.fetch_event_detail(ev["url_event_hyrox"]).get("price", "")
+            if not price:
+                print("  [SKIP] pas de prix trouvé (billetterie pas encore ouverte)")
+                continue
+            print(f"  prix : {price}")
+            if DRY_RUN:
+                print("  [DRY] pas de PATCH envoyé")
+                done += 1
+                continue
+            try:
+                h.wp_rest("patch", f"events/{wp_id}", json={"meta": {"ova_mb_event_price_desc": price}})
+                print("  ✓ PATCH OK")
+                done += 1
+            except Exception as e:
+                print(f"  [ERR PATCH] {e}")
+                errors += 1
+            continue
 
         query = h.city_guess(ev["nom_event"])
         geo = h.geocode_free(query)
