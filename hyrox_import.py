@@ -850,6 +850,10 @@ def build_post(ev: dict, city_fr: str, country_name: str, geo: dict, detail: dic
         "ova_mb_event_price_desc":                 price.get("desc", "NC"),
         "ova_mb_event_min_price":                  str(price["min"]) if price else "",
         "ova_mb_event_max_price":                  str(price["max"]) if price else "",
+        # Champ affiché dans le BO juste sous "Insert external link" (onglet
+        # Inscription) quand l'inscription est via lien externe — c'est LUI
+        # que l'admin voit, pas price_desc/min_price/max_price seuls.
+        "ova_mb_event_ticket_external_link_price": price.get("desc", "NC"),
         # Sans ce champ, eventlist/templates/loop/thumbnail.php fait
         # array_unshift() sur une chaîne vide (get_post_meta() pour une clé
         # jamais posée) → fatal error 500 sur les pages "événements liés"
@@ -945,9 +949,10 @@ def update_wp_price(wp_id: int, price: dict) -> None:
         return
     try:
         wp_rest("patch", f"events/{wp_id}", json={"meta": {
-            "ova_mb_event_price_desc": price.get("desc", "NC") if price else "NC",
-            "ova_mb_event_min_price":  str(price["min"]) if price else "",
-            "ova_mb_event_max_price":  str(price["max"]) if price else "",
+            "ova_mb_event_price_desc":                 price.get("desc", "NC") if price else "NC",
+            "ova_mb_event_min_price":                  str(price["min"]) if price else "",
+            "ova_mb_event_max_price":                  str(price["max"]) if price else "",
+            "ova_mb_event_ticket_external_link_price": price.get("desc", "NC") if price else "NC",
         }})
     except Exception as e:
         log.warning(f"    [update prix] {e}")
