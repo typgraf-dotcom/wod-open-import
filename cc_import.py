@@ -346,6 +346,39 @@ def wp_rest(method: str, endpoint: str, **kwargs) -> dict:
     r.raise_for_status()
     return r.json()
 
+def fetch_wp_slugs() -> set[str]:
+    """Filet de sécurité : slugs de tous les events WP existants (tous
+    statuts). cc_import_results.json ne sauvegarde qu'en toute fin de
+    script — si le script plante en cours de route (ex: incident
+    23/09/2026, AttributeError sur un event.eventLocation.state=null),
+    les events déjà créés avant le crash ne sont jamais enregistrés et
+    seraient recréés en double au run suivant sans cette vérification
+    en direct (cf. doublon Hyrox Brignais Sport Club, cc_id=20733)."""
+    slugs: set[str] = set()
+    page = 1
+    while True:
+        try:
+            r = requests.get(
+                f"{REST_URL}/events", auth=REST_AUTH,
+                params={"per_page": 100, "page": page,
+                        "status": "publish,draft,pending,private,future,trash",
+                        "_fields": "slug"},
+                timeout=30)
+            if r.status_code in (400, 404):
+                break
+            r.raise_for_status()
+            data = r.json()
+            if not data:
+                break
+            slugs.update(ev.get("slug", "") for ev in data if ev.get("slug"))
+            if len(data) < 100:
+                break
+            page += 1
+        except Exception as e:
+            log.warning(f"  [fetch_wp_slugs page={page}] {e}")
+            break
+    return slugs
+
 
 # ═══════════════════════════════════════════════════════════
 # ▌ CompetitionCorner API
@@ -619,12 +652,12 @@ def upload_image(thumbnail: str, slug: str, title: str) -> int | None:
 def build_post(ev: dict, slug: str, detail: dict | None = None) -> dict:
     """Construit le payload complet pour wp.newPost."""
     detail    = detail or {}
-    title     = ev.get("name", "").strip()
+    title     = (ev.get("name") or "").strip()
     loc       = ev.get("eventLocation") or {}
     country_c = loc.get("countryCode", "")
-    city      = loc.get("city", "").strip()
-    state     = loc.get("state", "").strip()
-    country   = loc.get("country", "").strip()
+    city      = (loc.get("city") or "").strip()
+    state     = (loc.get("state") or "").strip()
+    country   = (loc.get("country") or "").strip()
     lat       = str(loc.get("lat") or "")
     lng       = str(loc.get("lng") or "")
 
@@ -726,8 +759,8 @@ def enrich_post(wp_id: int, ev: dict, slug: str, title: str) -> None:
     """Région française + image à la une via REST PATCH."""
     loc       = ev.get("eventLocation") or {}
     country_c = loc.get("countryCode", "")
-    country   = loc.get("country", "").strip()
-    city      = loc.get("city", "").strip()
+    country   = (loc.get("country") or "").strip()
+    city      = (loc.get("city") or "").strip()
     lat       = str(loc.get("lat") or "")
     lng       = str(loc.get("lng") or "")
     thumbnail = ev.get("thumbnail") or ev.get("image") or ""
@@ -891,6 +924,11 @@ def main():
         existing_titles |= sf_titles
         log.info(f"    + {len(sf_titles)} titres depuis import_results.json (scoring.fit)")
 
+    log.info("  Scan des slugs WP existants (filet de sécurité anti-doublon)...")
+    wp_slugs = fetch_wp_slugs()
+    existing_slugs |= wp_slugs
+    log.info(f"  → {len(wp_slugs)} slugs WP chargés")
+
     # ── 3. Import ──────────────────────────────────────────
     log.info("\n[3] Import des nouveaux events...")
     new_results: list[dict] = []
@@ -900,7 +938,7 @@ def main():
     for ev in filtered:
         cc_id = ev.get("id")
         slug  = make_slug(ev)
-        title = ev.get("name", "").strip()
+        title = (ev.get("name") or "").strip()
         norm  = normalize_title(title)
         loc   = ev.get("eventLocation") or {}
         country_c = loc.get("countryCode", "")

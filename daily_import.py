@@ -265,7 +265,7 @@ INTERNAL_KW_RE = re.compile(
 # ▌ Helpers généraux
 # ═══════════════════════════════════════════════════════════
 def make_slug(comp: dict) -> str:
-    name = comp.get("name", "event").lower()
+    name = (comp.get("name") or "event").lower()
     sfid = comp.get("_id", "")[:8]
     return re.sub(r"[^a-z0-9]+", "-", name).strip("-") + f"-{sfid}"
 
@@ -481,7 +481,7 @@ def build_post(comp: dict, detail: dict, slug: str) -> dict:
     lb   = detail.get("leaderboard", {})
     pres = detail.get("presentation", {})
 
-    title   = comp.get("name", "").strip()
+    title   = (comp.get("name") or "").strip()
     dates   = lb.get("date", {})
     start_d = (dates.get("start") or {}).get("day", "")
     end_d   = (dates.get("end")   or {}).get("day", "")
@@ -941,7 +941,7 @@ def main():
 
     for comp in filtered:
         slug  = make_slug(comp)
-        title = comp.get("name", "").strip()
+        title = (comp.get("name") or "").strip()
         norm  = normalize_title(title)
 
         # Anti-doublon
