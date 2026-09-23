@@ -57,17 +57,17 @@ def main():
         print(f"\n[{ville}] wp_id={wp_id}  {ev['nom_event']}")
 
         if PRICE_ONLY:
-            price = h.fetch_event_detail(ev["url_event_hyrox"]).get("price", "")
+            price = h.fetch_event_detail(ev["url_event_hyrox"]).get("price", {})
             if not price:
                 print("  [SKIP] pas de prix trouvé (billetterie pas encore ouverte)")
                 continue
-            print(f"  prix : {price}")
+            print(f"  prix : {price['desc']}")
             if DRY_RUN:
                 print("  [DRY] pas de PATCH envoyé")
                 done += 1
                 continue
             try:
-                h.wp_rest("patch", f"events/{wp_id}", json={"meta": {"ova_mb_event_price_desc": price}})
+                h.update_wp_price(wp_id, price)
                 print("  ✓ PATCH OK")
                 done += 1
             except Exception as e:

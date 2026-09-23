@@ -371,7 +371,7 @@ def parse_hyrox_events(html: str) -> list[dict]:
         if not link:
             continue
         title = link.get_text(strip=True)
-        url   = link.get("href", "").strip()
+        url   = (link.get("href") or "").strip()
         slug  = slug_from_url(url)
         if not slug:
             continue
@@ -501,19 +501,22 @@ def geocode_free(query: str) -> dict:
 _TICKET_URL_RE = re.compile(r'https://[a-z]+\.hyrox\.com/event/[a-z0-9-]+\?useEmbed=true')
 _PRICE_EXCLUDE_RE = re.compile(r'spectator|charity|photo|package', re.IGNORECASE)
 
-def fetch_ticket_price(event_html: str) -> str:
-    """'80 - 129 CHF' (fourchette, même convention que daily_import.py/
-    cc_import.py) ou '' si billetterie pas encore ouverte /
+def fetch_ticket_price(event_html: str) -> dict:
+    """{"min": 80, "max": 129, "currency": "CHF", "desc": "80 - 129 CHF"}
+    (même convention que daily_import.py/cc_import.py : min/max numériques
+    + description texte — le BO affiche le prix depuis min/max, pas depuis
+    le texte seul, cf. incident du 31/08/2026 où price_desc était posé mais
+    invisible en back-office) — {} si billetterie pas encore ouverte /
     structure inattendue (jamais bloquant, jamais de prix inventé)."""
     m = _TICKET_URL_RE.search(event_html)
     if not m:
-        return ""
+        return {}
     try:
         r = requests.get(m.group(0), headers={"User-Agent": USER_AGENT}, timeout=20)
         r.raise_for_status()
         nd = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text, re.DOTALL)
         if not nd:
-            return ""
+            return {}
         data = json.loads(nd.group(1))
         pp = data["props"]["pageProps"]
         tickets = pp.get("shop", {}).get("tickets", [])
@@ -522,12 +525,13 @@ def fetch_ticket_price(event_html: str) -> str:
                  if isinstance(t.get("price"), (int, float)) and t["price"] > 0
                  and not _PRICE_EXCLUDE_RE.search(t.get("name") or "")]
         if not prices or not currency:
-            return ""
+            return {}
         lo, hi = min(prices), max(prices)
-        return f"{lo:g} - {hi:g} {currency}" if lo != hi else f"{lo:g} {currency}"
+        desc = f"{lo:g} - {hi:g} {currency}" if lo != hi else f"{lo:g} {currency}"
+        return {"min": lo, "max": hi, "currency": currency, "desc": desc}
     except Exception as e:
         log.warning(f"    [ticket price] {e}")
-        return ""
+        return {}
 
 def fetch_event_detail(event_url: str) -> dict:
     """Récupère description officielle (texte brut), adresse précise du
@@ -538,7 +542,7 @@ def fetch_event_detail(event_url: str) -> dict:
         r.raise_for_status()
     except Exception as e:
         log.warning(f"    [detail] {event_url} : {e}")
-        return {"description": "", "venue_address": "", "price": ""}
+        return {"description": "", "venue_address": "", "price": {}}
 
     soup = BeautifulSoup(r.text, "html.parser")
 
@@ -824,7 +828,7 @@ def build_post(ev: dict, city_fr: str, country_name: str, geo: dict, detail: dic
     description = generate_description(city_fr, ev["date_debut"], ev["date_fin"],
                                        venue_addr, ev["statut_bouton"],
                                        detail.get("description", ""))
-    price = detail.get("price") or "NC"
+    price = detail.get("price") or {}
 
     meta = {
         "ova_mb_event_start_date_str":             str(ts_start),
@@ -843,7 +847,9 @@ def build_post(ev: dict, city_fr: str, country_name: str, geo: dict, detail: dic
         "ova_mb_event_name_organizer":             "HYROX",
         "ova_mb_event_phone_organizer":            "NC",
         "ova_mb_event_mail_organizer":              "NC",
-        "ova_mb_event_price_desc":                 price,
+        "ova_mb_event_price_desc":                 price.get("desc", "NC"),
+        "ova_mb_event_min_price":                  str(price["min"]) if price else "",
+        "ova_mb_event_max_price":                  str(price["max"]) if price else "",
         # Sans ce champ, eventlist/templates/loop/thumbnail.php fait
         # array_unshift() sur une chaîne vide (get_post_meta() pour une clé
         # jamais posée) → fatal error 500 sur les pages "événements liés"
@@ -934,13 +940,15 @@ def refresh_wp_event(wp_id: int, ev: dict, city_name: str, country_name: str, ge
         log.error(f"    [ERR refresh] {e}")
         return False
 
-def update_wp_price(wp_id: int, price: str) -> None:
+def update_wp_price(wp_id: int, price: dict) -> None:
     if not wp_id or DRY_RUN:
         return
     try:
-        wp_rest("patch", f"events/{wp_id}", json={
-            "meta": {"ova_mb_event_price_desc": price or "NC"}
-        })
+        wp_rest("patch", f"events/{wp_id}", json={"meta": {
+            "ova_mb_event_price_desc": price.get("desc", "NC") if price else "NC",
+            "ova_mb_event_min_price":  str(price["min"]) if price else "",
+            "ova_mb_event_max_price":  str(price["max"]) if price else "",
+        }})
     except Exception as e:
         log.warning(f"    [update prix] {e}")
 
@@ -1112,12 +1120,12 @@ def main():
         if (prev.get("dernier_statut_bouton") == "Find out more"
                 and ev["statut_bouton"] == "Buy Tickets"):
             log.info(f"  [🔔 RÉACTIVATION] {ev['nom_event'][:50]} ({city_name}) — inscriptions ouvertes")
-            prix = fetch_event_detail(ev["url_event_hyrox"]).get("price", "")
+            prix = fetch_event_detail(ev["url_event_hyrox"]).get("price", {})
             if prix:
-                log.info(f"    💶 prix détecté : {prix}")
+                log.info(f"    💶 prix détecté : {prix['desc']}")
             update_wp_price(wp_id, prix)
-            prev["prix_connu"] = prix
-            reactivations.append({**ev, "prix_connu": prix})
+            prev["prix_connu"] = prix.get("desc", "")
+            reactivations.append({**ev, "prix_connu": prix.get("desc", "")})
             stats["reactivated"] += 1
 
         elif prev.get("slug_hyrox_actuel") != ev["slug_hyrox"]:
