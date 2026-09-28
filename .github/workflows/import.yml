@@ -35,7 +35,10 @@ jobs:
         env:
           WP_APP_PASS:   ${{ secrets.WP_APP_PASS }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-        run: python cc_import.py
+        shell: bash                      # pipefail : garde le code de sortie de python malgré tee
+        run: |
+          mkdir -p ci_last_run
+          python -u cc_import.py 2>&1 | tee ci_last_run/cc_stdout.txt
 
       - name: Save results to repo
         if: always()                     # always save, even after errors
@@ -43,6 +46,7 @@ jobs:
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
           git add import_results.json cc_import_results.json competitions_raw.json
+          git add ci_last_run/cc_stdout.txt || true
           git diff --staged --quiet || git commit -m "Auto: import $(date +%Y-%m-%d)"
           git push
 
