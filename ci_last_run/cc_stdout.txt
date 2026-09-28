@@ -1,0 +1,14 @@
+08:24:34 ============================================================
+08:24:34 ▶ Import CC wod-open.com — 28/09/2026 08:24
+08:24:34   DRY_RUN=False  POST_STATUS=draft
+08:24:34 ============================================================
+08:24:34 
+[1] Fetch competitioncorner.net...
+08:24:34   [CC fetch timing=active page=1] 403 Client Error: Forbidden for url: https://competitioncorner.net/api2/v1/events/filtered?timing=active&page=1
+08:24:34   timing=active: 0 nouveaux events (0 pages)
+08:24:34   [CC fetch timing=upcoming page=1] 403 Client Error: Forbidden for url: https://competitioncorner.net/api2/v1/events/filtered?timing=upcoming&page=1
+08:24:34   timing=upcoming: 0 nouveaux events (0 pages)
+08:24:34     0 events récupérés au total
+08:24:34     → 0 après filtre FR/BE/CH (hors privés)
+08:24:34   Aucun event à traiter. Fin.
+08:24:36 📧 Email envoyé → typgraf@gmail.com
