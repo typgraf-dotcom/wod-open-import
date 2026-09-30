@@ -21,7 +21,7 @@ jobs:
           python-version: '3.13'
 
       - name: Install dependencies
-        run: pip install requests Pillow
+        run: pip install requests Pillow curl_cffi   # curl_cffi : empreinte TLS Chrome, CompetitionCorner renvoie 403 aux IP GitHub sinon
 
       - name: Run scoring.fit import
         continue-on-error: true          # save step runs even if this fails
