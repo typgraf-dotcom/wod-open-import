@@ -1,111 +1,109 @@
-08:33:58 ============================================================
-08:33:58 ▶ Import CC wod-open.com — 05/10/2026 08:33
-08:33:58   DRY_RUN=False  POST_STATUS=draft
-08:33:58 ============================================================
-08:33:58 
+08:42:30 ============================================================
+08:42:30 ▶ Import CC wod-open.com — 06/10/2026 08:42
+08:42:30   DRY_RUN=False  POST_STATUS=draft
+08:42:30 ============================================================
+08:42:30 
 [1] Fetch competitioncorner.net...
-08:34:07   timing=active: 542 nouveaux events (55 pages)
-08:34:09   timing=upcoming: 151 nouveaux events (16 pages)
-08:34:09     693 events récupérés au total
-08:34:09     → 64 après filtre FR/BE/CH (hors privés)
-08:34:09     236 entrées déjà dans cc_import_results.json
-08:34:09     + 1038 titres depuis import_results.json (scoring.fit)
-08:34:09   Scan des slugs WP existants (filet de sécurité anti-doublon)...
-08:34:24   → 1277 slugs WP chargés
-08:34:24 
+08:42:43   timing=active: 549 nouveaux events (55 pages)
+08:42:47   timing=upcoming: 156 nouveaux events (16 pages)
+08:42:47     705 events récupérés au total
+08:42:47     → 65 après filtre FR/BE/CH (hors privés)
+08:42:47     237 entrées déjà dans cc_import_results.json
+08:42:47     + 1040 titres depuis import_results.json (scoring.fit)
+08:42:47   Scan des slugs WP existants (filet de sécurité anti-doublon)...
+08:43:04   → 1281 slugs WP chargés
+08:43:04 
 [3] Import des nouveaux events...
-08:34:24   [SKIP doublon cc_id] FTD x MAYHEM Online Comp
-08:34:24   [NEW] CFD GAMES  (cc_id=22676, FR)
-08:34:25     prix=None/0.0 USD  desc=oui
-08:34:25   [SKIP interne] CFD GAMES
-08:34:25   [SKIP doublon cc_id] Rompsay Winter Games 2026
-08:34:25   [NEW] Wakiza Battle 5  (cc_id=22424, FR)
-08:34:26     prix=0.0/0.0 EUR  desc=oui
-08:34:26   [SKIP interne] Wakiza Battle 5
-08:34:26   [SKIP doublon cc_id] REIMS HYBRID RACE - by EWIGO (4ème édition)
-08:34:26   [NEW] Wild Throwdown  (cc_id=22241, BE)
-08:34:26     prix=None/0.0 EUR  desc=oui
-08:34:26   [SKIP interne] Wild Throwdown
-08:34:26   [SKIP doublon cc_id] DARKLAND HYBRID BATTLE
-08:34:26   [SKIP doublon cc_id] QUALIFICATION AETOS BATTLE 2027
-08:34:26   [NEW] Unicorn And The Beasts 2026  (cc_id=21619, FR)
-08:34:27     prix=0.0/160.0 EUR  desc=oui
-08:34:27   [SKIP interne] Unicorn And The Beasts 2026
-08:34:27   [NEW] DISTRICT CHALLENGE INTERNE  (cc_id=22446, FR)
-08:34:28     prix=None/0.0 EUR  desc=oui
-08:34:28   [SKIP interne] DISTRICT CHALLENGE INTERNE
-08:34:28   [SKIP doublon cc_id] MAYENNE THROWDOWN 2026
-08:34:28   [SKIP doublon cc_id] ATHX SIMULATION - CROSSFIT HEART OF PIRATES
-08:34:28   [SKIP doublon cc_id] Massilia Contest 7
-08:34:28   [SKIP doublon cc_id] CFL Team Challenge #5
-08:34:28   [SKIP doublon cc_id] FORGE WARRIORS CONTEST
-08:34:28   [SKIP doublon cc_id] DEMI HYROX
-08:34:28   [SKIP doublon cc_id] Rhénium Contest 6
-08:34:28   [SKIP doublon cc_id] COMPÉTITION CROSSFIT
-08:34:28   [SKIP doublon cc_id] DNSRT Battle #5
-08:34:28   [SKIP doublon cc_id] GAMES OF GLANDS - édition 4
-08:34:28   [SKIP doublon cc_id] 🏋️ XMILE FÊTE SES 2 ANS — LA COMPÉTITION
-08:34:28   [SKIP doublon cc_id] Unity Throwdown - Winter Edition 2026
-08:34:28   [SKIP doublon cc_id] AGUÏO ATHX SIMULATION - DIMANCHE 15 NOVEMBRE
-08:34:28   [SKIP doublon cc_id] MÉDIÉVALES THROWDOWN - 9ème édition
-08:34:28   [SKIP doublon cc_id] MEREOS HYROX SIMULATION
-08:34:28   [SKIP doublon cc_id] The Wolves League - Autumn Edition
-08:34:28   [NEW] DUNKERQUE THROWDOWN 2026  (cc_id=22427, FR)
-08:34:28     prix=0.0/150.0 EUR  desc=oui
-08:34:28   [SKIP interne] DUNKERQUE THROWDOWN 2026
-08:34:28   [SKIP doublon cc_id] Engine Games
-08:34:28   [SKIP doublon cc_id] ARÈS CHRISTMAS DAY
-08:34:28   [SKIP doublon cc_id] HYBRID CHALLENGE OF HOPE
-08:34:28   [SKIP doublon cc_id] Battle Of Santa 2026
-08:34:28   [SKIP doublon cc_id] XMAS RACE
-08:34:28   [SKIP doublon cc_id] XMAS BATTLE V
-08:34:28   [SKIP doublon cc_id] CFL Solstices d'Hiver 2026
-08:34:28   [SKIP doublon titre] Unity Hyrox Race 6
-08:34:28   [SKIP doublon cc_id] Belgium Showdown Buddy, Triplets & Indy 2027
-08:34:28   [SKIP doublon cc_id] Winter XFORCE 2027
-08:34:28   [NEW] Odyssey Showdown Edition 2  (cc_id=20912, FR)
-08:34:29     prix=0.0/240.0 EUR  desc=oui
-08:34:29   [SKIP interne] Odyssey Showdown Edition 2
-08:34:29   [SKIP doublon cc_id] The Wolves League - Winter Edition
-08:34:29   [NEW] Girls Challenge 9  (cc_id=22546, FR)
-08:34:30     prix=None/120.0 EUR  desc=oui
-08:34:36     ✓ créé wp_id=24214
-08:34:36     → enrichissement (région + image)...
-08:34:37     🗺️  région : provence-alpes-cote-d-azur → 155
-08:35:07     🖼️  image 24216 OK
-08:35:07   [SKIP doublon cc_id] VOLCA BATTLE III
-08:35:07   [SKIP doublon cc_id] Mediterranean Showdown 2
-08:35:07   [SKIP doublon cc_id] goldenback the big tournament 2026
-08:35:07   [SKIP doublon cc_id] MiraRox Challenge
-08:35:07   [SKIP doublon cc_id] Bear Contest 2026
-08:35:07   [SKIP doublon cc_id] Battle of Hope - Ultime Edition - Team
-08:35:07   [SKIP doublon cc_id] Landifornian Battle Autumn Edition 2026
-08:35:07   [SKIP doublon cc_id] BLUE MONKEY SUMMER RACE
-08:35:07   [SKIP doublon cc_id] BLUE MONKEY HYROX RACE
-08:35:07   [SKIP doublon cc_id] Athletic Fitness Championship
-08:35:07   [SKIP doublon cc_id] Unicorn And The Kids 2026
-08:35:07   [SKIP doublon cc_id] RISE OF VALKAIA II
-08:35:07   [SKIP doublon cc_id] ONLY GILRS CONTEST #3
-08:35:07   [SKIP doublon cc_id] Ardèche Battle
-08:35:07   [NEW] The Wolves - Internal Game 2026  (cc_id=22207, BE)
-08:35:08     prix=None/0.0 EUR  desc=oui
-08:35:08   [SKIP interne] The Wolves - Internal Game 2026
-08:35:08   [SKIP doublon cc_id] Record de l'heure by CrossFit 6000
-08:35:08   [SKIP doublon cc_id] East Fitness Championship 2026 - Autumn Edition - 
-08:35:08   [SKIP doublon cc_id] EMERAUDE CONTEST 3
-08:35:08   [SKIP doublon cc_id] HOOKGRIP SHOWDOWN III
-08:35:08   [SKIP doublon cc_id] Polaris Games
-08:35:08   [SKIP doublon cc_id] Estuary Contest Winter Edition 2K26 ❄️
-08:35:08   [NEW] CFSB Games 2027  (cc_id=22538, FR)
-08:35:09     prix=0.0/69.0 EUR  desc=oui
-08:35:09   [SKIP interne] CFSB Games 2027
-08:35:09   [SKIP doublon cc_id] Aetos Battle 2027
-08:35:09   [SKIP doublon cc_id] Power Up Contest 2027
-08:35:09 
+08:43:04   [SKIP doublon cc_id] FTD x MAYHEM Online Comp
+08:43:04   [NEW] CFD GAMES  (cc_id=22676, FR)
+08:43:05     prix=None/0.0 USD  desc=oui
+08:43:05   [SKIP interne] CFD GAMES
+08:43:05   [SKIP doublon cc_id] Rompsay Winter Games 2026
+08:43:05   [NEW] Wakiza Battle 5  (cc_id=22424, FR)
+08:43:06     prix=0.0/0.0 EUR  desc=oui
+08:43:06   [SKIP interne] Wakiza Battle 5
+08:43:06   [SKIP doublon cc_id] REIMS HYBRID RACE - by EWIGO (4ème édition)
+08:43:06   [NEW] Wild Throwdown  (cc_id=22241, BE)
+08:43:06     prix=None/0.0 EUR  desc=oui
+08:43:06   [SKIP interne] Wild Throwdown
+08:43:06   [SKIP doublon cc_id] DARKLAND HYBRID BATTLE
+08:43:06   [SKIP doublon cc_id] QUALIFICATION AETOS BATTLE 2027
+08:43:06   [NEW] Unicorn And The Beasts 2026  (cc_id=21619, FR)
+08:43:07     prix=0.0/160.0 EUR  desc=oui
+08:43:07   [SKIP interne] Unicorn And The Beasts 2026
+08:43:07   [NEW] DISTRICT CHALLENGE INTERNE  (cc_id=22446, FR)
+08:43:08     prix=None/0.0 EUR  desc=oui
+08:43:08   [SKIP interne] DISTRICT CHALLENGE INTERNE
+08:43:08   [SKIP doublon cc_id] MAYENNE THROWDOWN 2026
+08:43:08   [SKIP doublon cc_id] ATHX SIMULATION - CROSSFIT HEART OF PIRATES
+08:43:08   [SKIP doublon cc_id] Massilia Contest 7
+08:43:08   [SKIP doublon cc_id] CFL Team Challenge #5
+08:43:08   [SKIP doublon cc_id] FORGE WARRIORS CONTEST
+08:43:08   [SKIP doublon cc_id] DEMI HYROX
+08:43:08   [SKIP doublon cc_id] Rhénium Contest 6
+08:43:08   [SKIP doublon cc_id] COMPÉTITION CROSSFIT
+08:43:08   [SKIP doublon cc_id] DNSRT Battle #5
+08:43:08   [SKIP doublon cc_id] GAMES OF GLANDS - édition 4
+08:43:08   [SKIP doublon cc_id] 🏋️ XMILE FÊTE SES 2 ANS — LA COMPÉTITION
+08:43:08   [SKIP doublon cc_id] Unity Throwdown - Winter Edition 2026
+08:43:08   [SKIP doublon cc_id] AGUÏO ATHX SIMULATION - DIMANCHE 15 NOVEMBRE
+08:43:08   [SKIP doublon cc_id] MÉDIÉVALES THROWDOWN - 9ème édition
+08:43:08   [SKIP doublon cc_id] MEREOS HYROX SIMULATION
+08:43:08   [SKIP doublon cc_id] The Wolves League - Autumn Edition
+08:43:08   [NEW] DUNKERQUE THROWDOWN 2026  (cc_id=22427, FR)
+08:43:09     prix=0.0/150.0 EUR  desc=oui
+08:43:09   [SKIP interne] DUNKERQUE THROWDOWN 2026
+08:43:09   [SKIP doublon cc_id] Engine Games
+08:43:09   [SKIP doublon cc_id] ARÈS CHRISTMAS DAY
+08:43:09   [SKIP doublon cc_id] HYBRID CHALLENGE OF HOPE
+08:43:09   [SKIP doublon cc_id] Battle Of Santa 2026
+08:43:09   [NEW] Teranga Contest 2026  (cc_id=22682, FR)
+08:43:09     prix=0.0/100.0 USD  desc=oui
+08:43:09   [SKIP interne] Teranga Contest 2026
+08:43:09   [SKIP doublon cc_id] XMAS RACE
+08:43:09   [SKIP doublon cc_id] XMAS BATTLE V
+08:43:09   [SKIP doublon cc_id] CFL Solstices d'Hiver 2026
+08:43:09   [SKIP doublon titre] Unity Hyrox Race 6
+08:43:09   [SKIP doublon cc_id] Belgium Showdown Buddy, Triplets & Indy 2027
+08:43:09   [SKIP doublon cc_id] Winter XFORCE 2027
+08:43:09   [NEW] Odyssey Showdown Edition 2  (cc_id=20912, FR)
+08:43:10     prix=0.0/240.0 EUR  desc=oui
+08:43:10   [SKIP interne] Odyssey Showdown Edition 2
+08:43:10   [SKIP doublon cc_id] The Wolves League - Winter Edition
+08:43:10   [SKIP doublon cc_id] Girls Challenge 9
+08:43:10   [SKIP doublon cc_id] VOLCA BATTLE III
+08:43:10   [SKIP doublon cc_id] Mediterranean Showdown 2
+08:43:10   [SKIP doublon cc_id] goldenback the big tournament 2026
+08:43:10   [SKIP doublon cc_id] MiraRox Challenge
+08:43:10   [SKIP doublon cc_id] Bear Contest 2026
+08:43:10   [SKIP doublon cc_id] Battle of Hope - Ultime Edition - Team
+08:43:10   [SKIP doublon cc_id] Landifornian Battle Autumn Edition 2026
+08:43:10   [SKIP doublon cc_id] BLUE MONKEY SUMMER RACE
+08:43:10   [SKIP doublon cc_id] BLUE MONKEY HYROX RACE
+08:43:10   [SKIP doublon cc_id] Athletic Fitness Championship
+08:43:10   [SKIP doublon cc_id] Unicorn And The Kids 2026
+08:43:10   [SKIP doublon cc_id] RISE OF VALKAIA II
+08:43:10   [SKIP doublon cc_id] ONLY GILRS CONTEST #3
+08:43:10   [SKIP doublon cc_id] Ardèche Battle
+08:43:10   [NEW] The Wolves - Internal Game 2026  (cc_id=22207, BE)
+08:43:11     prix=None/0.0 EUR  desc=oui
+08:43:11   [SKIP interne] The Wolves - Internal Game 2026
+08:43:11   [SKIP doublon cc_id] Record de l'heure by CrossFit 6000
+08:43:11   [SKIP doublon cc_id] East Fitness Championship 2026 - Autumn Edition - 
+08:43:11   [SKIP doublon cc_id] EMERAUDE CONTEST 3
+08:43:11   [SKIP doublon cc_id] HOOKGRIP SHOWDOWN III
+08:43:11   [SKIP doublon cc_id] Polaris Games
+08:43:11   [SKIP doublon cc_id] Estuary Contest Winter Edition 2K26 ❄️
+08:43:11   [NEW] CFSB Games 2027  (cc_id=22538, FR)
+08:43:12     prix=0.0/69.0 EUR  desc=oui
+08:43:12   [SKIP interne] CFSB Games 2027
+08:43:12   [SKIP doublon cc_id] Aetos Battle 2027
+08:43:12   [SKIP doublon cc_id] Power Up Contest 2027
+08:43:12 
 ============================================================
-08:35:09 ✅ Terminé en 71s
-08:35:09    créés   : 1
-08:35:09    ignorés : 63
-08:35:09    erreurs : 0
-08:35:09    log     : /home/runner/work/wod-open-import/wod-open-import/logs/cc_2026-10-05.log
-08:35:11 📧 Email envoyé → typgraf@gmail.com
+08:43:12 ✅ Terminé en 42s
+08:43:12    créés   : 0
+08:43:12    ignorés : 65
+08:43:12    erreurs : 0
+08:43:12    log     : /home/runner/work/wod-open-import/wod-open-import/logs/cc_2026-10-06.log
+08:43:13 📧 Email envoyé → typgraf@gmail.com
