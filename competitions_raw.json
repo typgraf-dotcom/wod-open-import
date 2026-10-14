@@ -350,7 +350,7 @@
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6991d651fab60b00338eb9e5/logo.jpg",
     "_planning": {
       "_id": "6ab38b10fa82a9d85db00a6f",
-      "publish": false
+      "publish": true
     },
     "publish": false,
     "total_participants": 79,
@@ -733,7 +733,7 @@
         "type": "team",
         "_id": "6a8869116f3d772950fa5573",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 4
       },
       {
         "type": "team",
@@ -763,7 +763,7 @@
         "type": "team",
         "_id": "6a8869496f3d772950fa58af",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 1
       },
       {
         "type": "team",
@@ -2203,26 +2203,26 @@
     "divisions": [
       {
         "type": "team",
-        "_id": "6a9adf4086f0ed23e5e1ea56",
         "participants": [],
+        "_id": "6a9adf4086f0ed23e5e1ea56",
         "participants_count": 4
       },
       {
         "type": "team",
-        "_id": "6a9adf4f86f0ed23e5e1ea99",
         "participants": [],
+        "_id": "6a9adf4f86f0ed23e5e1ea99",
         "participants_count": 12
       },
       {
         "type": "team",
-        "_id": "6a9adf6286f0ed23e5e1eac9",
         "participants": [],
+        "_id": "6a9adf6286f0ed23e5e1eac9",
         "participants_count": 9
       },
       {
         "type": "team",
-        "_id": "6a9adf7286f0ed23e5e1eae3",
         "participants": [],
+        "_id": "6a9adf7286f0ed23e5e1eae3",
         "participants_count": 4
       }
     ],
@@ -2382,7 +2382,8 @@
       "_id": "69465fa07694860033a54186",
       "open_date": "2026-01-20T17:00:05Z",
       "total_spots": "60",
-      "publish": true
+      "publish": true,
+      "end_date": "2026-10-13T16:51:00Z"
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69465fa07694860033a54170/logo.jpg",
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/69465fa07694860033a54170/background.jpg",
@@ -2768,7 +2769,7 @@
         "type": "team",
         "_id": "6aba2da9244add4c9ce03b3a",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "type": "team",
@@ -2811,7 +2812,7 @@
       "_id": "6ac527bfaef91e0f5c4666df",
       "publish": false
     },
-    "total_participants": 19,
+    "total_participants": 20,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -2872,7 +2873,7 @@
         "_id": "6aabba23d31f8b114132096a",
         "type": "team",
         "participants": [],
-        "participants_count": 2
+        "participants_count": 3
       },
       {
         "_id": "6aabba23d31f8b114132096b",
@@ -2929,8 +2930,8 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aaba141768872436c0db9d0/logo.png",
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aaba141768872436c0db9d0/background.jpg",
-    "total_participants": 20,
-    "total_volunteers": 1,
+    "total_participants": 21,
+    "total_volunteers": 4,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -3005,7 +3006,7 @@
           "_id": "6a8eafb31b0514a37bb18755"
         }
       ],
-      "end_date": "2026-10-09T19:00:00Z",
+      "end_date": "2026-10-12T20:00:00Z",
       "total_spots": "45",
       "open_date": "2026-08-31T20:00:00Z"
     },
@@ -3519,7 +3520,7 @@
         "type": "team",
         "_id": "6a8c05d3a7ecc92ca45a0bb5",
         "participants": [],
-        "participants_count": 8
+        "participants_count": 9
       },
       {
         "type": "team",
@@ -3614,7 +3615,7 @@
       "_id": "6ac0939e4659fc9768d2d082",
       "publish": false
     },
-    "total_participants": 44,
+    "total_participants": 45,
     "total_volunteers": 30,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -3744,7 +3745,7 @@
         "type": "single",
         "_id": "6aba216e244add4c9cdcf23c",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       },
       {
         "type": "single",
@@ -3829,7 +3830,7 @@
       "_id": "6ac409c3aef91e0f5ced7c0b",
       "publish": false
     },
-    "total_participants": 18,
+    "total_participants": 19,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -4263,8 +4264,10 @@
         "inside"
       ],
       "category": "Hybrid Race",
-      "location": "CINEY EXPO",
-      "country": "Belgium"
+      "location": "Ciney Expo, Rue du Marché Couvert, 5590 Ciney, Belgium",
+      "country": "Belgium",
+      "latitude": "50.31011308",
+      "longitude": "5.11585926"
     },
     "_ticketing": {
       "_id": "69958841f689990033943b7f",
@@ -4459,7 +4462,8 @@
         }
       ],
       "total_spots": "150",
-      "open_date": "2026-07-20T18:00:00Z"
+      "open_date": "2026-07-20T18:00:00Z",
+      "end_date": "2026-10-15T18:00:00Z"
     },
     "_volunteering": {
       "_id": "6a4cfc506e767d566dc5a881",
@@ -4474,7 +4478,7 @@
       "publish": false
     },
     "total_participants": 101,
-    "total_volunteers": 23,
+    "total_volunteers": 25,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -4557,7 +4561,7 @@
       "publish": false
     },
     "total_participants": 58,
-    "total_volunteers": 25,
+    "total_volunteers": 26,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -4587,7 +4591,7 @@
         "type": "team",
         "_id": "6a95700a1b15601a1dc12dd5",
         "participants": [],
-        "participants_count": 21
+        "participants_count": 25
       },
       {
         "type": "single",
@@ -4610,10 +4614,10 @@
     },
     "_ticketing": {
       "_id": "6a956ede1b15601a1dc1035b",
-      "publish": false,
+      "publish": true,
       "_leaderboard": "6a956ede1b15601a1dc10347",
       "specific_division_spots": [],
-      "end_date": "2026-09-28T19:00:00Z",
+      "end_date": "2026-10-30T23:00:00Z",
       "open_date": "2026-08-29T22:00:00Z"
     },
     "_volunteering": {
@@ -4625,7 +4629,7 @@
       "_id": "6abb616b2379db163832cc3e",
       "publish": false
     },
-    "total_participants": 26,
+    "total_participants": 30,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -4656,7 +4660,7 @@
         "type": "team",
         "_id": "6a96e49d1b15601a1dfd1685",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "type": "team",
@@ -4699,7 +4703,7 @@
       "_id": "6ac10bd10c1fa23cbad51881",
       "publish": false
     },
-    "total_participants": 12,
+    "total_participants": 13,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -5084,14 +5088,14 @@
     "divisions": [
       {
         "type": "team",
-        "_id": "6a3d5e2da2df801c6f30888c",
         "participants": [],
+        "_id": "6a3d5e2da2df801c6f30888c",
         "participants_count": 18
       },
       {
         "type": "team",
-        "_id": "6a3d5e3ea2df801c6f30889d",
         "participants": [],
+        "_id": "6a3d5e3ea2df801c6f30889d",
         "participants_count": 17
       }
     ],
@@ -5175,7 +5179,7 @@
         "type": "team",
         "_id": "6a71dbdf5d6cfa8b5649e670",
         "participants": [],
-        "participants_count": 10
+        "participants_count": 12
       }
     ],
     "_event": {
@@ -5219,7 +5223,7 @@
       "_id": "6ab8209e244add4c9cc2ec89",
       "publish": false
     },
-    "total_participants": 13,
+    "total_participants": 15,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -5344,7 +5348,7 @@
         "type": "single",
         "_id": "6aa527503c10a775a93e8edc",
         "participants": [],
-        "participants_count": 9
+        "participants_count": 10
       },
       {
         "type": "single",
@@ -5446,7 +5450,7 @@
       "_id": "6ac128457fb9e000823374a8",
       "publish": false
     },
-    "total_participants": 63,
+    "total_participants": 64,
     "total_volunteers": 15,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -5477,7 +5481,7 @@
         "type": "team",
         "_id": "6ab10e3bc910687be5a986af",
         "participants": [],
-        "participants_count": 26
+        "participants_count": 27
       }
     ],
     "_event": {
@@ -5515,7 +5519,7 @@
       "_id": "6ac3df880186ff3062046579",
       "publish": false
     },
-    "total_participants": 26,
+    "total_participants": 27,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -5813,7 +5817,7 @@
         "type": "team",
         "_id": "6aa656ca3c10a775a95dcfb9",
         "participants": [],
-        "participants_count": 8
+        "participants_count": 9
       }
     ],
     "_event": {
@@ -5858,7 +5862,7 @@
       "_id": "6ac0fd930ba450ac4f7a764c",
       "publish": false
     },
-    "total_participants": 8,
+    "total_participants": 9,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -6042,7 +6046,7 @@
         "type": "team",
         "_id": "6ab402e3433a85f53974d09d",
         "participants": [],
-        "participants_count": 10
+        "participants_count": 11
       },
       {
         "type": "team",
@@ -6060,13 +6064,13 @@
         "type": "team",
         "_id": "6ab40337433a85f53974d337",
         "participants": [],
-        "participants_count": 1
+        "participants_count": 2
       },
       {
         "type": "single",
         "_id": "6ab404ef433a85f539753879",
         "participants": [],
-        "participants_count": 2
+        "participants_count": 3
       },
       {
         "type": "single",
@@ -6078,13 +6082,13 @@
         "type": "single",
         "_id": "6ab40509433a85f539753f94",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       },
       {
         "type": "single",
         "_id": "6ab40585433a85f539756093",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 7
       }
     ],
     "_event": {
@@ -6116,7 +6120,7 @@
       "_id": "6abe093a2e0623272248c283",
       "publish": false
     },
-    "total_participants": 77,
+    "total_participants": 82,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -6837,7 +6841,7 @@
         "type": "team",
         "_id": "6aabe09cc910687be58b66f3",
         "participants": [],
-        "participants_count": 11
+        "participants_count": 13
       },
       {
         "type": "team",
@@ -6887,7 +6891,7 @@
       "_id": "6abfd070af8714f61f23cea9",
       "publish": false
     },
-    "total_participants": 34,
+    "total_participants": 36,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -6930,7 +6934,7 @@
         "type": "team",
         "_id": "6aaeb345c910687be589633d",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       }
     ],
     "_event": {
@@ -6963,7 +6967,7 @@
       "_id": "6ac29f730186ff3062939ef0",
       "publish": false
     },
-    "total_participants": 15,
+    "total_participants": 16,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -6994,7 +6998,7 @@
         "type": "team",
         "_id": "6aa0704641778190eda5c7a5",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 7
       },
       {
         "type": "team",
@@ -7006,7 +7010,7 @@
         "type": "team",
         "_id": "6aa0706241778190eda5de42",
         "participants": [],
-        "participants_count": 14
+        "participants_count": 15
       }
     ],
     "_event": {
@@ -7043,7 +7047,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aa02c4941778190ed8f1331/logo.jpg",
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aa02c4941778190ed8f1331/background.jpg",
-    "total_participants": 35,
+    "total_participants": 37,
     "total_volunteers": 12,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7086,7 +7090,7 @@
         "_id": "6938069dfb23ee003336c2c6",
         "type": "team",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 7
       },
       {
         "type": "team",
@@ -7142,7 +7146,7 @@
       "specific_division_spots": [
         {
           "division_id": "6938069dfb23ee003336c2c6",
-          "division_spots": 9,
+          "division_spots": 12,
           "whitelist": [],
           "_id": "693806a8fb23ee003336c343"
         },
@@ -7160,7 +7164,7 @@
         },
         {
           "division_id": "6aa15b1c41778190edbf3ea4",
-          "division_spots": 12,
+          "division_spots": 18,
           "whitelist": [],
           "_id": "6aa15c3341778190edbf68a9"
         },
@@ -7207,7 +7211,7 @@
       "_id": "6ac03db6826278b232a4976f",
       "publish": false
     },
-    "total_participants": 52,
+    "total_participants": 53,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7238,7 +7242,7 @@
         "type": "single",
         "_id": "6a393f0cd5094afc8174998e",
         "participants": [],
-        "participants_count": 20
+        "participants_count": 18
       },
       {
         "type": "single",
@@ -7256,7 +7260,7 @@
         "type": "single",
         "_id": "6a393facd5094afc81749f1d",
         "participants": [],
-        "participants_count": 29
+        "participants_count": 30
       }
     ],
     "_event": {
@@ -7313,7 +7317,7 @@
       "_id": "6a4291050ddf8bbd259188f0",
       "publish": false
     },
-    "total_participants": 108,
+    "total_participants": 107,
     "total_volunteers": 27,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7344,7 +7348,7 @@
         "type": "team",
         "_id": "6ab526c9244add4c9c52851e",
         "participants": [],
-        "participants_count": 14
+        "participants_count": 15
       }
     ],
     "_event": {
@@ -7371,7 +7375,7 @@
           "_id": "6ab526c9244add4c9c528525"
         }
       ],
-      "total_spots": "14",
+      "total_spots": "16",
       "end_date": "2026-10-23T22:00:00Z",
       "open_date": "2026-09-17T22:00:00Z"
     },
@@ -7384,7 +7388,7 @@
       "publish": false
     },
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aac0056c910687be59204f4/background.png",
-    "total_participants": 14,
+    "total_participants": 15,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7471,7 +7475,7 @@
       "publish": false
     },
     "total_participants": 78,
-    "total_volunteers": 8,
+    "total_volunteers": 16,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -7583,7 +7587,7 @@
         "type": "single",
         "_id": "6ac3a5310186ff3062817c07",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "type": "team",
@@ -7675,7 +7679,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6ac3a4380186ff306280bcf3/logo.png",
-    "total_participants": 8,
+    "total_participants": 9,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7706,7 +7710,7 @@
         "type": "team",
         "participants": [],
         "_id": "6ac3ad6a0186ff30628739cf",
-        "participants_count": 0
+        "participants_count": 1
       },
       {
         "type": "team",
@@ -7718,13 +7722,13 @@
         "type": "team",
         "participants": [],
         "_id": "6ac3ad810186ff306287a5fa",
-        "participants_count": 0
+        "participants_count": 1
       },
       {
         "type": "team",
         "participants": [],
         "_id": "6ac3ad8a0186ff306287a7bc",
-        "participants_count": 0
+        "participants_count": 1
       },
       {
         "type": "team",
@@ -7768,7 +7772,7 @@
     },
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6ac3aced0186ff3062868415/background.png",
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6ac3aced0186ff3062868415/logo.png",
-    "total_participants": 0,
+    "total_participants": 3,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7835,7 +7839,7 @@
         "type": "single",
         "_id": "6a7f103cf1e72ac431823f22",
         "participants": [],
-        "participants_count": 17
+        "participants_count": 18
       },
       {
         "type": "single",
@@ -7923,7 +7927,7 @@
       "_id": "6abfbc6368cfea35fad7a016",
       "publish": false
     },
-    "total_participants": 104,
+    "total_participants": 105,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -8022,7 +8026,7 @@
       "publish": false
     },
     "total_participants": 84,
-    "total_volunteers": 3,
+    "total_volunteers": 9,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -8108,7 +8112,7 @@
       "publish": false
     },
     "total_participants": 34,
-    "total_volunteers": 13,
+    "total_volunteers": 14,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -8138,7 +8142,7 @@
         "type": "team",
         "_id": "6aa2345841778190edf80ea3",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "type": "team",
@@ -8162,13 +8166,13 @@
         "type": "team",
         "_id": "6aa2370041778190edf8cd06",
         "participants": [],
-        "participants_count": 11
+        "participants_count": 12
       },
       {
         "type": "team",
         "_id": "6aa2371541778190edf8cd3a",
         "participants": [],
-        "participants_count": 13
+        "participants_count": 14
       }
     ],
     "_event": {
@@ -8237,7 +8241,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aa230b441778190edf78535/logo.jpg",
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aa230b441778190edf78535/background.jpg",
-    "total_participants": 38,
+    "total_participants": 41,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -8268,19 +8272,19 @@
         "type": "team",
         "_id": "6a4e13ab29de646d2eadb158",
         "participants": [],
-        "participants_count": 13
+        "participants_count": 14
       },
       {
         "type": "team",
         "_id": "6a4e13bcb794fd9d38bc3b22",
         "participants": [],
-        "participants_count": 19
+        "participants_count": 20
       },
       {
         "type": "team",
         "_id": "6a4e13c629de646d2eadd017",
         "participants": [],
-        "participants_count": 10
+        "participants_count": 11
       }
     ],
     "_event": {
@@ -8302,7 +8306,7 @@
       "specific_division_spots": [
         {
           "division_id": "6a4e13ab29de646d2eadb158",
-          "division_spots": 13,
+          "division_spots": 14,
           "whitelist": [],
           "_id": "6ab7ded7244add4c9c7c7d2e"
         },
@@ -8331,7 +8335,7 @@
       "_id": "6ac3809d0186ff30623c21ac",
       "publish": false
     },
-    "total_participants": 42,
+    "total_participants": 45,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -8386,7 +8390,7 @@
         "type": "team",
         "_id": "6a5526e6eaaa1121a1389eff",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "type": "team",
@@ -8398,7 +8402,7 @@
         "type": "team",
         "_id": "6a55272d1e965431a194c838",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 4
       },
       {
         "type": "team",
@@ -8728,7 +8732,7 @@
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6ab8cd51244add4c9c11d89f/logo.jpg",
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6ab8cd51244add4c9c11d89f/background.jpg",
     "total_participants": 7,
-    "total_volunteers": 5,
+    "total_volunteers": 6,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -8764,7 +8768,7 @@
         "type": "team",
         "_id": "6abe1b332e062327224dc289",
         "participants": [],
-        "participants_count": 14
+        "participants_count": 15
       },
       {
         "type": "team",
@@ -8776,7 +8780,7 @@
         "type": "team",
         "_id": "6abe1b532e062327224dce99",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 1
       },
       {
         "type": "team",
@@ -8849,7 +8853,7 @@
       "_id": "6abe1d6c2e062327224e4061",
       "publish": false
     },
-    "total_participants": 27,
+    "total_participants": 29,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -8886,7 +8890,7 @@
         "type": "single",
         "_id": "6abe233a2e0623272251afd6",
         "participants": [],
-        "participants_count": 9
+        "participants_count": 10
       },
       {
         "type": "team",
@@ -8955,7 +8959,7 @@
       "_id": "6abfd33eaf8714f61f254e2d",
       "publish": false
     },
-    "total_participants": 18,
+    "total_participants": 19,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -9551,13 +9555,13 @@
         "_id": "6949323887b73900333df42c",
         "type": "team",
         "participants": [],
-        "participants_count": 9
+        "participants_count": 10
       },
       {
         "_id": "6949324587b73900333df452",
         "type": "team",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       }
     ],
     "_event": {
@@ -9603,7 +9607,7 @@
       "_id": "6ac2a1a10186ff306299e70a",
       "publish": false
     },
-    "total_participants": 16,
+    "total_participants": 18,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -9887,25 +9891,25 @@
         "type": "single",
         "_id": "6aa165a141778190edc19bb4",
         "participants": [],
-        "participants_count": 45
+        "participants_count": 48
       },
       {
         "type": "team",
         "_id": "6aa165ac41778190edc19c23",
         "participants": [],
-        "participants_count": 131
+        "participants_count": 136
       },
       {
         "type": "single",
         "_id": "6aa165c041778190edc19ea9",
         "participants": [],
-        "participants_count": 97
+        "participants_count": 104
       },
       {
         "type": "team",
         "_id": "6aa165cb41778190edc19f09",
         "participants": [],
-        "participants_count": 94
+        "participants_count": 99
       }
     ],
     "_event": {
@@ -9945,7 +9949,7 @@
         },
         {
           "division_id": "6aa165c041778190edc19ea9",
-          "division_spots": 100,
+          "division_spots": 150,
           "whitelist": [],
           "_id": "6aa7ba3d3c10a775a931e299"
         },
@@ -9971,7 +9975,7 @@
       "_id": "6ac01075af8714f61f6318e1",
       "publish": false
     },
-    "total_participants": 477,
+    "total_participants": 497,
     "total_volunteers": 73,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -10070,7 +10074,7 @@
         "type": "team",
         "_id": "6accde40008fc5e34b7c0514",
         "participants": [],
-        "participants_count": 2
+        "participants_count": 3
       },
       {
         "type": "team",
@@ -10133,7 +10137,7 @@
       "_id": "6acce1f6008fc5e34b7dfa0d",
       "publish": false
     },
-    "total_participants": 17,
+    "total_participants": 18,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -10604,14 +10608,14 @@
     "type": "inside",
     "date": {
       "start": {
-        "day": "16/01/2027",
+        "day": "23/01/2027",
         "hour": "08:00",
-        "iso": "2027-01-16T07:00:00Z"
+        "iso": "2027-01-23T07:00:00Z"
       },
       "end": {
-        "day": "16/01/2027",
-        "hour": "20:00",
-        "iso": "2027-01-16T19:00:00Z"
+        "day": "23/01/2027",
+        "hour": "18:00",
+        "iso": "2027-01-23T17:00:00Z"
       }
     },
     "buttonLink": {
@@ -10660,7 +10664,7 @@
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a732f9e5d6cfa8b56690d2d/background.png",
     "_planning": {
       "_id": "6a74804f5d6cfa8b56b44a20",
-      "publish": false
+      "publish": true
     },
     "total_participants": 3,
     "total_volunteers": 0,
@@ -11698,7 +11702,7 @@
         "type": "team",
         "_id": "6a34028fb219faed6faf7616",
         "participants": [],
-        "participants_count": 23
+        "participants_count": 24
       },
       {
         "type": "team",
@@ -11768,7 +11772,7 @@
       "publish": false
     },
     "publish": false,
-    "total_participants": 55,
+    "total_participants": 56,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -12161,37 +12165,37 @@
         "type": "team",
         "_id": "6a8f58d71b0514a37be92d16",
         "participants": [],
-        "participants_count": 60
+        "participants_count": 73
       },
       {
         "type": "team",
         "_id": "6a8f58e11b0514a37be92d33",
         "participants": [],
-        "participants_count": 133
+        "participants_count": 144
       },
       {
         "type": "team",
         "_id": "6a8f58ec1b0514a37be95c7d",
         "participants": [],
-        "participants_count": 105
+        "participants_count": 118
       },
       {
         "type": "team",
         "_id": "6a8f58f51b0514a37be95c9a",
         "participants": [],
-        "participants_count": 19
+        "participants_count": 24
       },
       {
         "type": "team",
         "_id": "6a8f58fd1b0514a37be98ce8",
         "participants": [],
-        "participants_count": 47
+        "participants_count": 62
       },
       {
         "type": "team",
         "_id": "6a8f59051b0514a37be98d0d",
         "participants": [],
-        "participants_count": 44
+        "participants_count": 48
       }
     ],
     "_event": {
@@ -12210,7 +12214,44 @@
       "_id": "6a8f56871b0514a37be5f8a0",
       "publish": true,
       "_leaderboard": "6a8f56871b0514a37be5f88a",
-      "specific_division_spots": [],
+      "specific_division_spots": [
+        {
+          "division_id": "6a8f58d71b0514a37be92d16",
+          "division_spots": 96,
+          "whitelist": [],
+          "_id": "6ace3355a7351819f0b4ea95"
+        },
+        {
+          "division_id": "6a8f58e11b0514a37be92d33",
+          "division_spots": 144,
+          "whitelist": [],
+          "_id": "6ace3355a7351819f0b4ea96"
+        },
+        {
+          "division_id": "6a8f58ec1b0514a37be95c7d",
+          "division_spots": 122,
+          "whitelist": [],
+          "_id": "6ace3355a7351819f0b4ea97"
+        },
+        {
+          "division_id": "6a8f58f51b0514a37be95c9a",
+          "division_spots": 48,
+          "whitelist": [],
+          "_id": "6ace3355a7351819f0b4ea98"
+        },
+        {
+          "division_id": "6a8f58fd1b0514a37be98ce8",
+          "division_spots": 80,
+          "whitelist": [],
+          "_id": "6ace3355a7351819f0b4ea99"
+        },
+        {
+          "division_id": "6a8f59051b0514a37be98d0d",
+          "division_spots": 72,
+          "whitelist": [],
+          "_id": "6ace3355a7351819f0b4ea9a"
+        }
+      ],
       "open_date": "2026-10-12T09:45:00Z"
     },
     "_volunteering": {
@@ -12222,7 +12263,7 @@
       "_id": "6ac02ec03dd2eb17202d2101",
       "publish": false
     },
-    "total_participants": 408,
+    "total_participants": 469,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -12259,7 +12300,7 @@
         "type": "team",
         "_id": "6aba5261244add4c9cefba9a",
         "participants": [],
-        "participants_count": 131
+        "participants_count": 132
       },
       {
         "type": "team",
@@ -12299,7 +12340,7 @@
       "specific_division_spots": [
         {
           "division_id": "6aba5261244add4c9cefba9a",
-          "division_spots": 131,
+          "division_spots": 132,
           "whitelist": [],
           "_id": "6ac100980ba450ac4f8f3b8e"
         },
@@ -12340,7 +12381,7 @@
       "_id": "6abfb42768cfea35fad13da3",
       "publish": false
     },
-    "total_participants": 359,
+    "total_participants": 360,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
