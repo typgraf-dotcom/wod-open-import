@@ -42,19 +42,19 @@
         "type": "team",
         "participants": [],
         "_id": "6982145ff02fee003393fd5e",
-        "participants_count": 14
+        "participants_count": 12
       },
       {
         "type": "team",
         "participants": [],
         "_id": "69821447f02fee003393fca0",
-        "participants_count": 19
+        "participants_count": 18
       },
       {
         "type": "team",
         "participants": [],
         "_id": "69821457f02fee003393fcef",
-        "participants_count": 3
+        "participants_count": 4
       }
     ],
     "_event": {
@@ -64,8 +64,10 @@
         "inside"
       ],
       "category": "Functional Fitness",
-      "location": "Crossfit Reveal",
-      "country": "France"
+      "location": "CrossFit Reveal, 14 F Rue Maurice Halbwachs, 51100 Reims, France",
+      "country": "France",
+      "latitude": "49.2704565",
+      "longitude": "4.00256991"
     },
     "_ticketing": {
       "_id": "696ba8055110a100336e6613",
@@ -122,7 +124,7 @@
       "_id": "6a39011ad5094afc816f8e8a",
       "publish": false
     },
-    "total_participants": 73,
+    "total_participants": 71,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -175,8 +177,10 @@
         "inside"
       ],
       "category": "Functional Fitness",
-      "location": "Vernouillet",
-      "country": "France"
+      "location": "CrossFit Dreux, 10 Bd de l'Europe, 28500 Vernouillet, France",
+      "country": "France",
+      "latitude": "48.72045678",
+      "longitude": "1.37330261"
     },
     "_ticketing": {
       "_id": "696f27df081cd40033b1b7dd",
@@ -296,8 +300,10 @@
         "inside"
       ],
       "category": "Functional Fitness",
-      "location": "302 rue du plan 38140 Rives",
-      "country": "France"
+      "location": "Crossfit Rives, 302 Rue du Plan, 38140 Rives, France",
+      "country": "France",
+      "latitude": "45.34652969",
+      "longitude": "5.49733076"
     },
     "_ticketing": {
       "_id": "6991d651fab60b00338eb9f9",
@@ -403,11 +409,13 @@
       "_id": "69ef42830d9486c6ee9c4d87",
       "publish": true,
       "category": "Hybrid Race",
-      "location": "CROSSFIT LIBOURNE",
+      "location": "CrossFit Libourne, 7 Av. François Mitterrand, 33500 Libourne, France",
       "country": "France",
       "tags": [
         "inside"
-      ]
+      ],
+      "latitude": "44.94421052",
+      "longitude": "-0.238642"
     },
     "_ticketing": {
       "_id": "69ef42830d9486c6ee9c4d89",
@@ -503,7 +511,9 @@
       "country": "France",
       "tags": [
         "inside"
-      ]
+      ],
+      "latitude": "45.02747",
+      "longitude": "-0.441001"
     },
     "_ticketing": {
       "_id": "6a05d449b6158ccb95e4f7f8",
@@ -542,6 +552,7 @@
       "_id": "6aba6d1be88d8c6c34532c5c",
       "publish": true
     },
+    "publish": true,
     "total_participants": 76,
     "total_volunteers": 2,
     "spectatorsEnabled": false,
@@ -607,19 +618,19 @@
       "specific_division_spots": [
         {
           "division_id": "6a3cf6fc16d6b7cf665c1202",
-          "division_spots": 12,
+          "division_spots": 11,
           "whitelist": [],
           "_id": "6a3cf80316d6b7cf665c27e6"
         },
         {
           "division_id": "6a3cf70816d6b7cf665c1220",
-          "division_spots": 8,
+          "division_spots": 9,
           "whitelist": [],
           "_id": "6a3cf80316d6b7cf665c27e7"
         },
         {
           "division_id": "6a3cf71216d6b7cf665c1231",
-          "division_spots": 10,
+          "division_spots": 9,
           "whitelist": [],
           "_id": "6a3cf80316d6b7cf665c27e8"
         }
@@ -1024,7 +1035,7 @@
         "type": "single",
         "_id": "6aaaa041c910687be555fdf3",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "type": "single",
@@ -1106,7 +1117,7 @@
         }
       ],
       "total_spots": "173",
-      "end_date": "2026-10-12T18:00:00Z",
+      "end_date": "2026-10-15T18:00:00Z",
       "open_date": "2026-09-16T18:00:00Z"
     },
     "_volunteering": {
@@ -1116,7 +1127,7 @@
       "_id": "6aa7b4933c10a775a930aa28",
       "publish": true
     },
-    "total_participants": 12,
+    "total_participants": 13,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -1218,7 +1229,9 @@
       "country": "France",
       "tags": [
         "inside"
-      ]
+      ],
+      "latitude": "45.499924",
+      "longitude": "4.240232"
     },
     "_ticketing": {
       "_id": "6a05c314baecaad3c18053e2",
@@ -1342,13 +1355,13 @@
         "type": "team",
         "_id": "6a841de6f1e72ac431113839",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "type": "team",
         "_id": "6a841decf1e72ac43111384a",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       }
     ],
     "_event": {
@@ -1368,7 +1381,7 @@
       "publish": true,
       "_leaderboard": "6a840ffdf1e72ac4310f85fa",
       "specific_division_spots": [],
-      "end_date": "2026-10-10T22:00:00Z",
+      "end_date": "2026-10-15T22:00:00Z",
       "open_date": "2026-09-08T16:00:00Z"
     },
     "_volunteering": {
@@ -1380,7 +1393,7 @@
       "_id": "6ac159bf7fb9e000825eee8f",
       "publish": false
     },
-    "total_participants": 11,
+    "total_participants": 13,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -1409,39 +1422,39 @@
     "divisions": [
       {
         "type": "single",
-        "_id": "6a9e9bb495a914fe9868788e",
         "participants": [],
+        "_id": "6a9e9bb495a914fe9868788e",
         "participants_count": 14
       },
       {
         "type": "single",
-        "_id": "6a9e9bfb95a914fe98688871",
         "participants": [],
+        "_id": "6a9e9bfb95a914fe98688871",
         "participants_count": 3
       },
       {
         "type": "team",
-        "_id": "6a9e9da795a914fe98690b13",
         "participants": [],
+        "_id": "6a9e9da795a914fe98690b13",
         "participants_count": 4
       },
       {
         "type": "team",
-        "_id": "6a9e9df295a914fe986985ba",
         "participants": [],
+        "_id": "6a9e9df295a914fe986985ba",
         "participants_count": 8
       },
       {
         "type": "team",
-        "_id": "6a9e9e2495a914fe986989bd",
         "participants": [],
+        "_id": "6a9e9e2495a914fe986989bd",
         "participants_count": 8
       }
     ],
     "_event": {
       "_id": "6a9965cb86f0ed23e5b027d4",
       "publish": true,
-      "category": "Hybrid Race",
+      "category": "Functional Fitness",
       "location": "Physik Perf, 362 Rue du Mas de la Fiole, 34970 Lattes, France",
       "country": "France",
       "latitude": "43.59274337",
@@ -1502,6 +1515,7 @@
       "_id": "6ac207f00186ff3062bbdec7",
       "publish": true
     },
+    "publish": false,
     "total_participants": 37,
     "total_volunteers": 20,
     "spectatorsEnabled": false,
@@ -1533,7 +1547,7 @@
         "type": "team",
         "_id": "6a7b9189bc6cadfb2fe7cf44",
         "participants": [],
-        "participants_count": 8
+        "participants_count": 7
       },
       {
         "type": "single",
@@ -1593,7 +1607,7 @@
         "type": "single",
         "_id": "6a7e325df1e72ac4316e2f79",
         "participants": [],
-        "participants_count": 9
+        "participants_count": 7
       },
       {
         "type": "single",
@@ -1645,7 +1659,7 @@
       "specific_division_spots": [
         {
           "division_id": "6a7b9189bc6cadfb2fe7cf44",
-          "division_spots": 9,
+          "division_spots": 7,
           "whitelist": [],
           "_id": "6a7b9368bc6cadfb2fe7e5e3"
         },
@@ -1669,19 +1683,19 @@
         },
         {
           "division_id": "6a7b91f0bc6cadfb2fe7d245",
-          "division_spots": 6,
+          "division_spots": 3,
           "whitelist": [],
           "_id": "6a7b9368bc6cadfb2fe7e5e7"
         },
         {
           "division_id": "6a7b920bbc6cadfb2fe7d262",
-          "division_spots": 9,
+          "division_spots": 7,
           "whitelist": [],
           "_id": "6a7b9368bc6cadfb2fe7e5e8"
         },
         {
           "division_id": "6a7b922cbc6cadfb2fe7d2e3",
-          "division_spots": 3,
+          "division_spots": 1,
           "whitelist": [],
           "_id": "6a7b9368bc6cadfb2fe7e5e9"
         },
@@ -1699,7 +1713,7 @@
         },
         {
           "division_id": "6a7b925fbc6cadfb2fe7d453",
-          "division_spots": 6,
+          "division_spots": 4,
           "whitelist": [],
           "_id": "6a7b9368bc6cadfb2fe7e5ec"
         },
@@ -1723,19 +1737,19 @@
         },
         {
           "division_id": "6a7e325df1e72ac4316e2f79",
-          "division_spots": 9,
+          "division_spots": 7,
           "whitelist": [],
           "_id": "6a7e337cf1e72ac4316e60ba"
         },
         {
           "division_id": "6a7e326df1e72ac4316e3216",
-          "division_spots": 6,
+          "division_spots": 3,
           "whitelist": [],
           "_id": "6a7e337cf1e72ac4316e60bb"
         },
         {
           "division_id": "6a7e3282f1e72ac4316e3233",
-          "division_spots": 9,
+          "division_spots": 6,
           "whitelist": [],
           "_id": "6a7e337cf1e72ac4316e60bc"
         },
@@ -1747,7 +1761,7 @@
         },
         {
           "division_id": "6a7e32abf1e72ac4316e42d3",
-          "division_spots": 15,
+          "division_spots": 13,
           "whitelist": [],
           "_id": "6a7e337cf1e72ac4316e60be"
         },
@@ -1759,7 +1773,7 @@
         },
         {
           "division_id": "6a7e32d8f1e72ac4316e43f9",
-          "division_spots": 6,
+          "division_spots": 5,
           "whitelist": [],
           "_id": "6a7e337cf1e72ac4316e60c0"
         }
@@ -1770,11 +1784,11 @@
     },
     "_planning": {
       "_id": "6a7b936ebc6cadfb2fe7e6a1",
-      "publish": false
+      "publish": true
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a7b90e8bc6cadfb2fe7c610/logo.jpg",
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a7b90e8bc6cadfb2fe7c610/background.jpg",
-    "total_participants": 101,
+    "total_participants": 98,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -1811,7 +1825,7 @@
         "type": "team",
         "_id": "6a6cb5175d6cfa8b569fd3b2",
         "participants": [],
-        "participants_count": 11
+        "participants_count": 10
       },
       {
         "type": "team",
@@ -1847,7 +1861,7 @@
         "type": "team",
         "_id": "6a6cb5575d6cfa8b569fd90b",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "type": "team",
@@ -2042,14 +2056,14 @@
       },
       {
         "type": "team",
-        "_id": "6a4e877929de646d2ee191a3",
         "participants": [],
+        "_id": "6a4e877929de646d2ee191a3",
         "participants_count": 4
       },
       {
         "type": "team",
-        "_id": "6a4e878529de646d2ee191b3",
         "participants": [],
+        "_id": "6a4e878529de646d2ee191b3",
         "participants_count": 3
       }
     ],
@@ -2079,8 +2093,9 @@
     },
     "_planning": {
       "_id": "6ac28ffc0186ff30627b99a7",
-      "publish": false
+      "publish": true
     },
+    "publish": true,
     "total_participants": 11,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
@@ -2341,8 +2356,10 @@
         "inside"
       ],
       "category": "Functional Fitness",
-      "location": "GAP",
-      "country": "France"
+      "location": "Jean-Christophe Lafaille Gymnasium, Av. Commandant Dumont, 05000 Gap, France",
+      "country": "France",
+      "latitude": "44.5652755",
+      "longitude": "6.08618912"
     },
     "_ticketing": {
       "_id": "69465fa07694860033a54184",
@@ -2451,8 +2468,10 @@
         "inside"
       ],
       "category": "Functional Fitness",
-      "location": "1789 CrossFit",
-      "country": "France"
+      "location": "1789 CrossFit, 380 Rue Claude Nicolas Ledoux, 13290 Aix-en-Provence, France",
+      "country": "France",
+      "latitude": "43.48149197",
+      "longitude": "5.38616931"
     },
     "_ticketing": {
       "_id": "69e25c6de45878003345bb29",
@@ -2801,7 +2820,7 @@
       "publish": true,
       "_leaderboard": "6aba2c00244add4c9cdfbe37",
       "specific_division_spots": [],
-      "open_date": "2026-09-27T23:00:00Z"
+      "open_date": null
     },
     "_volunteering": {
       "_id": "6aba2c00244add4c9cdfbe4d"
@@ -2885,7 +2904,7 @@
         "_id": "6aabba23d31f8b114132096c",
         "type": "single",
         "participants": [],
-        "participants_count": 1
+        "participants_count": 2
       },
       {
         "_id": "6aabba23d31f8b114132096d",
@@ -2930,7 +2949,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aaba141768872436c0db9d0/logo.png",
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aaba141768872436c0db9d0/background.jpg",
-    "total_participants": 21,
+    "total_participants": 22,
     "total_volunteers": 4,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -2967,7 +2986,7 @@
         "type": "team",
         "_id": "6a8eaa2c1b0514a37bb01104",
         "participants": [],
-        "participants_count": 16
+        "participants_count": 15
       }
     ],
     "_event": {
@@ -3024,7 +3043,7 @@
     },
     "publish": true,
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6a8ea9011b0514a37bafdf04/background.jpg",
-    "total_participants": 27,
+    "total_participants": 26,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -3071,8 +3090,10 @@
         "inside"
       ],
       "category": "Functional Fitness",
-      "location": "CROSSFIT BAILLEUL",
-      "country": "France"
+      "location": "CrossFit Bailleul, 59270 Bailleul, France",
+      "country": "France",
+      "latitude": "50.72721122",
+      "longitude": "2.73434259"
     },
     "_ticketing": {
       "_id": "698b216e46c6ce00334b30fc",
@@ -3333,8 +3354,10 @@
         "inside"
       ],
       "category": "Functional Fitness",
-      "location": "Calade CrossFit ",
-      "country": "France"
+      "location": "Calade CrossFit Hyrox, 450 Rue Benoît Mulsant, 69400 Villefranche-sur-Saône, France",
+      "country": "France",
+      "latitude": "45.99749893",
+      "longitude": "4.73807448"
     },
     "_ticketing": {
       "_id": "697e2f43b487c3003385d1f7",
@@ -3381,7 +3404,7 @@
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/697e2f43b487c3003385d1e3/logo.png",
     "_planning": {
       "_id": "6a9150ae7366413b4474891a",
-      "publish": false
+      "publish": true
     },
     "total_participants": 62,
     "total_volunteers": 0,
@@ -3745,7 +3768,7 @@
         "type": "single",
         "_id": "6aba216e244add4c9cdcf23c",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "type": "single",
@@ -3763,7 +3786,7 @@
         "type": "team",
         "_id": "6aba2207244add4c9cdcfd41",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 6
       },
       {
         "type": "team",
@@ -3830,7 +3853,7 @@
       "_id": "6ac409c3aef91e0f5ced7c0b",
       "publish": false
     },
-    "total_participants": 19,
+    "total_participants": 22,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -4113,8 +4136,10 @@
         "inside"
       ],
       "category": "Functional Fitness",
-      "location": "CINEY expo",
-      "country": "Belgium"
+      "location": "Ciney Expo, Rue du Marché Couvert, 5590 Ciney, Belgium",
+      "country": "Belgium",
+      "latitude": "50.31011308",
+      "longitude": "5.11585926"
     },
     "_ticketing": {
       "_id": "69957184f68999003393f32b",
@@ -4392,13 +4417,13 @@
         "type": "single",
         "participants": [],
         "_id": "6a4cfd386e767d566dc610a0",
-        "participants_count": 7
+        "participants_count": 8
       },
       {
         "type": "team",
         "participants": [],
         "_id": "6a4cfd68627f3e32bcc93574",
-        "participants_count": 21
+        "participants_count": 22
       },
       {
         "type": "team",
@@ -4477,7 +4502,7 @@
       "_id": "6ac0152daf8714f61f67a198",
       "publish": false
     },
-    "total_participants": 101,
+    "total_participants": 103,
     "total_volunteers": 25,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -4561,7 +4586,7 @@
       "publish": false
     },
     "total_participants": 58,
-    "total_volunteers": 26,
+    "total_volunteers": 27,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -4660,7 +4685,7 @@
         "type": "team",
         "_id": "6a96e49d1b15601a1dfd1685",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 7
       },
       {
         "type": "team",
@@ -4672,7 +4697,7 @@
         "type": "team",
         "_id": "6a96e4b51b15601a1dfd177e",
         "participants": [],
-        "participants_count": 1
+        "participants_count": 2
       }
     ],
     "_event": {
@@ -4703,7 +4728,7 @@
       "_id": "6ac10bd10c1fa23cbad51881",
       "publish": false
     },
-    "total_participants": 13,
+    "total_participants": 15,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -4821,11 +4846,13 @@
       "_id": "6a01fde158b994343a9e5cd9",
       "publish": true,
       "category": "Functional Fitness",
-      "location": "189 Avenue Jean Jaurès - Décines Charpieu",
+      "location": "189 Avenue Jean Jaurès, 189 Avenue Jean Jaurès, 69150 Décines-Charpieu, France",
       "country": "France",
       "tags": [
         "inside"
-      ]
+      ],
+      "latitude": "45.770426",
+      "longitude": "4.955897"
     },
     "_ticketing": {
       "_id": "6a01fde158b994343a9e5cdb",
@@ -5000,13 +5027,13 @@
         "type": "team",
         "_id": "6a217ac064dc7a6b94156e8a",
         "participants": [],
-        "participants_count": 14
+        "participants_count": 15
       },
       {
         "type": "team",
         "_id": "6a217acaf59a8a62fc384f40",
         "participants": [],
-        "participants_count": 13
+        "participants_count": 14
       }
     ],
     "_event": {
@@ -5059,7 +5086,7 @@
       "_id": "6aba2381244add4c9cdd6299",
       "publish": false
     },
-    "total_participants": 37,
+    "total_participants": 39,
     "total_volunteers": 12,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -5179,7 +5206,7 @@
         "type": "team",
         "_id": "6a71dbdf5d6cfa8b5649e670",
         "participants": [],
-        "participants_count": 12
+        "participants_count": 13
       }
     ],
     "_event": {
@@ -5223,7 +5250,7 @@
       "_id": "6ab8209e244add4c9cc2ec89",
       "publish": false
     },
-    "total_participants": 15,
+    "total_participants": 16,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -5846,12 +5873,13 @@
         {
           "division_id": "6aa656ca3c10a775a95dcfb9",
           "division_spots": 40,
-          "_id": "6aa657f43c10a775a95eaa0d",
-          "whitelist": []
+          "whitelist": [],
+          "_id": "6aa657f43c10a775a95eaa0d"
         }
       ],
       "total_spots": "40",
-      "open_date": "2026-09-12T22:00:00Z"
+      "open_date": "2026-09-12T22:00:00Z",
+      "end_date": "2026-10-29T23:00:00Z"
     },
     "_volunteering": {
       "_id": "6aa15dab41778190edbfa283"
@@ -5956,19 +5984,19 @@
         "type": "team",
         "participants": [],
         "_id": "6aa9bab3c910687be52dabd6",
-        "participants_count": 2
+        "participants_count": 3
       },
       {
         "type": "team",
         "participants": [],
         "_id": "6aa9bae6c910687be52daf70",
-        "participants_count": 0
+        "participants_count": 1
       },
       {
         "type": "team",
         "participants": [],
         "_id": "6aa9bb40c910687be52daffe",
-        "participants_count": 0
+        "participants_count": 1
       },
       {
         "type": "team",
@@ -6009,7 +6037,7 @@
       "_id": "6aa9c12dc910687be52dfb3a",
       "publish": false
     },
-    "total_participants": 2,
+    "total_participants": 5,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -6040,7 +6068,7 @@
         "type": "team",
         "_id": "6ab402d2433a85f53974d006",
         "participants": [],
-        "participants_count": 17
+        "participants_count": 18
       },
       {
         "type": "team",
@@ -6052,7 +6080,7 @@
         "type": "team",
         "_id": "6ab4030a433a85f53974d180",
         "participants": [],
-        "participants_count": 29
+        "participants_count": 32
       },
       {
         "type": "team",
@@ -6088,7 +6116,7 @@
         "type": "single",
         "_id": "6ab40585433a85f539756093",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 9
       }
     ],
     "_event": {
@@ -6120,7 +6148,7 @@
       "_id": "6abe093a2e0623272248c283",
       "publish": false
     },
-    "total_participants": 82,
+    "total_participants": 88,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -6173,8 +6201,10 @@
         "inside"
       ],
       "category": "Functional Fitness",
-      "location": "CrossFit Pleasure",
-      "country": "France"
+      "location": "CrossFit Pleasure, 540 Rue Edouard Daladier, 84200 Carpentras, France",
+      "country": "France",
+      "latitude": "44.03507944",
+      "longitude": "5.04782461"
     },
     "_ticketing": {
       "_id": "697e47aab487c3003386b4c6",
@@ -6277,8 +6307,10 @@
         "inside"
       ],
       "category": "Functional Fitness",
-      "location": "Strasbourg",
-      "country": "France"
+      "location": "Strasbourg, Strasbourg, Bas-Rhin, France",
+      "country": "France",
+      "latitude": "48.583483",
+      "longitude": "7.746848"
     },
     "_ticketing": {
       "_id": "69b3d0e2e52fc10033e53d05",
@@ -6567,7 +6599,7 @@
         "type": "team",
         "_id": "6abcd2ff04b066ec8e4a0138",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 2
       },
       {
         "type": "team",
@@ -6579,7 +6611,7 @@
         "type": "team",
         "_id": "6abcd32004b066ec8e4a053e",
         "participants": [],
-        "participants_count": 2
+        "participants_count": 3
       },
       {
         "type": "team",
@@ -6616,7 +6648,7 @@
       "_id": "6ac3d8670186ff3062c33bb2",
       "publish": false
     },
-    "total_participants": 4,
+    "total_participants": 7,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -6653,7 +6685,7 @@
         "type": "team",
         "_id": "6a857ba56f3d772950a21836",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "type": "team",
@@ -6711,7 +6743,7 @@
       "_id": "6abfc6d1af8714f61f1e8167",
       "publish": false
     },
-    "total_participants": 14,
+    "total_participants": 15,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -6847,7 +6879,7 @@
         "type": "team",
         "_id": "6aabe0aac910687be58b67bd",
         "participants": [],
-        "participants_count": 23
+        "participants_count": 25
       }
     ],
     "_event": {
@@ -6891,7 +6923,7 @@
       "_id": "6abfd070af8714f61f23cea9",
       "publish": false
     },
-    "total_participants": 36,
+    "total_participants": 38,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7004,13 +7036,13 @@
         "type": "team",
         "_id": "6aa0705541778190eda5c96e",
         "participants": [],
-        "participants_count": 15
+        "participants_count": 18
       },
       {
         "type": "team",
         "_id": "6aa0706241778190eda5de42",
         "participants": [],
-        "participants_count": 15
+        "participants_count": 16
       }
     ],
     "_event": {
@@ -7031,7 +7063,7 @@
       "_leaderboard": "6aa02c4941778190ed8f1331",
       "specific_division_spots": [],
       "total_spots": "100",
-      "end_date": "2026-10-31T17:00:00Z",
+      "end_date": "2026-10-24T22:00:00Z",
       "open_date": "2026-10-06T16:00:00Z"
     },
     "_volunteering": {
@@ -7047,7 +7079,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aa02c4941778190ed8f1331/logo.jpg",
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aa02c4941778190ed8f1331/background.jpg",
-    "total_participants": 37,
+    "total_participants": 41,
     "total_volunteers": 12,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7090,7 +7122,7 @@
         "_id": "6938069dfb23ee003336c2c6",
         "type": "team",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       },
       {
         "type": "team",
@@ -7136,8 +7168,10 @@
         "inside"
       ],
       "category": "Hybrid Race",
-      "location": "Neo Crossfit, 318 bis rue Albert de Dion, 63500 ISSOIRE",
-      "country": "France"
+      "location": "NEO CrossFit, 318 bis Rue Albert de Dion, 63500 Issoire, France",
+      "country": "France",
+      "latitude": "45.53355749",
+      "longitude": "3.25915"
     },
     "_ticketing": {
       "_id": "69356e621f7bc10033c6804e",
@@ -7211,7 +7245,7 @@
       "_id": "6ac03db6826278b232a4976f",
       "publish": false
     },
-    "total_participants": 53,
+    "total_participants": 54,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7254,7 +7288,7 @@
         "type": "single",
         "_id": "6a393f6a543b31f201b788bc",
         "participants": [],
-        "participants_count": 39
+        "participants_count": 40
       },
       {
         "type": "single",
@@ -7317,7 +7351,7 @@
       "_id": "6a4291050ddf8bbd259188f0",
       "publish": false
     },
-    "total_participants": 107,
+    "total_participants": 108,
     "total_volunteers": 27,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7348,7 +7382,7 @@
         "type": "team",
         "_id": "6ab526c9244add4c9c52851e",
         "participants": [],
-        "participants_count": 15
+        "participants_count": 16
       }
     ],
     "_event": {
@@ -7388,7 +7422,7 @@
       "publish": false
     },
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aac0056c910687be59204f4/background.png",
-    "total_participants": 15,
+    "total_participants": 16,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7475,7 +7509,7 @@
       "publish": false
     },
     "total_participants": 78,
-    "total_volunteers": 16,
+    "total_volunteers": 17,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -7587,7 +7621,7 @@
         "type": "single",
         "_id": "6ac3a5310186ff3062817c07",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       },
       {
         "type": "team",
@@ -7679,7 +7713,7 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6ac3a4380186ff306280bcf3/logo.png",
-    "total_participants": 9,
+    "total_participants": 10,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7716,19 +7750,19 @@
         "type": "team",
         "participants": [],
         "_id": "6ac3ad780186ff3062878210",
-        "participants_count": 0
+        "participants_count": 2
       },
       {
         "type": "team",
         "participants": [],
         "_id": "6ac3ad810186ff306287a5fa",
-        "participants_count": 1
+        "participants_count": 2
       },
       {
         "type": "team",
         "participants": [],
         "_id": "6ac3ad8a0186ff306287a7bc",
-        "participants_count": 1
+        "participants_count": 2
       },
       {
         "type": "team",
@@ -7772,7 +7806,7 @@
     },
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6ac3aced0186ff3062868415/background.png",
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6ac3aced0186ff3062868415/logo.png",
-    "total_participants": 3,
+    "total_participants": 7,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -7839,13 +7873,13 @@
         "type": "single",
         "_id": "6a7f103cf1e72ac431823f22",
         "participants": [],
-        "participants_count": 18
+        "participants_count": 20
       },
       {
         "type": "single",
         "_id": "6a7f1051f1e72ac4318241fb",
         "participants": [],
-        "participants_count": 27
+        "participants_count": 29
       }
     ],
     "_event": {
@@ -7927,7 +7961,7 @@
       "_id": "6abfbc6368cfea35fad7a016",
       "publish": false
     },
-    "total_participants": 105,
+    "total_participants": 109,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -8026,7 +8060,7 @@
       "publish": false
     },
     "total_participants": 84,
-    "total_volunteers": 9,
+    "total_volunteers": 11,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -8154,7 +8188,7 @@
         "type": "team",
         "_id": "6aa236e041778190edf8a788",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "type": "team",
@@ -8166,7 +8200,7 @@
         "type": "team",
         "_id": "6aa2370041778190edf8cd06",
         "participants": [],
-        "participants_count": 12
+        "participants_count": 13
       },
       {
         "type": "team",
@@ -8241,7 +8275,7 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aa230b441778190edf78535/logo.jpg",
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aa230b441778190edf78535/background.jpg",
-    "total_participants": 41,
+    "total_participants": 43,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -8272,7 +8306,7 @@
         "type": "team",
         "_id": "6a4e13ab29de646d2eadb158",
         "participants": [],
-        "participants_count": 14
+        "participants_count": 15
       },
       {
         "type": "team",
@@ -8306,7 +8340,7 @@
       "specific_division_spots": [
         {
           "division_id": "6a4e13ab29de646d2eadb158",
-          "division_spots": 14,
+          "division_spots": 15,
           "whitelist": [],
           "_id": "6ab7ded7244add4c9c7c7d2e"
         },
@@ -8335,7 +8369,7 @@
       "_id": "6ac3809d0186ff30623c21ac",
       "publish": false
     },
-    "total_participants": 45,
+    "total_participants": 46,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -8378,7 +8412,7 @@
         "type": "single",
         "_id": "6a55268aeaaa1121a1389c07",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       },
       {
         "type": "single",
@@ -8513,7 +8547,7 @@
       "_id": "6ac2a10f0186ff3062979082",
       "publish": false
     },
-    "total_participants": 46,
+    "total_participants": 47,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -8550,7 +8584,7 @@
         "type": "team",
         "_id": "6a3f87b2847a3bcbe0635652",
         "participants": [],
-        "participants_count": 5
+        "participants_count": 6
       },
       {
         "type": "team",
@@ -8567,7 +8601,9 @@
       "country": "France",
       "tags": [
         "inside"
-      ]
+      ],
+      "latitude": "45.988847",
+      "longitude": "4.718763"
     },
     "_ticketing": {
       "_id": "6a0ec5d8557a52041ac24713",
@@ -8607,7 +8643,7 @@
       "publish": false
     },
     "publish": false,
-    "total_participants": 19,
+    "total_participants": 20,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -8768,7 +8804,7 @@
         "type": "team",
         "_id": "6abe1b332e062327224dc289",
         "participants": [],
-        "participants_count": 15
+        "participants_count": 16
       },
       {
         "type": "team",
@@ -8786,7 +8822,7 @@
         "type": "team",
         "_id": "6abe1b672e062327224dcecd",
         "participants": [],
-        "participants_count": 2
+        "participants_count": 3
       }
     ],
     "_event": {
@@ -8853,7 +8889,7 @@
       "_id": "6abe1d6c2e062327224e4061",
       "publish": false
     },
-    "total_participants": 29,
+    "total_participants": 31,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -8896,7 +8932,7 @@
         "type": "team",
         "_id": "6abe234d2e0623272251b069",
         "participants": [],
-        "participants_count": 2
+        "participants_count": 3
       },
       {
         "type": "team",
@@ -8959,7 +8995,7 @@
       "_id": "6abfd33eaf8714f61f254e2d",
       "publish": false
     },
-    "total_participants": 19,
+    "total_participants": 20,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -8990,25 +9026,25 @@
         "type": "single",
         "_id": "6acd55c5008fc5e34bb6118c",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 1
       },
       {
         "type": "single",
         "_id": "6acd55e2008fc5e34bb6c80e",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 3
       },
       {
         "type": "team",
         "_id": "6acd561a008fc5e34bb6e8b2",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 2
       },
       {
         "type": "team",
         "_id": "6acd61e0008fc5e34bb8f72a",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 3
       },
       {
         "type": "team",
@@ -9039,7 +9075,8 @@
       "open_date": "2026-10-11T22:00:00Z"
     },
     "_volunteering": {
-      "_id": "6acd4a19008fc5e34bb2b7dd"
+      "_id": "6acd4a19008fc5e34bb2b7dd",
+      "publish": true
     },
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6acd4a19008fc5e34bb2b7c7/background.png",
     "_planning": {
@@ -9047,8 +9084,8 @@
       "publish": false
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6acd4a19008fc5e34bb2b7c7/logo.png",
-    "total_participants": 0,
-    "total_volunteers": 0,
+    "total_participants": 9,
+    "total_volunteers": 3,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -9229,7 +9266,7 @@
       "publish": true
     },
     "total_participants": 415,
-    "total_volunteers": 74,
+    "total_volunteers": 75,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -9484,7 +9521,7 @@
         "type": "team",
         "_id": "6abbc40ef211020482058e1b",
         "participants": [],
-        "participants_count": 0
+        "participants_count": 16
       }
     ],
     "_event": {
@@ -9524,7 +9561,7 @@
       "publish": false
     },
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6abbc364f2110204820540aa/background.jpg",
-    "total_participants": 0,
+    "total_participants": 16,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -9555,13 +9592,13 @@
         "_id": "6949323887b73900333df42c",
         "type": "team",
         "participants": [],
-        "participants_count": 10
+        "participants_count": 11
       },
       {
         "_id": "6949324587b73900333df452",
         "type": "team",
         "participants": [],
-        "participants_count": 8
+        "participants_count": 9
       }
     ],
     "_event": {
@@ -9607,7 +9644,7 @@
       "_id": "6ac2a1a10186ff306299e70a",
       "publish": false
     },
-    "total_participants": 18,
+    "total_participants": 20,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -9638,13 +9675,13 @@
         "type": "team",
         "_id": "6a99691586f0ed23e5b0ad4f",
         "participants": [],
-        "participants_count": 16
+        "participants_count": 17
       },
       {
         "type": "team",
         "_id": "6a99693986f0ed23e5b0b1f8",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 5
       },
       {
         "type": "team",
@@ -9700,7 +9737,7 @@
       "_id": "6ac01ae3af8714f61f6c94a7",
       "publish": false
     },
-    "total_participants": 46,
+    "total_participants": 48,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -9885,31 +9922,31 @@
         "type": "team",
         "_id": "6aa1659541778190edc198ed",
         "participants": [],
-        "participants_count": 110
+        "participants_count": 115
       },
       {
         "type": "single",
         "_id": "6aa165a141778190edc19bb4",
         "participants": [],
-        "participants_count": 48
+        "participants_count": 51
       },
       {
         "type": "team",
         "_id": "6aa165ac41778190edc19c23",
         "participants": [],
-        "participants_count": 136
+        "participants_count": 142
       },
       {
         "type": "single",
         "_id": "6aa165c041778190edc19ea9",
         "participants": [],
-        "participants_count": 104
+        "participants_count": 110
       },
       {
         "type": "team",
         "_id": "6aa165cb41778190edc19f09",
         "participants": [],
-        "participants_count": 99
+        "participants_count": 101
       }
     ],
     "_event": {
@@ -9975,8 +10012,8 @@
       "_id": "6ac01075af8714f61f6318e1",
       "publish": false
     },
-    "total_participants": 497,
-    "total_volunteers": 73,
+    "total_participants": 519,
+    "total_volunteers": 74,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
     "total_spectators": 0
@@ -10086,7 +10123,7 @@
         "type": "team",
         "_id": "6accde5d008fc5e34b7c0be7",
         "participants": [],
-        "participants_count": 6
+        "participants_count": 10
       }
     ],
     "_event": {
@@ -10137,7 +10174,7 @@
       "_id": "6acce1f6008fc5e34b7dfa0d",
       "publish": false
     },
-    "total_participants": 18,
+    "total_participants": 22,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -10266,7 +10303,7 @@
         "type": "team",
         "_id": "6abf77664638d8cb6dbaa927",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       }
     ],
     "_event": {
@@ -10297,7 +10334,7 @@
       "_id": "6abfd3e6af8714f61f259cc1",
       "publish": false
     },
-    "total_participants": 10,
+    "total_participants": 11,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -10340,7 +10377,7 @@
         "type": "team",
         "_id": "6aca17a3008fc5e34bb34523",
         "participants": [],
-        "participants_count": 4
+        "participants_count": 6
       }
     ],
     "_event": {
@@ -10371,7 +10408,7 @@
       "_id": "6aca2970008fc5e34bca91af",
       "publish": false
     },
-    "total_participants": 14,
+    "total_participants": 16,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -10430,6 +10467,10 @@
     },
     "iconLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aaa5803c910687be53c2efd/logo.png",
     "illustrationLink": "https://scoring-images.s3.eu-west-3.amazonaws.com/events/6aaa5803c910687be53c2efd/background.png",
+    "_planning": {
+      "_id": "6acf9684b48fbe70e23f900e",
+      "publish": false
+    },
     "total_participants": 8,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
@@ -10479,7 +10520,7 @@
         "type": "team",
         "_id": "6ab6cc03244add4c9cba5fd4",
         "participants": [],
-        "participants_count": 1
+        "participants_count": 2
       },
       {
         "type": "team",
@@ -10503,7 +10544,7 @@
         "type": "team",
         "_id": "6ab6cd2d244add4c9cbade2c",
         "participants": [],
-        "participants_count": 11
+        "participants_count": 13
       },
       {
         "type": "team",
@@ -10521,7 +10562,7 @@
         "type": "single",
         "_id": "6ab6cd97244add4c9cbaf2aa",
         "participants": [],
-        "participants_count": 1
+        "participants_count": 2
       },
       {
         "type": "single",
@@ -10595,7 +10636,7 @@
       "_id": "6ac041d24659fc9768c6d6c5",
       "publish": false
     },
-    "total_participants": 49,
+    "total_participants": 53,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -10626,7 +10667,7 @@
         "type": "team",
         "_id": "6a7332635d6cfa8b56696546",
         "participants": [],
-        "participants_count": 3
+        "participants_count": 4
       }
     ],
     "_event": {
@@ -10666,7 +10707,7 @@
       "_id": "6a74804f5d6cfa8b56b44a20",
       "publish": true
     },
-    "total_participants": 3,
+    "total_participants": 4,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -11258,7 +11299,7 @@
         "type": "team",
         "_id": "6ab78c12244add4c9c1afd6d",
         "participants": [],
-        "participants_count": 7
+        "participants_count": 8
       }
     ],
     "_event": {
@@ -11337,7 +11378,7 @@
       "_id": "6ac0aee44659fc9768f38115",
       "publish": false
     },
-    "total_participants": 35,
+    "total_participants": 36,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
@@ -12165,7 +12206,7 @@
         "type": "team",
         "_id": "6a8f58d71b0514a37be92d16",
         "participants": [],
-        "participants_count": 73
+        "participants_count": 82
       },
       {
         "type": "team",
@@ -12177,25 +12218,25 @@
         "type": "team",
         "_id": "6a8f58ec1b0514a37be95c7d",
         "participants": [],
-        "participants_count": 118
+        "participants_count": 124
       },
       {
         "type": "team",
         "_id": "6a8f58f51b0514a37be95c9a",
         "participants": [],
-        "participants_count": 24
+        "participants_count": 26
       },
       {
         "type": "team",
         "_id": "6a8f58fd1b0514a37be98ce8",
         "participants": [],
-        "participants_count": 62
+        "participants_count": 73
       },
       {
         "type": "team",
         "_id": "6a8f59051b0514a37be98d0d",
         "participants": [],
-        "participants_count": 48
+        "participants_count": 53
       }
     ],
     "_event": {
@@ -12229,7 +12270,7 @@
         },
         {
           "division_id": "6a8f58ec1b0514a37be95c7d",
-          "division_spots": 122,
+          "division_spots": 126,
           "whitelist": [],
           "_id": "6ace3355a7351819f0b4ea97"
         },
@@ -12241,7 +12282,7 @@
         },
         {
           "division_id": "6a8f58fd1b0514a37be98ce8",
-          "division_spots": 80,
+          "division_spots": 88,
           "whitelist": [],
           "_id": "6ace3355a7351819f0b4ea99"
         },
@@ -12263,7 +12304,7 @@
       "_id": "6ac02ec03dd2eb17202d2101",
       "publish": false
     },
-    "total_participants": 469,
+    "total_participants": 502,
     "total_volunteers": 0,
     "spectatorsEnabled": false,
     "_spectatorTicketing": null,
