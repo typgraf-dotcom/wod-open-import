@@ -365,6 +365,8 @@ def fetch_wp_slugs() -> set[str]:
 # ═══════════════════════════════════════════════════════════
 # ▌ Scoring.fit API
 # ═══════════════════════════════════════════════════════════
+FETCH_ERRORS: list[str] = []   # erreurs de fetch du run courant (alerte si 0 résultat)
+
 def fetch_competitions() -> list[dict]:
     """Récupère toutes les compétitions futures depuis scoring.fit."""
     all_comps: list[dict] = []
@@ -387,6 +389,7 @@ def fetch_competitions() -> list[dict]:
                 page += 1
             except Exception as e:
                 log.warning(f"  [SF fetch] period={period} page={page}: {e}")
+                FETCH_ERRORS.append(f"period={period} page={page}: {e}")
                 break
     # Dédoublonner par _id
     seen, unique = set(), []
@@ -813,6 +816,38 @@ def enrich_post(wp_id: int, detail: dict, title: str,
 # ═══════════════════════════════════════════════════════════
 # ▌ Notification email
 # ═══════════════════════════════════════════════════════════
+def send_source_down_alert(source: str, errors: list[str]) -> None:
+    """Alerte rouge quand la source renvoie 0 résultat À CAUSE d'erreurs
+    (ex: 403 depuis le 31/10/2026) — distinct du "0 créé" banal d'un jour
+    sans nouveauté, qui est passé inaperçu pendant une semaine."""
+    if not EMAIL_ENABLED:
+        return
+    try:
+        items = "".join(f"<li>{e}</li>" for e in errors[:10])
+        html = f"""
+        <html><body style='font-family:Arial,sans-serif;color:#333;max-width:700px'>
+        <h2 style='color:#c0392b;border-bottom:2px solid #c0392b;padding-bottom:8px'>
+            🚨 SOURCE INACCESSIBLE : {source}
+        </h2>
+        <p>L'import n'a rien récupéré et n'a donc rien créé. Ce n'est <b>pas</b> un
+        jour sans nouveauté : le fetch a échoué.</p>
+        <ul style='font-size:13px;color:#555'>{items}</ul>
+        <p style='font-size:12px;color:#999'>{datetime.now():%d/%m/%Y %H:%M} — wod-open-import</p>
+        </body></html>"""
+        msg = MIMEMultipart("alternative")
+        msg["Subject"] = f"[wod-open] 🚨 SOURCE INACCESSIBLE : {source}"
+        msg["From"], msg["To"] = EMAIL_FROM, EMAIL_TO
+        msg.attach(MIMEText(html, "html", "utf-8"))
+        with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as server:
+            server.ehlo()
+            server.starttls(context=ssl.create_default_context())
+            server.login(SMTP_USER, SMTP_PASSWORD)
+            server.sendmail(EMAIL_FROM, EMAIL_TO, msg.as_string())
+        log.info(f"🚨 Alerte envoyée → {EMAIL_TO}")
+    except Exception as e:
+        log.warning(f"  [email alerte] Échec envoi : {e}")
+
+
 def send_summary_email(stats: dict, new_results: list, elapsed: float,
                        warnings: list) -> None:
     """Envoie un email récapitulatif après chaque run."""
@@ -899,6 +934,11 @@ def main():
     log.info("\n[1] Fetch scoring.fit...")
     competitions = fetch_competitions()
     log.info(f"    {len(competitions)} compétitions récupérées")
+
+    if not competitions and FETCH_ERRORS:
+        log.error("  🚨 Source inaccessible — arrêt (competitions_raw.json conservé)")
+        send_source_down_alert("scoring.fit", FETCH_ERRORS)
+        return
 
     # Filtrer par pays
     # Le pays est dans _event.country (jamais à la racine dans l'API search)

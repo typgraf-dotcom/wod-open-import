@@ -396,6 +396,8 @@ CC_HEADERS = {
 }
 
 
+FETCH_ERRORS: list[str] = []   # erreurs de fetch du run courant (alerte si 0 résultat)
+
 def fetch_cc_events() -> list[dict]:
     """Récupère les events actifs et upcoming depuis l'API CC publique (toutes les pages)."""
     all_events: list[dict] = []
@@ -428,6 +430,7 @@ def fetch_cc_events() -> list[dict]:
                     break   # dernière page (incomplète)
             except Exception as e:
                 log.warning(f"  [CC fetch timing={timing} page={page}] {e}")
+                FETCH_ERRORS.append(f"timing={timing} page={page}: {e}")
                 break
         log.info(f"  timing={timing}: {timing_total} nouveaux events ({page - 1} pages)")
 
@@ -801,6 +804,38 @@ def enrich_post(wp_id: int, ev: dict, slug: str, title: str) -> None:
 # ═══════════════════════════════════════════════════════════
 # ▌ Notification email
 # ═══════════════════════════════════════════════════════════
+def send_source_down_alert(source: str, errors: list[str]) -> None:
+    """Alerte rouge quand la source renvoie 0 résultat À CAUSE d'erreurs
+    (ex: 403 CompetitionCorner du 28/09/2026) — distinct du "0 créé" banal
+    d'un jour sans nouveauté."""
+    if not EMAIL_ENABLED:
+        return
+    try:
+        items = "".join(f"<li>{e}</li>" for e in errors[:10])
+        html = f"""
+        <html><body style='font-family:Arial,sans-serif;color:#333;max-width:700px'>
+        <h2 style='color:#c0392b;border-bottom:2px solid #c0392b;padding-bottom:8px'>
+            🚨 SOURCE INACCESSIBLE : {source}
+        </h2>
+        <p>L'import n'a rien récupéré et n'a donc rien créé. Ce n'est <b>pas</b> un
+        jour sans nouveauté : le fetch a échoué.</p>
+        <ul style='font-size:13px;color:#555'>{items}</ul>
+        <p style='font-size:12px;color:#999'>{datetime.now():%d/%m/%Y %H:%M} — wod-open-import</p>
+        </body></html>"""
+        msg = MIMEMultipart("alternative")
+        msg["Subject"] = f"[wod-open] 🚨 SOURCE INACCESSIBLE : {source}"
+        msg["From"], msg["To"] = EMAIL_FROM, EMAIL_TO
+        msg.attach(MIMEText(html, "html", "utf-8"))
+        with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as server:
+            server.ehlo()
+            server.starttls(context=ssl.create_default_context())
+            server.login(SMTP_USER, SMTP_PASSWORD)
+            server.sendmail(EMAIL_FROM, EMAIL_TO, msg.as_string())
+        log.info(f"🚨 Alerte envoyée → {EMAIL_TO}")
+    except Exception as e:
+        log.warning(f"  [email alerte] Échec envoi : {e}")
+
+
 def send_summary_email(stats: dict, new_results: list, elapsed: float,
                        warnings: list) -> None:
     if not EMAIL_ENABLED:
@@ -885,6 +920,11 @@ def main():
     log.info("\n[1] Fetch competitioncorner.net...")
     all_events = fetch_cc_events()
     log.info(f"    {len(all_events)} events récupérés au total")
+
+    if not all_events and FETCH_ERRORS:
+        log.error("  🚨 Source inaccessible — arrêt")
+        send_source_down_alert("CompetitionCorner", FETCH_ERRORS)
+        return
 
     # Filtrer par pays
     filtered = [
