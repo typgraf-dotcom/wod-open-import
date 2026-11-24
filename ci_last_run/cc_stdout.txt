@@ -1,113 +1,109 @@
-10:25:27 ============================================================
-10:25:27 ▶ Import CC wod-open.com — 23/11/2026 10:25
-10:25:27   DRY_RUN=False  POST_STATUS=draft
-10:25:27 ============================================================
-10:25:27 
+12:06:20 ============================================================
+12:06:20 ▶ Import CC wod-open.com — 24/11/2026 12:06
+12:06:20   DRY_RUN=False  POST_STATUS=draft
+12:06:20 ============================================================
+12:06:20 
 [1] Fetch competitioncorner.net...
-10:25:33   timing=active: 395 nouveaux events (40 pages)
-10:25:34   timing=upcoming: 67 nouveaux events (7 pages)
-10:25:34     462 events récupérés au total
-10:25:34     → 57 après filtre FR/BE/CH (hors privés)
-10:25:34     268 entrées déjà dans cc_import_results.json
-10:25:34     + 1068 titres depuis import_results.json (scoring.fit)
-10:25:34   Scan des slugs WP existants (filet de sécurité anti-doublon)...
-10:25:56   → 1327 slugs WP chargés
-10:25:56 
+12:06:26   timing=active: 396 nouveaux events (40 pages)
+12:06:28   timing=upcoming: 73 nouveaux events (8 pages)
+12:06:28     469 events récupérés au total
+12:06:28     → 58 après filtre FR/BE/CH (hors privés)
+12:06:28     270 entrées déjà dans cc_import_results.json
+12:06:28     + 1068 titres depuis import_results.json (scoring.fit)
+12:06:28   Scan des slugs WP existants (filet de sécurité anti-doublon)...
+12:06:58   → 1329 slugs WP chargés
+12:06:58 
 [3] Import des nouveaux events...
-10:25:56   [SKIP doublon titre] The Wolves Hyrox Simulation Race
-10:25:56   [SKIP doublon cc_id] Minimes Lift Club #3
-10:25:56   [NEW] WINTER CONTEST 2026  (cc_id=23057, FR)
-10:25:56     prix=None/0.0 EUR  desc=oui
-10:25:56   [SKIP interne] WINTER CONTEST 2026
-10:25:56   [SKIP doublon cc_id] HYBRID CHALLENGE OF HOPE
-10:25:56   [SKIP doublon cc_id] XMAS RACE
-10:25:56   [SKIP doublon cc_id] Tribok Hybrid Xperience
-10:25:56   [SKIP doublon cc_id] CFL Solstices d'Hiver 2026
-10:25:56   [NEW] Compétition interne 2026  (cc_id=22941, FR)
-10:25:57     prix=0.0/0.0 EUR  desc=oui
-10:25:57   [SKIP interne] Compétition interne 2026
-10:25:57   [SKIP doublon cc_id] Belgium Showdown Buddy, Triplets & Indy 2027
-10:25:57   [SKIP doublon cc_id] Winter XFORCE 2027
-10:25:57   [SKIP doublon cc_id] French Throwdown 2027- Online Qualifiers
-10:25:57   [SKIP doublon cc_id] LS CONTEST
-10:25:57   [SKIP doublon cc_id] CHOP OR BE CHOPPED BATTLE V2 2027
-10:25:57   [NEW] Yggdra Winter 2027  (cc_id=22866, FR)
-10:25:58     prix=None/100.0 EUR  desc=oui
-10:25:58   [SKIP interne] Yggdra Winter 2027
-10:25:58   [SKIP doublon cc_id] TERANGA HYBRID GAMES - 2027
-10:25:58   [SKIP doublon cc_id] MULHOUSE WINTER BATTLE 2027
-10:25:58   [SKIP doublon cc_id] West Coast Throwdown 2027 Qualifications
-10:25:58   [SKIP doublon cc_id] HEIDEN RANDOM CONTEST 2027
-10:25:58   [SKIP doublon cc_id] BEAST LEAGUE 2027 - Qualification
-10:25:58   [NEW] THE BACK FROM HOLIDAYS CONTEST - WINTER EDITION 2027  (cc_id=23143, FR)
-10:25:58     prix=47.0/120.0 EUR  desc=oui
-10:26:07     ✓ créé wp_id=24582
-10:26:07     → enrichissement (région + image)...
-10:26:09     🗺️  région : occitanie → 154
-10:26:42     🖼️  image 24584 OK
-10:26:42   [SKIP doublon cc_id] The Affiliates Battle 2027 - QUALIF
-10:26:42   [NEW] CFC WINTER 2027  (cc_id=23170, FR)
-10:26:43     prix=None/110.0 EUR  desc=oui
-10:26:49     ✓ créé wp_id=24585
-10:26:49     → enrichissement (région + image)...
-10:26:51     🗺️  région : normandie → 145
-10:27:31     🖼️  image 24587 OK
-10:27:31   [NEW] Odyssey Showdown Edition 2  (cc_id=20912, FR)
-10:27:32     prix=0.0/240.0 EUR  desc=oui
-10:27:32   [SKIP interne] Odyssey Showdown Edition 2
-10:27:32   [SKIP doublon cc_id] Morteau Loves Games 2027
-10:27:32   [SKIP doublon cc_id] The Wolves League - Winter Edition
-10:27:32   [SKIP doublon cc_id] THE HYBRID CHAMPIONSHIPS 2027 indoor
-10:27:32   [SKIP doublon titre] Hyrox Challenge Simulation Saint-Dizier
-10:27:32   [SKIP doublon cc_id] Unity Throwdown - Spring 2027
-10:27:32   [SKIP doublon cc_id] VOLCA BATTLE III
-10:27:32   [SKIP doublon cc_id] Aetos Battle 2027
-10:27:32   [SKIP doublon cc_id] Rompsay Summer Games 2027
-10:27:32   [SKIP doublon cc_id] AREA THROWDOWN 2027
-10:27:32   [SKIP doublon titre] LE JOUR DES BRAVES
-10:27:32   [SKIP doublon cc_id] Power Up Contest 2027
-10:27:32   [SKIP doublon cc_id] Double Queens Contest
-10:27:32   [SKIP doublon cc_id] Olten Throwdown 2027
-10:27:32   [SKIP doublon cc_id] Mediterranean Showdown 2
-10:27:32   [SKIP doublon cc_id] Heart Of Wallonia 2027
-10:27:32   [NEW] Next series Vol.3 (Interne)  (cc_id=22925, FR)
-10:27:32     prix=None/70.0 EUR  desc=oui
-10:27:32   [SKIP interne] Next series Vol.3 (Interne)
-10:27:32   [SKIP doublon cc_id] Estuary Contest Winter Edition 2K26 ❄️
-10:27:32   [SKIP doublon cc_id] Battle Of Santa 2026
-10:27:32   [NEW] TERANGA CONTEST 2026  (cc_id=22698, FR)
-10:27:33     prix=None/90.0 EUR  desc=oui
-10:27:33   [SKIP interne] TERANGA CONTEST 2026
-10:27:33   [NEW] Calmeta Winter Games 2026  (cc_id=18720, FR)
-10:27:34     prix=None/135.0 EUR  desc=oui
-10:27:34   [SKIP interne] Calmeta Winter Games 2026
-10:27:34   [SKIP doublon cc_id] XMAS BATTLE V
-10:27:34   [NEW] UNICORN THROWDOWN 2027 - INDIV QUALIFIER  (cc_id=22943, FR)
-10:27:34     prix=15.0/None EUR  desc=oui
-10:27:34   [SKIP interne] UNICORN THROWDOWN 2027 - INDIV QUALIFIER
-10:27:34   [SKIP doublon titre] Unity Hyrox Race 6
-10:27:34   [NEW] CFSB Games 2027  (cc_id=22538, FR)
-10:27:35     prix=0.0/84.0 EUR  desc=oui
-10:27:35   [SKIP interne] CFSB Games 2027
-10:27:35   [SKIP doublon cc_id] Cannes Showdown - Qualifications Indiv
-10:27:35   [SKIP doublon cc_id] Girls Challenge 9
-10:27:35   [SKIP doublon cc_id] Rocket Challenge 3.0 - Indiv Qualifiers
-10:27:35   [NEW] East Fitness Championship 2027 -  TEAM of 3  (cc_id=22924, FR)
-10:27:36     prix=None/260.0 EUR  desc=oui
-10:27:36   [SKIP interne] East Fitness Championship 2027 -  TEAM of 3
-10:27:36   [SKIP doublon cc_id] Sharkids Trowdown
-10:27:36   [SKIP doublon cc_id] Hyrocket RACE 2.0
-10:27:36   [NEW] UNICORN THROWDOWN 2027 - FINALE  (cc_id=22945, FR)
-10:27:36     prix=170.0/600.0 EUR  desc=oui
-10:27:36   [SKIP interne] UNICORN THROWDOWN 2027 - FINALE
-10:27:36   [SKIP doublon titre] Cannes Showdown
-10:27:36   [SKIP doublon cc_id] Fitex Showdown 'Évolution'
-10:27:36   [SKIP doublon cc_id] Rocket Challenge 3.0
-10:27:36 
+12:06:58   [SKIP doublon titre] The Wolves Hyrox Simulation Race
+12:06:58   [NEW] Next series Vol.3 (Interne)  (cc_id=22925, FR)
+12:06:59     prix=None/70.0 EUR  desc=oui
+12:06:59   [SKIP interne] Next series Vol.3 (Interne)
+12:06:59   [SKIP doublon cc_id] Minimes Lift Club #3
+12:06:59   [NEW] WINTER CONTEST 2026  (cc_id=23057, FR)
+12:06:59     prix=None/0.0 EUR  desc=oui
+12:06:59   [SKIP interne] WINTER CONTEST 2026
+12:06:59   [SKIP doublon cc_id] HYBRID CHALLENGE OF HOPE
+12:06:59   [SKIP doublon cc_id] XMAS RACE
+12:06:59   [SKIP doublon cc_id] Tribok Hybrid Xperience
+12:06:59   [SKIP doublon cc_id] CFL Solstices d'Hiver 2026
+12:06:59   [NEW] Compétition interne 2026  (cc_id=22941, FR)
+12:07:00     prix=0.0/0.0 EUR  desc=oui
+12:07:00   [SKIP interne] Compétition interne 2026
+12:07:00   [SKIP doublon cc_id] Belgium Showdown Buddy, Triplets & Indy 2027
+12:07:00   [SKIP doublon cc_id] Winter XFORCE 2027
+12:07:00   [SKIP doublon cc_id] French Throwdown 2027- Online Qualifiers
+12:07:00   [SKIP doublon cc_id] LS CONTEST
+12:07:00   [SKIP doublon cc_id] CHOP OR BE CHOPPED BATTLE V2 2027
+12:07:00   [NEW] Yggdra Winter 2027  (cc_id=22866, FR)
+12:07:01     prix=None/100.0 EUR  desc=oui
+12:07:01   [SKIP interne] Yggdra Winter 2027
+12:07:01   [SKIP doublon cc_id] TERANGA HYBRID GAMES - 2027
+12:07:01   [SKIP doublon cc_id] MULHOUSE WINTER BATTLE 2027
+12:07:01   [SKIP doublon cc_id] West Coast Throwdown 2027 Qualifications
+12:07:01   [SKIP doublon cc_id] HEIDEN RANDOM CONTEST 2027
+12:07:01   [SKIP doublon cc_id] BEAST LEAGUE 2027 - Qualification
+12:07:01   [SKIP doublon cc_id] THE BACK FROM HOLIDAYS CONTEST - WINTER EDITION 20
+12:07:01   [NEW] CFSB Games 2027  (cc_id=22538, FR)
+12:07:01     prix=0.0/84.0 EUR  desc=oui
+12:07:01   [SKIP interne] CFSB Games 2027
+12:07:01   [SKIP doublon cc_id] The Affiliates Battle 2027 - QUALIF
+12:07:01   [SKIP doublon cc_id] CFC WINTER 2027
+12:07:01   [NEW] Odyssey Showdown Edition 2  (cc_id=20912, FR)
+12:07:02     prix=0.0/240.0 EUR  desc=oui
+12:07:02   [SKIP interne] Odyssey Showdown Edition 2
+12:07:02   [SKIP doublon cc_id] Morteau Loves Games 2027
+12:07:02   [SKIP doublon cc_id] The Wolves League - Winter Edition
+12:07:02   [SKIP doublon cc_id] THE HYBRID CHAMPIONSHIPS 2027 indoor
+12:07:02   [SKIP doublon titre] Hyrox Challenge Simulation Saint-Dizier
+12:07:02   [SKIP doublon cc_id] Unity Throwdown - Spring 2027
+12:07:02   [SKIP doublon cc_id] VOLCA BATTLE III
+12:07:02   [SKIP doublon cc_id] Aetos Battle 2027
+12:07:02   [SKIP doublon cc_id] Rompsay Summer Games 2027
+12:07:02   [SKIP doublon cc_id] AREA THROWDOWN 2027
+12:07:02   [SKIP doublon titre] LE JOUR DES BRAVES
+12:07:02   [SKIP doublon cc_id] Power Up Contest 2027
+12:07:02   [SKIP doublon cc_id] Double Queens Contest
+12:07:02   [SKIP doublon cc_id] Olten Throwdown 2027
+12:07:02   [SKIP doublon cc_id] Mediterranean Showdown 2
+12:07:02   [SKIP doublon cc_id] Heart Of Wallonia 2027
+12:07:02   [SKIP doublon cc_id] Estuary Contest Winter Edition 2K26 ❄️
+12:07:02   [SKIP doublon cc_id] Battle Of Santa 2026
+12:07:02   [NEW] TERANGA CONTEST 2026  (cc_id=22698, FR)
+12:07:03     prix=None/90.0 EUR  desc=oui
+12:07:03   [SKIP interne] TERANGA CONTEST 2026
+12:07:03   [NEW] Calmeta Winter Games 2026  (cc_id=18720, FR)
+12:07:03     prix=None/135.0 EUR  desc=oui
+12:07:03   [SKIP interne] Calmeta Winter Games 2026
+12:07:03   [SKIP doublon cc_id] XMAS BATTLE V
+12:07:03   [NEW] UNICORN THROWDOWN 2027 - INDIV QUALIFIER  (cc_id=22943, FR)
+12:07:04     prix=15.0/None EUR  desc=oui
+12:07:04   [SKIP interne] UNICORN THROWDOWN 2027 - INDIV QUALIFIER
+12:07:04   [SKIP doublon titre] Unity Hyrox Race 6
+12:07:04   [NEW] UBK Night Contest #5  (cc_id=23194, FR)
+12:07:05     prix=0.0/330.0 EUR  desc=oui
+12:07:12     ✓ créé wp_id=24592
+12:07:12     → enrichissement (région + image)...
+12:07:14     🗺️  région : ile-de-france → 146
+12:07:57     🖼️  image 24594 OK
+12:07:57   [SKIP doublon cc_id] Cannes Showdown - Qualifications Indiv
+12:07:57   [SKIP doublon cc_id] Girls Challenge 9
+12:07:57   [SKIP doublon cc_id] Rocket Challenge 3.0 - Indiv Qualifiers
+12:07:57   [NEW] East Fitness Championship 2027 -  TEAM of 3  (cc_id=22924, FR)
+12:07:58     prix=None/260.0 EUR  desc=oui
+12:07:58   [SKIP interne] East Fitness Championship 2027 -  TEAM of 3
+12:07:58   [SKIP doublon cc_id] Sharkids Trowdown
+12:07:58   [SKIP doublon cc_id] Hyrocket RACE 2.0
+12:07:58   [NEW] UNICORN THROWDOWN 2027 - FINALE  (cc_id=22945, FR)
+12:07:59     prix=170.0/600.0 EUR  desc=oui
+12:07:59   [SKIP interne] UNICORN THROWDOWN 2027 - FINALE
+12:07:59   [SKIP doublon titre] Cannes Showdown
+12:07:59   [SKIP doublon cc_id] Fitex Showdown 'Évolution'
+12:07:59   [SKIP doublon cc_id] Rocket Challenge 3.0
+12:07:59 
 ============================================================
-10:27:36 ✅ Terminé en 130s
-10:27:36    créés   : 2
-10:27:36    ignorés : 55
-10:27:36    erreurs : 0
-10:27:36    log     : /home/runner/work/wod-open-import/wod-open-import/logs/cc_2026-11-23.log
-10:27:37 📧 Email envoyé → typgraf@gmail.com
+12:07:59 ✅ Terminé en 99s
+12:07:59    créés   : 1
+12:07:59    ignorés : 57
+12:07:59    erreurs : 0
+12:07:59    log     : /home/runner/work/wod-open-import/wod-open-import/logs/cc_2026-11-24.log
+12:08:00 📧 Email envoyé → typgraf@gmail.com
